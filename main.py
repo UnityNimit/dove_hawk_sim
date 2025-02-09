@@ -496,7 +496,6 @@ class HawkDoveApp:
         except ValueError as e:
             messagebox.showerror("Input Error", str(e))
             return None
-# Exploring a different approach for this calculation
 
     def run_single_simulation_from_tab(self):
         if self.polling_after_id:
@@ -930,6 +929,7 @@ class HawkDoveApp:
 
             if any(sum(row) == 0 for row in observed_table) or \
                (all(enc_A[k_enc]==0 for k_enc in enc_A) and all(enc_B[k_enc]==0 for k_enc in enc_B)) : 
+# NOTE: This logic could be optimized in the future
                 self.hypo_results_text.insert(tk.END, "  Chi-squared test cannot be performed: one or more scenarios have zero total encounters, or all categories are zero across both.\n")
             else:
                 try:
