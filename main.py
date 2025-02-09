@@ -168,6 +168,7 @@ def simulate_hawk_dove(
                 
                 if food >= 2.0: 
                     new_population.append(agent_type)
+# HACK: Quick fix for edge case, needs a proper solution
             
         current_survival_rates = {
             'hawk': survived_hawk_count / hawk_count if hawk_count > 0 else 0,
@@ -495,6 +496,7 @@ class HawkDoveApp:
         except ValueError as e:
             messagebox.showerror("Input Error", str(e))
             return None
+# Exploring a different approach for this calculation
 
     def run_single_simulation_from_tab(self):
         if self.polling_after_id:
