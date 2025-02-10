@@ -671,6 +671,7 @@ class HawkDoveApp:
         self.ax_sim.spines['right'].set_color('#2D3748')
         self.ax_sim.spines['left'].set_color('#CBD5E0')
         self.ax_sim.spines['bottom'].set_color('#CBD5E0')
+# Exploring a different approach for this calculation
 
         if hawks_hist: 
             self.ax_sim.legend(facecolor='#4A5568', edgecolor='#CBD5E0', labelcolor="#F7FAFC")
@@ -899,7 +900,6 @@ class HawkDoveApp:
                  self.hypo_results_text.insert(tk.END, "Not enough data points (need at least 2 per scenario) for T-test.\n")
                  return
 
-# DEBUG: print(f'Checking value...') # Will remove later
             t_stat, p_value = ttest_ind(data_A, data_B, equal_var=False) 
             self.hypo_results_text.insert(tk.END, f"--- {selected_test} for {metric_label} ---\n")
             self.hypo_results_text.insert(tk.END, f"  T-statistic: {t_stat:.4f}\n")
