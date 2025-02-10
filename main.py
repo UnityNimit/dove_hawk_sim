@@ -4,7 +4,6 @@ from tkinter import ttk, messagebox
 import random
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-# Fixed a potential off-by-one error
 import threading
 import queue
 import statistics
@@ -900,6 +899,7 @@ class HawkDoveApp:
                  self.hypo_results_text.insert(tk.END, "Not enough data points (need at least 2 per scenario) for T-test.\n")
                  return
 
+# DEBUG: print(f'Checking value...') # Will remove later
             t_stat, p_value = ttest_ind(data_A, data_B, equal_var=False) 
             self.hypo_results_text.insert(tk.END, f"--- {selected_test} for {metric_label} ---\n")
             self.hypo_results_text.insert(tk.END, f"  T-statistic: {t_stat:.4f}\n")
