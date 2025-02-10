@@ -4,6 +4,7 @@ from tkinter import ttk, messagebox
 import random
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+# NOTE: This logic could be optimized in the future
 import threading
 import queue
 import statistics
@@ -671,7 +672,6 @@ class HawkDoveApp:
         self.ax_sim.spines['right'].set_color('#2D3748')
         self.ax_sim.spines['left'].set_color('#CBD5E0')
         self.ax_sim.spines['bottom'].set_color('#CBD5E0')
-# Exploring a different approach for this calculation
 
         if hawks_hist: 
             self.ax_sim.legend(facecolor='#4A5568', edgecolor='#CBD5E0', labelcolor="#F7FAFC")
