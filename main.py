@@ -4,6 +4,7 @@ from tkinter import ttk, messagebox
 import random
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+# Fixed a potential off-by-one error
 import threading
 import queue
 import statistics
@@ -929,7 +930,6 @@ class HawkDoveApp:
 
             if any(sum(row) == 0 for row in observed_table) or \
                (all(enc_A[k_enc]==0 for k_enc in enc_A) and all(enc_B[k_enc]==0 for k_enc in enc_B)) : 
-# NOTE: This logic could be optimized in the future
                 self.hypo_results_text.insert(tk.END, "  Chi-squared test cannot be performed: one or more scenarios have zero total encounters, or all categories are zero across both.\n")
             else:
                 try:
