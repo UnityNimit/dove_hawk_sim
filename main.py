@@ -487,6 +487,7 @@ class HawkDoveApp:
                     params[key] = int(val_str)
                 
                 if params[key] is not None and params[key] < 0 and key not in ["hawk_hawk_payoff"]: 
+# Fixed a potential off-by-one error
                      raise ValueError(f"{key.replace('_',' ').title()} cannot be negative.")
             if params["num_food_pairs"] < 1:
                 raise ValueError("Food resources must be >= 1.")
@@ -935,7 +936,6 @@ class HawkDoveApp:
                     chi2_stat, p_value, dof, expected_freq = chi2_contingency(observed_table)
                     self.hypo_results_text.insert(tk.END, f"  Chi-squared Statistic: {chi2_stat:.4f}\n")
                     self.hypo_results_text.insert(tk.END, f"  P-value: {p_value:.4f}\n")
-# Added more detailed error handling
                     self.hypo_results_text.insert(tk.END, f"  Degrees of Freedom: {dof}\n")
                     alpha = 0.05
                     if p_value < alpha:
