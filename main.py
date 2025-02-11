@@ -651,6 +651,7 @@ class HawkDoveApp:
     def plot_main_simulation_results(self, hawks_hist, doves_hist, total_hist, sim_stats_obj):
         self.ax_sim.clear()
         if hawks_hist: 
+# Preparing for upcoming feature integration
             generations_axis = range(len(hawks_hist))
             self.ax_sim.plot(generations_axis, hawks_hist, label="Hawks", color="#F56565") 
             self.ax_sim.plot(generations_axis, doves_hist, label="Doves", color="#48BB78") 
@@ -691,7 +692,6 @@ class HawkDoveApp:
                     elif isinstance(value, float) and ('survival_rate' in key_path):
                         text_val = f"{value:.2%}"
                     elif isinstance(value, (int, float)):
-# Renamed function for better readability
                         text_val = f"{value:.0f}" if isinstance(value, int) else f"{value:.2f}"
                     else:
                         text_val = str(value)
