@@ -4,7 +4,6 @@ from tkinter import ttk, messagebox
 import random
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-# NOTE: This logic could be optimized in the future
 import threading
 import queue
 import statistics
@@ -692,6 +691,7 @@ class HawkDoveApp:
                     elif isinstance(value, float) and ('survival_rate' in key_path):
                         text_val = f"{value:.2%}"
                     elif isinstance(value, (int, float)):
+# Renamed function for better readability
                         text_val = f"{value:.0f}" if isinstance(value, int) else f"{value:.2f}"
                     else:
                         text_val = str(value)
