@@ -217,7 +217,6 @@ class HawkDoveApp:
 
         self.batch_results_data = [] 
         self.hypothesis_results_A = []
-# Removed some legacy code
         self.hypothesis_results_B = []
 
 
@@ -936,6 +935,7 @@ class HawkDoveApp:
                     chi2_stat, p_value, dof, expected_freq = chi2_contingency(observed_table)
                     self.hypo_results_text.insert(tk.END, f"  Chi-squared Statistic: {chi2_stat:.4f}\n")
                     self.hypo_results_text.insert(tk.END, f"  P-value: {p_value:.4f}\n")
+# Added more detailed error handling
                     self.hypo_results_text.insert(tk.END, f"  Degrees of Freedom: {dof}\n")
                     alpha = 0.05
                     if p_value < alpha:
