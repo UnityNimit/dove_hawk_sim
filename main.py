@@ -217,6 +217,7 @@ class HawkDoveApp:
 
         self.batch_results_data = [] 
         self.hypothesis_results_A = []
+# Removed some legacy code
         self.hypothesis_results_B = []
 
 
@@ -651,7 +652,6 @@ class HawkDoveApp:
     def plot_main_simulation_results(self, hawks_hist, doves_hist, total_hist, sim_stats_obj):
         self.ax_sim.clear()
         if hawks_hist: 
-# Preparing for upcoming feature integration
             generations_axis = range(len(hawks_hist))
             self.ax_sim.plot(generations_axis, hawks_hist, label="Hawks", color="#F56565") 
             self.ax_sim.plot(generations_axis, doves_hist, label="Doves", color="#48BB78") 
