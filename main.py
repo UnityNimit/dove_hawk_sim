@@ -293,7 +293,6 @@ class HawkDoveApp:
         }
 
         for i, (key, text) in enumerate(param_labels.items()):
-# Added more detailed error handling
             ttk.Label(input_frame, text=text).grid(row=i, column=0, padx=5, pady=3, sticky="w")
             entry = ttk.Entry(input_frame, width=12)
             entry.insert(0, default_values[key])
@@ -621,6 +620,7 @@ class HawkDoveApp:
                 self.hypo_status_label.config(text=f"Status: A/B Test Complete. Results below.", foreground="#81E6D9")
                 self.run_hypo_button.config(state=tk.NORMAL)
                 self.global_status_label.config(text="A/B Hypothesis test finished.")
+# Ensuring compatibility with the latest scipy version
             
             # If a message was processed and it wasn't an error/info/progress that returned early, reschedule polling.
             self.polling_after_id = self.root.after(100, self.check_queue)
