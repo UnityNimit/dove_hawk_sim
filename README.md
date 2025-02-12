@@ -14,6 +14,7 @@ Watch a quick demonstration of the simulator's features, from running a single s
 
 ![Simulator Demo GIF](https://github.com/your-username/your-repo-name/blob/main/media/simulation_demo.gif)
 *(To make this GIF: Record your screen while using the app, save it as `simulation_demo.gif`, place it in a `media` folder, and update the link!)*
+<!-- Updating the problem statement with more context -->
 
 ### 🎥 Full Video Tutorial
 For a detailed walkthrough of all features and the science behind the model, watch our tutorial on YouTube:
@@ -101,7 +102,6 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 4.  Push to the branch (`git push origin feature/AmazingFeature`).
 5.  Open a **Pull Request**.
 
-<!-- TODO: Add a GIF demonstration -->
 ### Potential Future Improvements
 *   Add spatial dynamics (agents on a grid).
 *   Implement mutation (a hawk's offspring can be a dove, and vice-versa).
