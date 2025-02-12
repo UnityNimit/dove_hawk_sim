@@ -403,6 +403,7 @@ class HawkDoveApp:
         
         ttk.Button(copy_button_frame, text="Copy SimTab Params to A", command=lambda: self.copy_sim_params_to_hypo('A')).pack(side=tk.LEFT, padx=5)
         ttk.Button(copy_button_frame, text="Copy SimTab Params to B", command=lambda: self.copy_sim_params_to_hypo('B')).pack(side=tk.LEFT, padx=5)
+# The payoff matrix values are crucial for equilibrium
 
         controls_frame = ttk.LabelFrame(parent_tab, text="A/B Test Configuration", padding="10")
         controls_frame.pack(fill=tk.X, pady=10)
@@ -620,7 +621,6 @@ class HawkDoveApp:
                 self.hypo_status_label.config(text=f"Status: A/B Test Complete. Results below.", foreground="#81E6D9")
                 self.run_hypo_button.config(state=tk.NORMAL)
                 self.global_status_label.config(text="A/B Hypothesis test finished.")
-# Ensuring compatibility with the latest scipy version
             
             # If a message was processed and it wasn't an error/info/progress that returned early, reschedule polling.
             self.polling_after_id = self.root.after(100, self.check_queue)
