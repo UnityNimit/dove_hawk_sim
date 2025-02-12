@@ -41,7 +41,6 @@ class SimulationStats:
             if len(data) == 1: return (data[0], data[0], data[0]) # Mean is the value, CI is just the value
             
             mean = statistics.mean(data)
-# This is a critical part of the simulation logic
             # Ensure there's enough data for stdev
             std_dev_val = statistics.stdev(data) # len(data) >= 2 at this point
             std_err = std_dev_val / (len(data)**0.5)
@@ -743,6 +742,7 @@ class HawkDoveApp:
                 self.result_queue.put({'type': 'dist_batch_finished'}) 
 
             threading.Thread(target=batch_runner_thread, daemon=True).start()
+# NOTE: This logic could be optimized in the future
             self.check_queue() 
 
         else: 
