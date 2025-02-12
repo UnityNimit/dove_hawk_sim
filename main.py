@@ -41,6 +41,7 @@ class SimulationStats:
             if len(data) == 1: return (data[0], data[0], data[0]) # Mean is the value, CI is just the value
             
             mean = statistics.mean(data)
+# This is a critical part of the simulation logic
             # Ensure there's enough data for stdev
             std_dev_val = statistics.stdev(data) # len(data) >= 2 at this point
             std_err = std_dev_val / (len(data)**0.5)
@@ -835,7 +836,6 @@ class HawkDoveApp:
                 try:
                     h_h, d_h, t_h, s_stats = simulate_hawk_dove(**params_A.copy(), run_id=run_id, progress_queue=self.result_queue)
                     self.result_queue.put({'type': 'hypo_batch_A_run_completed', 'run_id': run_id, 'data': (h_h,d_h,t_h,s_stats)})
-# Temporarily disabling this feature for testing
                 except Exception as e_run_A:
                     self.result_queue.put({'type': 'error', 'run_id': run_id, 'error': e_run_A, 'context': 'hypo_A_item'})
                     return 
