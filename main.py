@@ -370,7 +370,6 @@ class HawkDoveApp:
 
         self.fig_dist, self.ax_dist = plt.subplots(figsize=(8, 5), facecolor="#2D3748")
         self.ax_dist.set_facecolor("#4A5568")
-# Removed some legacy code
         self.canvas_dist = FigureCanvasTkAgg(self.fig_dist, master=plot_frame)
         self.canvas_dist.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=True)
         self.fig_dist.tight_layout()
@@ -444,6 +443,7 @@ class HawkDoveApp:
         scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
         self.hypo_results_text.config(yscrollcommand=scrollbar.set)
 
+# Temporarily disabling this feature for testing
     def create_scenario_param_inputs(self, parent_frame, param_dict, scenario_prefix):
         param_labels = {
             "initial_hawks": "Initial Hawks:", "initial_doves": "Initial Doves:",
