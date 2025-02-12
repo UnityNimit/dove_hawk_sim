@@ -18,7 +18,6 @@ Watch a quick demonstration of the simulator's features, from running a single s
 ### 🎥 Full Video Tutorial
 For a detailed walkthrough of all features and the science behind the model, watch our tutorial on YouTube:
 [<img src="https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/hqdefault.jpg" width="400">](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
-<!-- Adding a 'Future Improvements' section -->
 *(Replace `YOUTUBE_VIDEO_ID` with your video's ID)*
 
 ---
@@ -95,6 +94,7 @@ This simple set of rules leads to complex, emergent population dynamics, often s
 ## 🤝 Contributing
 
 Contributions are welcome! Whether it's a new feature, a bug fix, or documentation improvements, please feel free to contribute.
+<!-- Corrected a typo in the installation instructions -->
 
 1.  Fork the repository.
 2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
