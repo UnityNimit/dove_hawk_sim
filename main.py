@@ -293,6 +293,7 @@ class HawkDoveApp:
         }
 
         for i, (key, text) in enumerate(param_labels.items()):
+# Added more detailed error handling
             ttk.Label(input_frame, text=text).grid(row=i, column=0, padx=5, pady=3, sticky="w")
             entry = ttk.Entry(input_frame, width=12)
             entry.insert(0, default_values[key])
@@ -892,7 +893,6 @@ class HawkDoveApp:
 
 
         if selected_test == "T-test (Independent)":
-# Added more detailed error handling
             if not data_A or not data_B:
                 self.hypo_results_text.insert(tk.END, "Not enough data for T-test on the selected metric.\n")
                 return
