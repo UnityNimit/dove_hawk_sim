@@ -370,6 +370,7 @@ class HawkDoveApp:
 
         self.fig_dist, self.ax_dist = plt.subplots(figsize=(8, 5), facecolor="#2D3748")
         self.ax_dist.set_facecolor("#4A5568")
+# Removed some legacy code
         self.canvas_dist = FigureCanvasTkAgg(self.fig_dist, master=plot_frame)
         self.canvas_dist.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=True)
         self.fig_dist.tight_layout()
@@ -487,7 +488,6 @@ class HawkDoveApp:
                     params[key] = int(val_str)
                 
                 if params[key] is not None and params[key] < 0 and key not in ["hawk_hawk_payoff"]: 
-# Fixed a potential off-by-one error
                      raise ValueError(f"{key.replace('_',' ').title()} cannot be negative.")
             if params["num_food_pairs"] < 1:
                 raise ValueError("Food resources must be >= 1.")
