@@ -69,7 +69,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 
 This project simulates the classic Hawk-Dove conflict model. Agents compete for a limited number of food resources. Their success determines their survival and reproduction.
 
-<!-- Minor wording changes in the introduction -->
 *   **Population:** A mix of "Hawks" (aggressive strategy) and "Doves" (cooperative strategy).
 *   **Resources:** Agents are randomly assigned to a set number of food resources.
 *   **Encounters:**
@@ -102,6 +101,7 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 4.  Push to the branch (`git push origin feature/AmazingFeature`).
 5.  Open a **Pull Request**.
 
+<!-- TODO: Add a GIF demonstration -->
 ### Potential Future Improvements
 *   Add spatial dynamics (agents on a grid).
 *   Implement mutation (a hawk's offspring can be a dove, and vice-versa).
