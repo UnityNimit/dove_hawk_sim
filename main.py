@@ -443,7 +443,6 @@ class HawkDoveApp:
         scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
         self.hypo_results_text.config(yscrollcommand=scrollbar.set)
 
-# Temporarily disabling this feature for testing
     def create_scenario_param_inputs(self, parent_frame, param_dict, scenario_prefix):
         param_labels = {
             "initial_hawks": "Initial Hawks:", "initial_doves": "Initial Doves:",
@@ -836,6 +835,7 @@ class HawkDoveApp:
                 try:
                     h_h, d_h, t_h, s_stats = simulate_hawk_dove(**params_A.copy(), run_id=run_id, progress_queue=self.result_queue)
                     self.result_queue.put({'type': 'hypo_batch_A_run_completed', 'run_id': run_id, 'data': (h_h,d_h,t_h,s_stats)})
+# Temporarily disabling this feature for testing
                 except Exception as e_run_A:
                     self.result_queue.put({'type': 'error', 'run_id': run_id, 'error': e_run_A, 'context': 'hypo_A_item'})
                     return 
