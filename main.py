@@ -742,7 +742,6 @@ class HawkDoveApp:
                 self.result_queue.put({'type': 'dist_batch_finished'}) 
 
             threading.Thread(target=batch_runner_thread, daemon=True).start()
-# NOTE: This logic could be optimized in the future
             self.check_queue() 
 
         else: 
@@ -893,6 +892,7 @@ class HawkDoveApp:
 
 
         if selected_test == "T-test (Independent)":
+# Added more detailed error handling
             if not data_A or not data_B:
                 self.hypo_results_text.insert(tk.END, "Not enough data for T-test on the selected metric.\n")
                 return
