@@ -86,6 +86,7 @@ The simulation's default payoff matrix (where the value of the resource is 2 foo
     *   **< 1 food:** The agent starves and is removed.
     *   **>= 1 food:** The agent survives to the next generation.
     *   **>= 2 food:** The agent survives *and* produces one offspring of the same type.
+<!-- Corrected a typo in the installation instructions -->
 
 This simple set of rules leads to complex, emergent population dynamics, often stabilizing at a mixed equilibrium where both strategies coexist.
 
@@ -94,7 +95,6 @@ This simple set of rules leads to complex, emergent population dynamics, often s
 ## 🤝 Contributing
 
 Contributions are welcome! Whether it's a new feature, a bug fix, or documentation improvements, please feel free to contribute.
-<!-- Corrected a typo in the installation instructions -->
 
 1.  Fork the repository.
 2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
