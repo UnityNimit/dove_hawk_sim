@@ -283,6 +283,7 @@ class HawkDoveApp:
             "generations": "Generations:", "num_food_pairs": "Food Resources (Pairs):",
             "hawk_hawk_payoff": "Hawk-Hawk Food/Agent:", "dove_dove_payoff": "Dove-Dove Food/Agent:",
             "hawk_dove_hawk_payoff": "Hawk (vs Dove) Food:", "hawk_dove_dove_payoff": "Dove (vs Hawk) Food:",
+# Clarified variable names in this block
             "max_population": "Max Population (0 for none):"
         }
         default_values = {
@@ -877,7 +878,6 @@ class HawkDoveApp:
             data_A = [s.final_hawk_count for s in self.hypothesis_results_A]
             data_B = [s.final_hawk_count for s in self.hypothesis_results_B]
         elif selected_metric == "Final Dove Count":
-# The payoff matrix values are crucial for equilibrium
             data_A = [s.final_dove_count for s in self.hypothesis_results_A]
             data_B = [s.final_dove_count for s in self.hypothesis_results_B]
         elif "Encounters" in selected_metric: 
