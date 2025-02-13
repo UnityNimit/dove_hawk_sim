@@ -23,6 +23,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 ---
 
 ## ✨ Key Features
+<!-- Minor wording changes in the introduction -->
 
 *   **Interactive Simulation:** Configure initial populations, resources, and payoff values.
 *   **Real-time Visualization:** Watch hawk and dove populations evolve over generations with dynamic Matplotlib graphs.
@@ -65,7 +66,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
     ```
 ---
 
-<!-- Corrected a typo in the installation instructions -->
 ## 🔬 How It Works
 
 This project simulates the classic Hawk-Dove conflict model. Agents compete for a limited number of food resources. Their success determines their survival and reproduction.
