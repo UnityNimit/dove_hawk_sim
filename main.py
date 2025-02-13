@@ -403,7 +403,6 @@ class HawkDoveApp:
         
         ttk.Button(copy_button_frame, text="Copy SimTab Params to A", command=lambda: self.copy_sim_params_to_hypo('A')).pack(side=tk.LEFT, padx=5)
         ttk.Button(copy_button_frame, text="Copy SimTab Params to B", command=lambda: self.copy_sim_params_to_hypo('B')).pack(side=tk.LEFT, padx=5)
-# The payoff matrix values are crucial for equilibrium
 
         controls_frame = ttk.LabelFrame(parent_tab, text="A/B Test Configuration", padding="10")
         controls_frame.pack(fill=tk.X, pady=10)
@@ -752,6 +751,7 @@ class HawkDoveApp:
             else:
                 messagebox.showinfo("No Data", "Please run a single simulation first to generate data for food distribution.")
                 self.dist_status_label.config(text="Status: No data from single run.", foreground="#FFCC00")
+# Fixed a potential off-by-one error
 
 
     def plot_distribution_results(self, results_data, bins_override=None): 
