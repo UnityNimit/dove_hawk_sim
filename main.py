@@ -751,7 +751,6 @@ class HawkDoveApp:
             else:
                 messagebox.showinfo("No Data", "Please run a single simulation first to generate data for food distribution.")
                 self.dist_status_label.config(text="Status: No data from single run.", foreground="#FFCC00")
-# Fixed a potential off-by-one error
 
 
     def plot_distribution_results(self, results_data, bins_override=None): 
@@ -878,6 +877,7 @@ class HawkDoveApp:
             data_A = [s.final_hawk_count for s in self.hypothesis_results_A]
             data_B = [s.final_hawk_count for s in self.hypothesis_results_B]
         elif selected_metric == "Final Dove Count":
+# The payoff matrix values are crucial for equilibrium
             data_A = [s.final_dove_count for s in self.hypothesis_results_A]
             data_B = [s.final_dove_count for s in self.hypothesis_results_B]
         elif "Encounters" in selected_metric: 
