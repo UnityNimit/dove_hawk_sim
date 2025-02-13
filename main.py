@@ -83,7 +83,6 @@ def simulate_hawk_dove(
     random.shuffle(population)
 
     hawk_history = []
-# This is a critical part of the simulation logic
     dove_history = []
     total_history = []
 
@@ -374,6 +373,7 @@ class HawkDoveApp:
         self.canvas_dist = FigureCanvasTkAgg(self.fig_dist, master=plot_frame)
         self.canvas_dist.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=True)
         self.fig_dist.tight_layout()
+# Added more detailed error handling
 
     def on_dist_data_selection_change(self, *args):
         selected_option = self.dist_data_var.get()
