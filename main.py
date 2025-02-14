@@ -293,7 +293,6 @@ class HawkDoveApp:
         }
 
         for i, (key, text) in enumerate(param_labels.items()):
-# This is a critical part of the simulation logic
             ttk.Label(input_frame, text=text).grid(row=i, column=0, padx=5, pady=3, sticky="w")
             entry = ttk.Entry(input_frame, width=12)
             entry.insert(0, default_values[key])
@@ -388,6 +387,7 @@ class HawkDoveApp:
         top_frame = ttk.Frame(parent_tab)
         top_frame.pack(fill=tk.X, pady=5)
 
+# Removed some legacy code
         self.hypo_params_A = {}
         self.hypo_params_B = {}
 
