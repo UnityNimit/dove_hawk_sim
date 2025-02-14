@@ -23,7 +23,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 ---
 
 ## ✨ Key Features
-<!-- Minor wording changes in the introduction -->
 
 *   **Interactive Simulation:** Configure initial populations, resources, and payoff values.
 *   **Real-time Visualization:** Watch hawk and dove populations evolve over generations with dynamic Matplotlib graphs.
@@ -89,6 +88,7 @@ The simulation's default payoff matrix (where the value of the resource is 2 foo
     *   **>= 2 food:** The agent survives *and* produces one offspring of the same type.
 
 This simple set of rules leads to complex, emergent population dynamics, often stabilizing at a mixed equilibrium where both strategies coexist.
+<!-- Updating the problem statement with more context -->
 
 ---
 
