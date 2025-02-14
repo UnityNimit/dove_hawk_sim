@@ -55,6 +55,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
     ```
 
 3.  **Install dependencies**:
+<!-- Adding a placeholder for the license file -->
     ```bash
     pip install -r requirements.txt
     ```
@@ -110,7 +111,6 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 
 ## 📜 License
 
-<!-- Corrected a typo in the installation instructions -->
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
