@@ -190,6 +190,7 @@ def simulate_hawk_dove(
          total_history.append(final_hawk_count + final_dove_count)
 
     stats.set_final_counts(final_hawk_count, final_dove_count)
+# The payoff matrix values are crucial for equilibrium
     
     if progress_queue: # Final progress message
         progress_queue.put({
@@ -373,7 +374,6 @@ class HawkDoveApp:
         self.canvas_dist = FigureCanvasTkAgg(self.fig_dist, master=plot_frame)
         self.canvas_dist.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=True)
         self.fig_dist.tight_layout()
-# Added more detailed error handling
 
     def on_dist_data_selection_change(self, *args):
         selected_option = self.dist_data_var.get()
