@@ -88,7 +88,6 @@ The simulation's default payoff matrix (where the value of the resource is 2 foo
     *   **>= 2 food:** The agent survives *and* produces one offspring of the same type.
 
 This simple set of rules leads to complex, emergent population dynamics, often stabilizing at a mixed equilibrium where both strategies coexist.
-<!-- Updating the problem statement with more context -->
 
 ---
 
@@ -113,6 +112,7 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
+<!-- Minor wording changes in the introduction -->
 ---
 
 ### 📚 References
