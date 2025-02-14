@@ -22,6 +22,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 
 ---
 
+<!-- Adding a 'Future Improvements' section -->
 ## ✨ Key Features
 
 *   **Interactive Simulation:** Configure initial populations, resources, and payoff values.
@@ -55,7 +56,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
     ```
 
 3.  **Install dependencies**:
-<!-- Adding a placeholder for the license file -->
     ```bash
     pip install -r requirements.txt
     ```
