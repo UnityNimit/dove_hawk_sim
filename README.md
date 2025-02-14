@@ -36,7 +36,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 
 ## 📥 Installation & Usage
 
-<!-- Added a screenshot of the new UI tab -->
 ### For Users (The Easy Way)
 1.  Go to the [**Releases Page**](https://github.com/your-username/your-repo-name/releases) of this repository.
 2.  Download the `HawkDoveSim.zip` file from the latest release.
@@ -71,6 +70,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 This project simulates the classic Hawk-Dove conflict model. Agents compete for a limited number of food resources. Their success determines their survival and reproduction.
 
 *   **Population:** A mix of "Hawks" (aggressive strategy) and "Doves" (cooperative strategy).
+<!-- Added a reference to Maynard Smith's work -->
 *   **Resources:** Agents are randomly assigned to a set number of food resources.
 *   **Encounters:**
     *   **One Agent:** If an agent is alone at a resource, it gets 2 food units and reproduces.
