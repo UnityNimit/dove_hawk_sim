@@ -190,7 +190,6 @@ def simulate_hawk_dove(
          total_history.append(final_hawk_count + final_dove_count)
 
     stats.set_final_counts(final_hawk_count, final_dove_count)
-# The payoff matrix values are crucial for equilibrium
     
     if progress_queue: # Final progress message
         progress_queue.put({
@@ -294,6 +293,7 @@ class HawkDoveApp:
         }
 
         for i, (key, text) in enumerate(param_labels.items()):
+# This is a critical part of the simulation logic
             ttk.Label(input_frame, text=text).grid(row=i, column=0, padx=5, pady=3, sticky="w")
             entry = ttk.Entry(input_frame, width=12)
             entry.insert(0, default_values[key])
