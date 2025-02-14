@@ -22,7 +22,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 
 ---
 
-<!-- Adding a 'Future Improvements' section -->
+<!-- Adding a placeholder for the license file -->
 ## ✨ Key Features
 
 *   **Interactive Simulation:** Configure initial populations, resources, and payoff values.
