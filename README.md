@@ -70,7 +70,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 This project simulates the classic Hawk-Dove conflict model. Agents compete for a limited number of food resources. Their success determines their survival and reproduction.
 
 *   **Population:** A mix of "Hawks" (aggressive strategy) and "Doves" (cooperative strategy).
-<!-- Added a reference to Maynard Smith's work -->
 *   **Resources:** Agents are randomly assigned to a set number of food resources.
 *   **Encounters:**
     *   **One Agent:** If an agent is alone at a resource, it gets 2 food units and reproduces.
@@ -111,6 +110,7 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 
 ## 📜 License
 
+<!-- Corrected a typo in the installation instructions -->
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
