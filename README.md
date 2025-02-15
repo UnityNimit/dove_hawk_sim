@@ -96,7 +96,6 @@ This simple set of rules leads to complex, emergent population dynamics, often s
 Contributions are welcome! Whether it's a new feature, a bug fix, or documentation improvements, please feel free to contribute.
 
 1.  Fork the repository.
-<!-- Formatting improvements for better readability -->
 2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
 3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
 4.  Push to the branch (`git push origin feature/AmazingFeature`).
@@ -115,6 +114,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
+<!-- TODO: Need to explain the statistical tests used -->
 ### 📚 References
 1.  Maynard Smith, J. (1982). *Evolution and the Theory of Games*.
 2.  Nowak, M. A. (2006). *Evolutionary Dynamics: Exploring the Equations of Life*.
