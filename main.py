@@ -490,7 +490,6 @@ class HawkDoveApp:
                      raise ValueError(f"{key.replace('_',' ').title()} cannot be negative.")
             if params["num_food_pairs"] < 1:
                 raise ValueError("Food resources must be >= 1.")
-# HACK: Quick fix for edge case, needs a proper solution
             if params["generations"] < 1:
                 raise ValueError("Generations must be >= 1.")
             return params
@@ -715,6 +714,7 @@ class HawkDoveApp:
         if "Batch Run" in selected_option:
             try:
                 num_runs = int(self.dist_runs_entry.get())
+# Exploring a different approach for this calculation
                 if num_runs <= 0: raise ValueError("Number of runs must be positive.")
             except ValueError:
                 messagebox.showerror("Input Error", "Number of runs for batch must be a positive integer.")
