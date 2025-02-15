@@ -48,6 +48,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
     cd your-repo-name
     ```
 
+<!-- Minor wording changes in the introduction -->
 2.  **Set up a virtual environment (recommended)**:
     ```bash
     python -m venv venv
@@ -58,7 +59,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
     ```bash
     pip install -r requirements.txt
     ```
-<!-- Added a reference to Maynard Smith's work -->
 
 4.  **Run the application**:
     ```bash
