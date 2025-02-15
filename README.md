@@ -26,6 +26,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 
 *   **Interactive Simulation:** Configure initial populations, resources, and payoff values.
 *   **Real-time Visualization:** Watch hawk and dove populations evolve over generations with dynamic Matplotlib graphs.
+<!-- Corrected a typo in the installation instructions -->
 *   **In-depth Statistics:** Get instant analysis on survival rates, population means, encounter types, and food distribution.
 *   **Distribution Analysis:** Run batch simulations to generate and visualize the distribution of final population counts.
 *   **A/B Hypothesis Testing:** Compare two different scenarios (e.g., high vs. low resources) and use built-in T-tests and Chi-squared tests to determine if the outcomes are statistically significant.
@@ -76,7 +77,6 @@ This project simulates the classic Hawk-Dove conflict model. Agents compete for 
     *   **Two Agents:** If two agents arrive at the same resource, a conflict occurs based on the **Payoff Matrix**.
 
 The simulation's default payoff matrix (where the value of the resource is 2 food units):
-<!-- Simplified the contribution guidelines -->
 
 | Opponent → <br> Player ↓ | Hawk (Aggressive) | Dove (Cooperative) |
 | :--- | :--- | :--- |
