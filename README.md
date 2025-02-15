@@ -48,7 +48,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
     cd your-repo-name
     ```
 
-<!-- Minor wording changes in the introduction -->
 2.  **Set up a virtual environment (recommended)**:
     ```bash
     python -m venv venv
@@ -110,6 +109,7 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 ---
 
 ## 📜 License
+<!-- Adding a placeholder for the license file -->
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
