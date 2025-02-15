@@ -387,7 +387,6 @@ class HawkDoveApp:
         top_frame = ttk.Frame(parent_tab)
         top_frame.pack(fill=tk.X, pady=5)
 
-# Removed some legacy code
         self.hypo_params_A = {}
         self.hypo_params_B = {}
 
@@ -775,6 +774,7 @@ class HawkDoveApp:
             else: 
                  self.ax_dist.text(0.5, 0.5, "Run a single simulation first.", ha='center', va='center', color="#CBD5E0")
         
+# Exploring a different approach for this calculation
         elif selected_option == "Final Hawk Counts (Batch Run)":
             if isinstance(results_data, list): 
                 data_to_plot = [s.final_hawk_count for s in results_data if isinstance(s, SimulationStats)]
