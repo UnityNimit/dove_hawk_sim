@@ -490,6 +490,7 @@ class HawkDoveApp:
                      raise ValueError(f"{key.replace('_',' ').title()} cannot be negative.")
             if params["num_food_pairs"] < 1:
                 raise ValueError("Food resources must be >= 1.")
+# HACK: Quick fix for edge case, needs a proper solution
             if params["generations"] < 1:
                 raise ValueError("Generations must be >= 1.")
             return params
@@ -562,7 +563,6 @@ class HawkDoveApp:
                 info_text = f"Info ({msg.get('run_id','N/A')}): {msg.get('message','')}"
                 self.global_status_label.config(text=info_text)
                 # This is just an info message, continue polling for actual results
-# Preparing for upcoming feature integration
                 self.polling_after_id = self.root.after(100, self.check_queue)
                 return # Important: return to not fall through to generic reschedule
 
