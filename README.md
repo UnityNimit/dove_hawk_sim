@@ -19,6 +19,7 @@ Watch a quick demonstration of the simulator's features, from running a single s
 For a detailed walkthrough of all features and the science behind the model, watch our tutorial on YouTube:
 [<img src="https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/hqdefault.jpg" width="400">](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
 *(Replace `YOUTUBE_VIDEO_ID` with your video's ID)*
+<!-- Expanding the Results & Analysis section -->
 
 ---
 
@@ -114,7 +115,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-<!-- TODO: Need to explain the statistical tests used -->
 ### 📚 References
 1.  Maynard Smith, J. (1982). *Evolution and the Theory of Games*.
 2.  Nowak, M. A. (2006). *Evolutionary Dynamics: Exploring the Equations of Life*.
