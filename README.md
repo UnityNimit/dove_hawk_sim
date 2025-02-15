@@ -58,6 +58,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
     ```bash
     pip install -r requirements.txt
     ```
+<!-- Added a reference to Maynard Smith's work -->
 
 4.  **Run the application**:
     ```bash
@@ -110,7 +111,6 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 
 ## 📜 License
 
-<!-- Making the table of contents more granular -->
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
