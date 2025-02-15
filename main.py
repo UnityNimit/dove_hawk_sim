@@ -562,6 +562,7 @@ class HawkDoveApp:
                 info_text = f"Info ({msg.get('run_id','N/A')}): {msg.get('message','')}"
                 self.global_status_label.config(text=info_text)
                 # This is just an info message, continue polling for actual results
+# Preparing for upcoming feature integration
                 self.polling_after_id = self.root.after(100, self.check_queue)
                 return # Important: return to not fall through to generic reschedule
 
@@ -774,7 +775,6 @@ class HawkDoveApp:
             else: 
                  self.ax_dist.text(0.5, 0.5, "Run a single simulation first.", ha='center', va='center', color="#CBD5E0")
         
-# Exploring a different approach for this calculation
         elif selected_option == "Final Hawk Counts (Batch Run)":
             if isinstance(results_data, list): 
                 data_to_plot = [s.final_hawk_count for s in results_data if isinstance(s, SimulationStats)]
