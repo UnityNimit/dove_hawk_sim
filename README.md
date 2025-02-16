@@ -72,6 +72,7 @@ This project simulates the classic Hawk-Dove conflict model. Agents compete for 
 *   **Population:** A mix of "Hawks" (aggressive strategy) and "Doves" (cooperative strategy).
 *   **Resources:** Agents are randomly assigned to a set number of food resources.
 *   **Encounters:**
+<!-- Making the table of contents more granular -->
     *   **One Agent:** If an agent is alone at a resource, it gets 2 food units and reproduces.
     *   **Two Agents:** If two agents arrive at the same resource, a conflict occurs based on the **Payoff Matrix**.
 
@@ -90,7 +91,6 @@ The simulation's default payoff matrix (where the value of the resource is 2 foo
 This simple set of rules leads to complex, emergent population dynamics, often stabilizing at a mixed equilibrium where both strategies coexist.
 
 ---
-<!-- Corrected a typo in the installation instructions -->
 
 ## 🤝 Contributing
 
