@@ -13,7 +13,6 @@ An interactive desktop application for simulating the Hawk-Dove evolutionary gam
 Watch a quick demonstration of the simulator's features, from running a single simulation to performing an A/B hypothesis test.
 
 ![Simulator Demo GIF](https://github.com/your-username/your-repo-name/blob/main/media/simulation_demo.gif)
-<!-- Rephrasing the conclusion for greater impact -->
 *(To make this GIF: Record your screen while using the app, save it as `simulation_demo.gif`, place it in a `media` folder, and update the link!)*
 
 ### 🎥 Full Video Tutorial
@@ -91,6 +90,7 @@ The simulation's default payoff matrix (where the value of the resource is 2 foo
 This simple set of rules leads to complex, emergent population dynamics, often stabilizing at a mixed equilibrium where both strategies coexist.
 
 ---
+<!-- Corrected a typo in the installation instructions -->
 
 ## 🤝 Contributing
 
