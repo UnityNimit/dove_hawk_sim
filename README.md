@@ -1,6 +1,5 @@
 # Advanced Hawk-Dove Evolutionary Simulator 🦅🕊️
 
-<!-- Minor wording changes in the introduction -->
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/python-3.8+-brightgreen.svg)](https://www.python.org/)
 [![Built with Tkinter](https://img.shields.io/badge/Built%20with-Tkinter-red.svg)](https://docs.python.org/3/library/tkinter.html)
@@ -14,6 +13,7 @@ An interactive desktop application for simulating the Hawk-Dove evolutionary gam
 Watch a quick demonstration of the simulator's features, from running a single simulation to performing an A/B hypothesis test.
 
 ![Simulator Demo GIF](https://github.com/your-username/your-repo-name/blob/main/media/simulation_demo.gif)
+<!-- Rephrasing the conclusion for greater impact -->
 *(To make this GIF: Record your screen while using the app, save it as `simulation_demo.gif`, place it in a `media` folder, and update the link!)*
 
 ### 🎥 Full Video Tutorial
