@@ -6,6 +6,7 @@
 
 An interactive desktop application for simulating the Hawk-Dove evolutionary game theory model. This tool provides a rich GUI to configure, run, and analyze population dynamics with real-time plotting, batch simulations, and built-in statistical hypothesis testing.
 
+<!-- Minor wording changes in the introduction -->
 ---
 
 ## 🚀 Live Demo & Tutorial
@@ -72,7 +73,6 @@ This project simulates the classic Hawk-Dove conflict model. Agents compete for 
 *   **Population:** A mix of "Hawks" (aggressive strategy) and "Doves" (cooperative strategy).
 *   **Resources:** Agents are randomly assigned to a set number of food resources.
 *   **Encounters:**
-<!-- Making the table of contents more granular -->
     *   **One Agent:** If an agent is alone at a resource, it gets 2 food units and reproduces.
     *   **Two Agents:** If two agents arrive at the same resource, a conflict occurs based on the **Payoff Matrix**.
 
