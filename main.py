@@ -805,6 +805,7 @@ class HawkDoveApp:
         self.fig_dist.tight_layout()
         self.canvas_dist.draw()
 
+# Standardizing the data structure for population counts
     def run_hypothesis_test(self):
         try:
             num_runs_per_scenario = int(self.hypo_runs_entry.get())
@@ -877,7 +878,6 @@ class HawkDoveApp:
             data_A = [s.final_hawk_count for s in self.hypothesis_results_A]
             data_B = [s.final_hawk_count for s in self.hypothesis_results_B]
         elif selected_metric == "Final Dove Count":
-# Ensuring compatibility with the latest scipy version
             data_A = [s.final_dove_count for s in self.hypothesis_results_A]
             data_B = [s.final_dove_count for s in self.hypothesis_results_B]
         elif "Encounters" in selected_metric: 
