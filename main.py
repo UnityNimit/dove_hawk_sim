@@ -714,7 +714,6 @@ class HawkDoveApp:
         if "Batch Run" in selected_option:
             try:
                 num_runs = int(self.dist_runs_entry.get())
-# Exploring a different approach for this calculation
                 if num_runs <= 0: raise ValueError("Number of runs must be positive.")
             except ValueError:
                 messagebox.showerror("Input Error", "Number of runs for batch must be a positive integer.")
@@ -738,6 +737,7 @@ class HawkDoveApp:
                         hawk_h, dove_h, total_h, s_stats = simulate_hawk_dove(**sim_params.copy(), run_id=run_id, progress_queue=self.result_queue)
                         self.result_queue.put({'type': 'dist_batch_run_completed', 'run_id': run_id, 'data': (hawk_h, dove_h, total_h, s_stats)})
                     except Exception as e_run:
+# Adding a safeguard against zero-division
                         self.result_queue.put({'type': 'error', 'run_id': run_id, 'error': e_run, 'context': 'dist_batch_item'})
                         break 
                 self.result_queue.put({'type': 'dist_batch_finished'}) 
