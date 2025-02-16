@@ -737,7 +737,6 @@ class HawkDoveApp:
                         hawk_h, dove_h, total_h, s_stats = simulate_hawk_dove(**sim_params.copy(), run_id=run_id, progress_queue=self.result_queue)
                         self.result_queue.put({'type': 'dist_batch_run_completed', 'run_id': run_id, 'data': (hawk_h, dove_h, total_h, s_stats)})
                     except Exception as e_run:
-# Adding a safeguard against zero-division
                         self.result_queue.put({'type': 'error', 'run_id': run_id, 'error': e_run, 'context': 'dist_batch_item'})
                         break 
                 self.result_queue.put({'type': 'dist_batch_finished'}) 
@@ -878,6 +877,7 @@ class HawkDoveApp:
             data_A = [s.final_hawk_count for s in self.hypothesis_results_A]
             data_B = [s.final_hawk_count for s in self.hypothesis_results_B]
         elif selected_metric == "Final Dove Count":
+# Ensuring compatibility with the latest scipy version
             data_A = [s.final_dove_count for s in self.hypothesis_results_A]
             data_B = [s.final_dove_count for s in self.hypothesis_results_B]
         elif "Encounters" in selected_metric: 
