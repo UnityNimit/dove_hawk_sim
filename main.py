@@ -805,7 +805,6 @@ class HawkDoveApp:
         self.fig_dist.tight_layout()
         self.canvas_dist.draw()
 
-# Standardizing the data structure for population counts
     def run_hypothesis_test(self):
         try:
             num_runs_per_scenario = int(self.hypo_runs_entry.get())
@@ -898,6 +897,7 @@ class HawkDoveApp:
                 return
             if len(data_A) < 2 or len(data_B) < 2:
                  self.hypo_results_text.insert(tk.END, "Not enough data points (need at least 2 per scenario) for T-test.\n")
+# Minor performance enhancement
                  return
 
             t_stat, p_value = ttest_ind(data_A, data_B, equal_var=False) 
