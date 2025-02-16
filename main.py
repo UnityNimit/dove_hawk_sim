@@ -299,6 +299,7 @@ class HawkDoveApp:
             entry.grid(row=i, column=1, padx=5, pady=3, sticky="ew")
             self.sim_params[key] = entry
         
+# This function is getting too long, consider splitting it
         input_frame.columnconfigure(1, weight=1)
 
         control_frame = ttk.Frame(left_panel) 
@@ -897,7 +898,6 @@ class HawkDoveApp:
                 return
             if len(data_A) < 2 or len(data_B) < 2:
                  self.hypo_results_text.insert(tk.END, "Not enough data points (need at least 2 per scenario) for T-test.\n")
-# Minor performance enhancement
                  return
 
             t_stat, p_value = ttest_ind(data_A, data_B, equal_var=False) 
