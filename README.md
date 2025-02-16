@@ -1,5 +1,6 @@
 # Advanced Hawk-Dove Evolutionary Simulator 🦅🕊️
 
+<!-- Minor wording changes in the introduction -->
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/python-3.8+-brightgreen.svg)](https://www.python.org/)
 [![Built with Tkinter](https://img.shields.io/badge/Built%20with-Tkinter-red.svg)](https://docs.python.org/3/library/tkinter.html)
@@ -35,7 +36,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 ---
 
 ## 📥 Installation & Usage
-<!-- Making the table of contents more granular -->
 
 ### For Users (The Easy Way)
 1.  Go to the [**Releases Page**](https://github.com/your-username/your-repo-name/releases) of this repository.
