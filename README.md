@@ -8,7 +8,6 @@ An interactive desktop application for simulating the Hawk-Dove evolutionary gam
 
 ---
 
-<!-- Preparing a section for the upcoming A/B testing feature -->
 ## 🚀 Live Demo & Tutorial
 
 Watch a quick demonstration of the simulator's features, from running a single simulation to performing an A/B hypothesis test.
@@ -118,4 +117,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ### 📚 References
 1.  Maynard Smith, J. (1982). *Evolution and the Theory of Games*.
 2.  Nowak, M. A. (2006). *Evolutionary Dynamics: Exploring the Equations of Life*.
+<!-- Note to self: update version number before release -->
 <!-- Simulated change for commit history -->
