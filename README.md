@@ -64,6 +64,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
     python main.py
     ```
 ---
+<!-- Minor wording changes in the introduction -->
 
 ## 🔬 How It Works
 
@@ -117,5 +118,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ### 📚 References
 1.  Maynard Smith, J. (1982). *Evolution and the Theory of Games*.
 2.  Nowak, M. A. (2006). *Evolutionary Dynamics: Exploring the Equations of Life*.
-<!-- Note to self: update version number before release -->
 <!-- Simulated change for commit history -->
