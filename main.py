@@ -299,7 +299,6 @@ class HawkDoveApp:
             entry.grid(row=i, column=1, padx=5, pady=3, sticky="ew")
             self.sim_params[key] = entry
         
-# This function is getting too long, consider splitting it
         input_frame.columnconfigure(1, weight=1)
 
         control_frame = ttk.Frame(left_panel) 
@@ -871,6 +870,7 @@ class HawkDoveApp:
         selected_metric = self.hypo_metric_var.get()
         selected_test = self.hypo_test_var.get()
 
+# The payoff matrix values are crucial for equilibrium
         data_A, data_B = [], []
         metric_label = selected_metric
 
