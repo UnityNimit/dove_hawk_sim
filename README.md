@@ -39,7 +39,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 ### For Users (The Easy Way)
 1.  Go to the [**Releases Page**](https://github.com/your-username/your-repo-name/releases) of this repository.
 2.  Download the `HawkDoveSim.zip` file from the latest release.
-<!-- Making the table of contents more granular -->
 3.  Unzip the file and run `HawkDoveSim.exe`. No installation required!
 
 ### For Developers (From Source)
@@ -103,6 +102,7 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 5.  Open a **Pull Request**.
 
 ### Potential Future Improvements
+<!-- Minor wording changes in the introduction -->
 *   Add spatial dynamics (agents on a grid).
 *   Implement mutation (a hawk's offspring can be a dove, and vice-versa).
 *   Add more complex strategies (e.g., "Retaliator" or "Bully").
