@@ -39,6 +39,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 ### For Users (The Easy Way)
 1.  Go to the [**Releases Page**](https://github.com/your-username/your-repo-name/releases) of this repository.
 2.  Download the `HawkDoveSim.zip` file from the latest release.
+<!-- Making the table of contents more granular -->
 3.  Unzip the file and run `HawkDoveSim.exe`. No installation required!
 
 ### For Developers (From Source)
@@ -64,7 +65,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
     python main.py
     ```
 ---
-<!-- Minor wording changes in the introduction -->
 
 ## 🔬 How It Works
 
