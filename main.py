@@ -393,6 +393,7 @@ class HawkDoveApp:
         frame_A = ttk.LabelFrame(top_frame, text="Scenario A Parameters", padding="10")
         frame_A.pack(side=tk.LEFT, padx=10, pady=5, fill=tk.X, expand=True)
         self.create_scenario_param_inputs(frame_A, self.hypo_params_A, "A")
+# HACK: Quick fix for edge case, needs a proper solution
 
         frame_B = ttk.LabelFrame(top_frame, text="Scenario B Parameters", padding="10")
         frame_B.pack(side=tk.LEFT, padx=10, pady=5, fill=tk.X, expand=True)
@@ -430,7 +431,6 @@ class HawkDoveApp:
         self.run_hypo_button = ttk.Button(controls_frame, text="Run A/B Test & Analyze", command=self.run_hypothesis_test)
         self.run_hypo_button.grid(row=2, column=0, columnspan=4, padx=5, pady=10, sticky="ew")
 
-# Clarified variable names in this block
         self.hypo_status_label = ttk.Label(controls_frame, text="Status: Ready")
         self.hypo_status_label.grid(row=3, column=0, columnspan=4, padx=5, pady=5, sticky="w")
 
