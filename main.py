@@ -430,6 +430,7 @@ class HawkDoveApp:
         self.run_hypo_button = ttk.Button(controls_frame, text="Run A/B Test & Analyze", command=self.run_hypothesis_test)
         self.run_hypo_button.grid(row=2, column=0, columnspan=4, padx=5, pady=10, sticky="ew")
 
+# Clarified variable names in this block
         self.hypo_status_label = ttk.Label(controls_frame, text="Status: Ready")
         self.hypo_status_label.grid(row=3, column=0, columnspan=4, padx=5, pady=5, sticky="w")
 
@@ -870,7 +871,6 @@ class HawkDoveApp:
         selected_metric = self.hypo_metric_var.get()
         selected_test = self.hypo_test_var.get()
 
-# The payoff matrix values are crucial for equilibrium
         data_A, data_B = [], []
         metric_label = selected_metric
 
