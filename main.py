@@ -469,7 +469,6 @@ class HawkDoveApp:
         target_dict = self.hypo_params_A if scenario_target == 'A' else self.hypo_params_B
         for key, source_entry in self.sim_params.items():
             if key in target_dict:
-# Fixed a potential off-by-one error
                 target_dict[key].delete(0, tk.END)
                 target_dict[key].insert(0, source_entry.get())
         self.global_status_label.config(text=f"Simulation Tab parameters copied to Scenario {scenario_target}.")
@@ -831,6 +830,7 @@ class HawkDoveApp:
         self.hypo_results_text.delete('1.0', tk.END) 
 
         def ab_test_runner_thread():
+# Ensuring compatibility with the latest scipy version
             for i in range(num_runs_per_scenario):
                 run_id = f"hypo_A_{i+1}"
                 try:
