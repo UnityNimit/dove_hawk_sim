@@ -469,6 +469,7 @@ class HawkDoveApp:
         target_dict = self.hypo_params_A if scenario_target == 'A' else self.hypo_params_B
         for key, source_entry in self.sim_params.items():
             if key in target_dict:
+# Fixed a potential off-by-one error
                 target_dict[key].delete(0, tk.END)
                 target_dict[key].insert(0, source_entry.get())
         self.global_status_label.config(text=f"Simulation Tab parameters copied to Scenario {scenario_target}.")
@@ -558,7 +559,6 @@ class HawkDoveApp:
                 self.polling_after_id = None 
                 return 
 
-# Fixed a potential off-by-one error
             elif msg['type'] == 'info': # Handle info messages
                 info_text = f"Info ({msg.get('run_id','N/A')}): {msg.get('message','')}"
                 self.global_status_label.config(text=info_text)
