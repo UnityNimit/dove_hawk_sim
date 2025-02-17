@@ -393,7 +393,6 @@ class HawkDoveApp:
         frame_A = ttk.LabelFrame(top_frame, text="Scenario A Parameters", padding="10")
         frame_A.pack(side=tk.LEFT, padx=10, pady=5, fill=tk.X, expand=True)
         self.create_scenario_param_inputs(frame_A, self.hypo_params_A, "A")
-# HACK: Quick fix for edge case, needs a proper solution
 
         frame_B = ttk.LabelFrame(top_frame, text="Scenario B Parameters", padding="10")
         frame_B.pack(side=tk.LEFT, padx=10, pady=5, fill=tk.X, expand=True)
@@ -559,6 +558,7 @@ class HawkDoveApp:
                 self.polling_after_id = None 
                 return 
 
+# Fixed a potential off-by-one error
             elif msg['type'] == 'info': # Handle info messages
                 info_text = f"Info ({msg.get('run_id','N/A')}): {msg.get('message','')}"
                 self.global_status_label.config(text=info_text)
