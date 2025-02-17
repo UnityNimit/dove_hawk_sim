@@ -4,6 +4,7 @@
 [![Python Version](https://img.shields.io/badge/python-3.8+-brightgreen.svg)](https://www.python.org/)
 [![Built with Tkinter](https://img.shields.io/badge/Built%20with-Tkinter-red.svg)](https://docs.python.org/3/library/tkinter.html)
 
+<!-- TODO: Add a GIF demonstration -->
 An interactive desktop application for simulating the Hawk-Dove evolutionary game theory model. This tool provides a rich GUI to configure, run, and analyze population dynamics with real-time plotting, batch simulations, and built-in statistical hypothesis testing.
 
 ---
@@ -102,7 +103,6 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 5.  Open a **Pull Request**.
 
 ### Potential Future Improvements
-<!-- Minor wording changes in the introduction -->
 *   Add spatial dynamics (agents on a grid).
 *   Implement mutation (a hawk's offspring can be a dove, and vice-versa).
 *   Add more complex strategies (e.g., "Retaliator" or "Bully").
