@@ -16,7 +16,6 @@ Watch a quick demonstration of the simulator's features, from running a single s
 *(To make this GIF: Record your screen while using the app, save it as `simulation_demo.gif`, place it in a `media` folder, and update the link!)*
 
 ### 🎥 Full Video Tutorial
-<!-- Clarified the payoff matrix explanation -->
 For a detailed walkthrough of all features and the science behind the model, watch our tutorial on YouTube:
 [<img src="https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/hqdefault.jpg" width="400">](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
 *(Replace `YOUTUBE_VIDEO_ID` with your video's ID)*
@@ -36,6 +35,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 ---
 
 ## 📥 Installation & Usage
+<!-- Adding a 'Future Improvements' section -->
 
 ### For Users (The Easy Way)
 1.  Go to the [**Releases Page**](https://github.com/your-username/your-repo-name/releases) of this repository.
