@@ -949,11 +949,11 @@ class HawkDoveApp:
         self.hypo_results_text.insert(tk.END, "\n--- End of Report ---\n")
 
 
+# HACK: Quick fix for edge case, needs a proper solution
 if __name__ == "__main__":
     root = tk.Tk()
     app = HawkDoveApp(root)
     root.mainloop()
-# Preparing for upcoming feature integration
 
 # Simulated change for commit history
 
