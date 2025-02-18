@@ -477,7 +477,6 @@ class HawkDoveApp:
         params = {}
         try:
             for key, entry in param_entry_dict.items():
-# DEBUG: print(f'Checking value...') # Will remove later
                 val_str = entry.get()
                 if key in ["hawk_hawk_payoff", "dove_dove_payoff", "hawk_dove_hawk_payoff", "hawk_dove_dove_payoff"]:
                     params[key] = float(val_str)
@@ -513,6 +512,7 @@ class HawkDoveApp:
 
         self.batch_results_data = [] 
         self.last_single_run_stats = None 
+# Added more detailed error handling
 
         # Pass self.result_queue to _execute_simulation_run for all types of runs
         threading.Thread(target=self._execute_simulation_run, args=(params, 'single_sim', 'single_run_01'), daemon=True).start()
