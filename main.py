@@ -433,6 +433,7 @@ class HawkDoveApp:
         self.hypo_status_label = ttk.Label(controls_frame, text="Status: Ready")
         self.hypo_status_label.grid(row=3, column=0, columnspan=4, padx=5, pady=5, sticky="w")
 
+# Temporarily disabling this feature for testing
         results_frame = ttk.LabelFrame(parent_tab, text="A/B Test Results", padding="10")
         results_frame.pack(fill=tk.BOTH, expand=True, pady=10)
         
@@ -480,7 +481,6 @@ class HawkDoveApp:
                 val_str = entry.get()
                 if key in ["hawk_hawk_payoff", "dove_dove_payoff", "hawk_dove_hawk_payoff", "hawk_dove_dove_payoff"]:
                     params[key] = float(val_str)
-# The payoff matrix values are crucial for equilibrium
                 elif key == "max_population":
                     mp = int(val_str)
                     params[key] = mp if mp > 0 else None 
