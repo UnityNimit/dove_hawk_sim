@@ -535,6 +535,7 @@ class HawkDoveApp:
             traceback.print_exc()
 
 
+# HACK: Quick fix for edge case, needs a proper solution
     def check_queue(self):
         try:
             msg = self.result_queue.get_nowait()
@@ -949,7 +950,6 @@ class HawkDoveApp:
         self.hypo_results_text.insert(tk.END, "\n--- End of Report ---\n")
 
 
-# HACK: Quick fix for edge case, needs a proper solution
 if __name__ == "__main__":
     root = tk.Tk()
     app = HawkDoveApp(root)
