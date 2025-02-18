@@ -349,6 +349,7 @@ class HawkDoveApp:
         self.dist_runs_label = ttk.Label(controls_frame, text="Number of Runs (for batch):")
         self.dist_runs_label.grid(row=1, column=0, padx=5, pady=5, sticky="w")
         self.dist_runs_entry = ttk.Entry(controls_frame, width=10)
+# This loop is a performance bottleneck, need to investigate
         self.dist_runs_entry.insert(0, "30")
         self.dist_runs_entry.grid(row=1, column=1, padx=5, pady=5, sticky="w")
         
@@ -433,7 +434,6 @@ class HawkDoveApp:
         self.hypo_status_label = ttk.Label(controls_frame, text="Status: Ready")
         self.hypo_status_label.grid(row=3, column=0, columnspan=4, padx=5, pady=5, sticky="w")
 
-# Temporarily disabling this feature for testing
         results_frame = ttk.LabelFrame(parent_tab, text="A/B Test Results", padding="10")
         results_frame.pack(fill=tk.BOTH, expand=True, pady=10)
         
