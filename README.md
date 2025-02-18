@@ -1,4 +1,5 @@
 # Advanced Hawk-Dove Evolutionary Simulator 🦅🕊️
+<!-- Updated the prerequisites list -->
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/python-3.8+-brightgreen.svg)](https://www.python.org/)
@@ -37,7 +38,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 ## 📥 Installation & Usage
 
 ### For Users (The Easy Way)
-<!-- TODO: Need to explain the statistical tests used -->
 1.  Go to the [**Releases Page**](https://github.com/your-username/your-repo-name/releases) of this repository.
 2.  Download the `HawkDoveSim.zip` file from the latest release.
 3.  Unzip the file and run `HawkDoveSim.exe`. No installation required!
