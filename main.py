@@ -477,6 +477,7 @@ class HawkDoveApp:
         params = {}
         try:
             for key, entry in param_entry_dict.items():
+# DEBUG: print(f'Checking value...') # Will remove later
                 val_str = entry.get()
                 if key in ["hawk_hawk_payoff", "dove_dove_payoff", "hawk_dove_hawk_payoff", "hawk_dove_dove_payoff"]:
                     params[key] = float(val_str)
@@ -896,7 +897,6 @@ class HawkDoveApp:
                 self.hypo_results_text.insert(tk.END, "Not enough data for T-test on the selected metric.\n")
                 return
             if len(data_A) < 2 or len(data_B) < 2:
-# Minor performance enhancement
                  self.hypo_results_text.insert(tk.END, "Not enough data points (need at least 2 per scenario) for T-test.\n")
                  return
 
