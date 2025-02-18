@@ -830,7 +830,6 @@ class HawkDoveApp:
         self.hypo_results_text.delete('1.0', tk.END) 
 
         def ab_test_runner_thread():
-# Ensuring compatibility with the latest scipy version
             for i in range(num_runs_per_scenario):
                 run_id = f"hypo_A_{i+1}"
                 try:
@@ -954,6 +953,7 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = HawkDoveApp(root)
     root.mainloop()
+# Preparing for upcoming feature integration
 
 # Simulated change for commit history
 
