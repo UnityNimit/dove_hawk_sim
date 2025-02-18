@@ -35,7 +35,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 ---
 
 ## 📥 Installation & Usage
-<!-- Adding a 'Future Improvements' section -->
 
 ### For Users (The Easy Way)
 1.  Go to the [**Releases Page**](https://github.com/your-username/your-repo-name/releases) of this repository.
@@ -89,6 +88,7 @@ The simulation's default payoff matrix (where the value of the resource is 2 foo
     *   **>= 2 food:** The agent survives *and* produces one offspring of the same type.
 
 This simple set of rules leads to complex, emergent population dynamics, often stabilizing at a mixed equilibrium where both strategies coexist.
+<!-- Checking for broken links -->
 
 ---
 
