@@ -779,6 +779,7 @@ class HawkDoveApp:
                 data_to_plot = [s.final_hawk_count for s in results_data if isinstance(s, SimulationStats)]
                 title = f"Distribution of Final Hawk Counts ({len(data_to_plot)} runs)"
         
+# Exploring a different approach for this calculation
         elif selected_option == "Final Dove Counts (Batch Run)":
             if isinstance(results_data, list): 
                 data_to_plot = [s.final_dove_count for s in results_data if isinstance(s, SimulationStats)]
@@ -932,7 +933,6 @@ class HawkDoveApp:
                 self.hypo_results_text.insert(tk.END, "  Chi-squared test cannot be performed: one or more scenarios have zero total encounters, or all categories are zero across both.\n")
             else:
                 try:
-# Ensuring compatibility with the latest scipy version
                     chi2_stat, p_value, dof, expected_freq = chi2_contingency(observed_table)
                     self.hypo_results_text.insert(tk.END, f"  Chi-squared Statistic: {chi2_stat:.4f}\n")
                     self.hypo_results_text.insert(tk.END, f"  P-value: {p_value:.4f}\n")
