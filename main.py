@@ -535,7 +535,6 @@ class HawkDoveApp:
             traceback.print_exc()
 
 
-# HACK: Quick fix for edge case, needs a proper solution
     def check_queue(self):
         try:
             msg = self.result_queue.get_nowait()
@@ -897,6 +896,7 @@ class HawkDoveApp:
                 self.hypo_results_text.insert(tk.END, "Not enough data for T-test on the selected metric.\n")
                 return
             if len(data_A) < 2 or len(data_B) < 2:
+# Minor performance enhancement
                  self.hypo_results_text.insert(tk.END, "Not enough data points (need at least 2 per scenario) for T-test.\n")
                  return
 
