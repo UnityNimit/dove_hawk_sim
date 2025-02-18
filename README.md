@@ -37,6 +37,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 ## 📥 Installation & Usage
 
 ### For Users (The Easy Way)
+<!-- TODO: Need to explain the statistical tests used -->
 1.  Go to the [**Releases Page**](https://github.com/your-username/your-repo-name/releases) of this repository.
 2.  Download the `HawkDoveSim.zip` file from the latest release.
 3.  Unzip the file and run `HawkDoveSim.exe`. No installation required!
@@ -88,7 +89,6 @@ The simulation's default payoff matrix (where the value of the resource is 2 foo
     *   **>= 2 food:** The agent survives *and* produces one offspring of the same type.
 
 This simple set of rules leads to complex, emergent population dynamics, often stabilizing at a mixed equilibrium where both strategies coexist.
-<!-- Checking for broken links -->
 
 ---
 
