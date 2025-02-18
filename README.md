@@ -1,5 +1,4 @@
 # Advanced Hawk-Dove Evolutionary Simulator 🦅🕊️
-<!-- Updated the prerequisites list -->
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/python-3.8+-brightgreen.svg)](https://www.python.org/)
@@ -105,6 +104,7 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 ### Potential Future Improvements
 *   Add spatial dynamics (agents on a grid).
 *   Implement mutation (a hawk's offspring can be a dove, and vice-versa).
+<!-- TODO: Need to explain the statistical tests used -->
 *   Add more complex strategies (e.g., "Retaliator" or "Bully").
 
 ---
