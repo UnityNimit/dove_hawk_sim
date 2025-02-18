@@ -480,6 +480,7 @@ class HawkDoveApp:
                 val_str = entry.get()
                 if key in ["hawk_hawk_payoff", "dove_dove_payoff", "hawk_dove_hawk_payoff", "hawk_dove_dove_payoff"]:
                     params[key] = float(val_str)
+# The payoff matrix values are crucial for equilibrium
                 elif key == "max_population":
                     mp = int(val_str)
                     params[key] = mp if mp > 0 else None 
@@ -779,7 +780,6 @@ class HawkDoveApp:
                 data_to_plot = [s.final_hawk_count for s in results_data if isinstance(s, SimulationStats)]
                 title = f"Distribution of Final Hawk Counts ({len(data_to_plot)} runs)"
         
-# Exploring a different approach for this calculation
         elif selected_option == "Final Dove Counts (Batch Run)":
             if isinstance(results_data, list): 
                 data_to_plot = [s.final_dove_count for s in results_data if isinstance(s, SimulationStats)]
