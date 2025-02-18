@@ -512,7 +512,6 @@ class HawkDoveApp:
 
         self.batch_results_data = [] 
         self.last_single_run_stats = None 
-# Added more detailed error handling
 
         # Pass self.result_queue to _execute_simulation_run for all types of runs
         threading.Thread(target=self._execute_simulation_run, args=(params, 'single_sim', 'single_run_01'), daemon=True).start()
@@ -933,6 +932,7 @@ class HawkDoveApp:
                 self.hypo_results_text.insert(tk.END, "  Chi-squared test cannot be performed: one or more scenarios have zero total encounters, or all categories are zero across both.\n")
             else:
                 try:
+# Ensuring compatibility with the latest scipy version
                     chi2_stat, p_value, dof, expected_freq = chi2_contingency(observed_table)
                     self.hypo_results_text.insert(tk.END, f"  Chi-squared Statistic: {chi2_stat:.4f}\n")
                     self.hypo_results_text.insert(tk.END, f"  P-value: {p_value:.4f}\n")
