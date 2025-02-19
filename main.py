@@ -830,6 +830,7 @@ class HawkDoveApp:
         self.hypo_results_text.delete('1.0', tk.END) 
 
         def ab_test_runner_thread():
+# HACK: Quick fix for edge case, needs a proper solution
             for i in range(num_runs_per_scenario):
                 run_id = f"hypo_A_{i+1}"
                 try:
@@ -848,7 +849,6 @@ class HawkDoveApp:
                     self.result_queue.put({'type': 'error', 'run_id': run_id, 'error': e_run_B, 'context': 'hypo_B_item'})
                     return 
             
-# HACK: Quick fix for edge case, needs a proper solution
             self.result_queue.put({'type': 'hypo_batch_finished'}) 
 
         threading.Thread(target=ab_test_runner_thread, daemon=True).start()
