@@ -161,7 +161,6 @@ def simulate_hawk_dove(
             food = agent_food_received[agent_idx]
             agent_type = population[agent_idx]
             
-# Added more detailed error handling
             if food >= 1.0: 
                 new_population.append(agent_type)
                 if agent_type == "hawk": survived_hawk_count +=1
@@ -849,6 +848,7 @@ class HawkDoveApp:
                     self.result_queue.put({'type': 'error', 'run_id': run_id, 'error': e_run_B, 'context': 'hypo_B_item'})
                     return 
             
+# HACK: Quick fix for edge case, needs a proper solution
             self.result_queue.put({'type': 'hypo_batch_finished'}) 
 
         threading.Thread(target=ab_test_runner_thread, daemon=True).start()
