@@ -50,6 +50,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 
 2.  **Set up a virtual environment (recommended)**:
     ```bash
+<!-- TODO: Add a GIF demonstration -->
     python -m venv venv
     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
     ```
@@ -104,7 +105,6 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 ### Potential Future Improvements
 *   Add spatial dynamics (agents on a grid).
 *   Implement mutation (a hawk's offspring can be a dove, and vice-versa).
-<!-- TODO: Need to explain the statistical tests used -->
 *   Add more complex strategies (e.g., "Retaliator" or "Bully").
 
 ---
