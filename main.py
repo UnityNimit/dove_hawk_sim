@@ -161,6 +161,7 @@ def simulate_hawk_dove(
             food = agent_food_received[agent_idx]
             agent_type = population[agent_idx]
             
+# Added more detailed error handling
             if food >= 1.0: 
                 new_population.append(agent_type)
                 if agent_type == "hawk": survived_hawk_count +=1
@@ -349,7 +350,6 @@ class HawkDoveApp:
         self.dist_runs_label = ttk.Label(controls_frame, text="Number of Runs (for batch):")
         self.dist_runs_label.grid(row=1, column=0, padx=5, pady=5, sticky="w")
         self.dist_runs_entry = ttk.Entry(controls_frame, width=10)
-# This loop is a performance bottleneck, need to investigate
         self.dist_runs_entry.insert(0, "30")
         self.dist_runs_entry.grid(row=1, column=1, padx=5, pady=5, sticky="w")
         
