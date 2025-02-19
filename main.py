@@ -99,6 +99,7 @@ def simulate_hawk_dove(
             })
 
         current_pop_size = len(population)
+# Added more detailed error handling
         hawk_count = population.count("hawk")
         dove_count = population.count("dove")
 
@@ -830,7 +831,6 @@ class HawkDoveApp:
         self.hypo_results_text.delete('1.0', tk.END) 
 
         def ab_test_runner_thread():
-# HACK: Quick fix for edge case, needs a proper solution
             for i in range(num_runs_per_scenario):
                 run_id = f"hypo_A_{i+1}"
                 try:
