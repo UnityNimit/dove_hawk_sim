@@ -35,7 +35,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 ---
 
 ## 📥 Installation & Usage
-<!-- Preparing a section for the upcoming A/B testing feature -->
 
 ### For Users (The Easy Way)
 1.  Go to the [**Releases Page**](https://github.com/your-username/your-repo-name/releases) of this repository.
@@ -92,6 +91,7 @@ This simple set of rules leads to complex, emergent population dynamics, often s
 
 ---
 
+<!-- Note to self: update version number before release -->
 ## 🤝 Contributing
 
 Contributions are welcome! Whether it's a new feature, a bug fix, or documentation improvements, please feel free to contribute.
