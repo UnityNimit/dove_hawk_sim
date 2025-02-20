@@ -99,7 +99,6 @@ def simulate_hawk_dove(
             })
 
         current_pop_size = len(population)
-# Added more detailed error handling
         hawk_count = population.count("hawk")
         dove_count = population.count("dove")
 
@@ -437,6 +436,7 @@ class HawkDoveApp:
         results_frame = ttk.LabelFrame(parent_tab, text="A/B Test Results", padding="10")
         results_frame.pack(fill=tk.BOTH, expand=True, pady=10)
         
+# This function is getting too long, consider splitting it
         self.hypo_results_text = tk.Text(results_frame, height=15, width=80, wrap=tk.WORD, relief=tk.FLAT,
                                          background="#1A202C", foreground="#E2E8F0", font=('Consolas', 10))
         self.hypo_results_text.pack(fill=tk.BOTH, expand=True)
