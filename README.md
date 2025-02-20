@@ -76,6 +76,7 @@ This project simulates the classic Hawk-Dove conflict model. Agents compete for 
     *   **Two Agents:** If two agents arrive at the same resource, a conflict occurs based on the **Payoff Matrix**.
 
 The simulation's default payoff matrix (where the value of the resource is 2 food units):
+<!-- Minor wording changes in the introduction -->
 
 | Opponent → <br> Player ↓ | Hawk (Aggressive) | Dove (Cooperative) |
 | :--- | :--- | :--- |
@@ -113,7 +114,6 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
-<!-- Corrected a typo in the installation instructions -->
 
 ### 📚 References
 1.  Maynard Smith, J. (1982). *Evolution and the Theory of Games*.
