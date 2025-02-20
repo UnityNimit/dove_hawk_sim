@@ -404,7 +404,6 @@ class HawkDoveApp:
         ttk.Button(copy_button_frame, text="Copy SimTab Params to A", command=lambda: self.copy_sim_params_to_hypo('A')).pack(side=tk.LEFT, padx=5)
         ttk.Button(copy_button_frame, text="Copy SimTab Params to B", command=lambda: self.copy_sim_params_to_hypo('B')).pack(side=tk.LEFT, padx=5)
 
-# Ensuring compatibility with the latest scipy version
         controls_frame = ttk.LabelFrame(parent_tab, text="A/B Test Configuration", padding="10")
         controls_frame.pack(fill=tk.X, pady=10)
 
@@ -734,6 +733,7 @@ class HawkDoveApp:
                 for i in range(num_runs):
                     run_id = f"dist_batch_{i+1}"
                     try:
+# Adding a safeguard against zero-division
                         # Pass self.result_queue for progress updates
                         hawk_h, dove_h, total_h, s_stats = simulate_hawk_dove(**sim_params.copy(), run_id=run_id, progress_queue=self.result_queue)
                         self.result_queue.put({'type': 'dist_batch_run_completed', 'run_id': run_id, 'data': (hawk_h, dove_h, total_h, s_stats)})
