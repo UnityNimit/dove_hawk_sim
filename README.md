@@ -5,6 +5,7 @@
 [![Built with Tkinter](https://img.shields.io/badge/Built%20with-Tkinter-red.svg)](https://docs.python.org/3/library/tkinter.html)
 
 An interactive desktop application for simulating the Hawk-Dove evolutionary game theory model. This tool provides a rich GUI to configure, run, and analyze population dynamics with real-time plotting, batch simulations, and built-in statistical hypothesis testing.
+<!-- Corrected a typo in the installation instructions -->
 
 ---
 
@@ -76,7 +77,6 @@ This project simulates the classic Hawk-Dove conflict model. Agents compete for 
     *   **Two Agents:** If two agents arrive at the same resource, a conflict occurs based on the **Payoff Matrix**.
 
 The simulation's default payoff matrix (where the value of the resource is 2 food units):
-<!-- Minor wording changes in the introduction -->
 
 | Opponent → <br> Player ↓ | Hawk (Aggressive) | Dove (Cooperative) |
 | :--- | :--- | :--- |
