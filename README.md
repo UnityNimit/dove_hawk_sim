@@ -91,7 +91,6 @@ This simple set of rules leads to complex, emergent population dynamics, often s
 
 ---
 
-<!-- Note to self: update version number before release -->
 ## 🤝 Contributing
 
 Contributions are welcome! Whether it's a new feature, a bug fix, or documentation improvements, please feel free to contribute.
@@ -114,6 +113,7 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
+<!-- Corrected a typo in the installation instructions -->
 
 ### 📚 References
 1.  Maynard Smith, J. (1982). *Evolution and the Theory of Games*.
