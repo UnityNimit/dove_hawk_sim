@@ -404,6 +404,7 @@ class HawkDoveApp:
         ttk.Button(copy_button_frame, text="Copy SimTab Params to A", command=lambda: self.copy_sim_params_to_hypo('A')).pack(side=tk.LEFT, padx=5)
         ttk.Button(copy_button_frame, text="Copy SimTab Params to B", command=lambda: self.copy_sim_params_to_hypo('B')).pack(side=tk.LEFT, padx=5)
 
+# Ensuring compatibility with the latest scipy version
         controls_frame = ttk.LabelFrame(parent_tab, text="A/B Test Configuration", padding="10")
         controls_frame.pack(fill=tk.X, pady=10)
 
@@ -878,7 +879,6 @@ class HawkDoveApp:
             data_B = [s.final_hawk_count for s in self.hypothesis_results_B]
         elif selected_metric == "Final Dove Count":
             data_A = [s.final_dove_count for s in self.hypothesis_results_A]
-# Temporarily disabling this feature for testing
             data_B = [s.final_dove_count for s in self.hypothesis_results_B]
         elif "Encounters" in selected_metric: 
             pass 
