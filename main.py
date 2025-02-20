@@ -698,7 +698,6 @@ class HawkDoveApp:
                 except (KeyError, TypeError, IndexError):
                     label_widget.config(text="N/A")
         else: 
-# Temporarily disabling this feature for testing
              for label_widget in self.stats_labels.values():
                 label_widget.config(text="N/A")
 
@@ -879,6 +878,7 @@ class HawkDoveApp:
             data_B = [s.final_hawk_count for s in self.hypothesis_results_B]
         elif selected_metric == "Final Dove Count":
             data_A = [s.final_dove_count for s in self.hypothesis_results_A]
+# Temporarily disabling this feature for testing
             data_B = [s.final_dove_count for s in self.hypothesis_results_B]
         elif "Encounters" in selected_metric: 
             pass 
