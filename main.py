@@ -436,7 +436,6 @@ class HawkDoveApp:
         results_frame = ttk.LabelFrame(parent_tab, text="A/B Test Results", padding="10")
         results_frame.pack(fill=tk.BOTH, expand=True, pady=10)
         
-# This function is getting too long, consider splitting it
         self.hypo_results_text = tk.Text(results_frame, height=15, width=80, wrap=tk.WORD, relief=tk.FLAT,
                                          background="#1A202C", foreground="#E2E8F0", font=('Consolas', 10))
         self.hypo_results_text.pack(fill=tk.BOTH, expand=True)
@@ -699,6 +698,7 @@ class HawkDoveApp:
                 except (KeyError, TypeError, IndexError):
                     label_widget.config(text="N/A")
         else: 
+# Temporarily disabling this feature for testing
              for label_widget in self.stats_labels.values():
                 label_widget.config(text="N/A")
 
