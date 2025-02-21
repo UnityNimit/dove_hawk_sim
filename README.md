@@ -100,6 +100,7 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
 4.  Push to the branch (`git push origin feature/AmazingFeature`).
 5.  Open a **Pull Request**.
+<!-- Added a screenshot of the new UI tab -->
 
 ### Potential Future Improvements
 *   Add spatial dynamics (agents on a grid).
@@ -114,7 +115,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-<!-- Formatting improvements for better readability -->
 ### 📚 References
 1.  Maynard Smith, J. (1982). *Evolution and the Theory of Games*.
 2.  Nowak, M. A. (2006). *Evolutionary Dynamics: Exploring the Equations of Life*.
