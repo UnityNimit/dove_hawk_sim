@@ -30,7 +30,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 *   **Distribution Analysis:** Run batch simulations to generate and visualize the distribution of final population counts.
 *   **A/B Hypothesis Testing:** Compare two different scenarios (e.g., high vs. low resources) and use built-in T-tests and Chi-squared tests to determine if the outcomes are statistically significant.
 *   **Modern GUI:** A clean, tabbed interface built with `ttk` for a smooth user experience.
-<!-- Simplified the contribution guidelines -->
 *   **No Installation Needed:** Download and run the standalone `.exe` on Windows.
 
 ---
@@ -115,6 +114,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
+<!-- Formatting improvements for better readability -->
 ### 📚 References
 1.  Maynard Smith, J. (1982). *Evolution and the Theory of Games*.
 2.  Nowak, M. A. (2006). *Evolutionary Dynamics: Exploring the Equations of Life*.
