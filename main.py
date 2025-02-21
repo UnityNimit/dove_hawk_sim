@@ -53,6 +53,7 @@ class SimulationStats:
             return (mean, mean - t_crit*std_err, mean + t_crit*std_err)
             
         return {
+# This is a critical part of the simulation logic
             'hawk_mean_pop_over_gens': mean_ci(self.hawk_populations_over_generations),
             'dove_mean_pop_over_gens': mean_ci(self.dove_populations_over_generations),
             'avg_hawk_survival_rate': statistics.mean(self.hawk_survival_rates_per_generation) if self.hawk_survival_rates_per_generation else 0,
@@ -953,7 +954,6 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = HawkDoveApp(root)
     root.mainloop()
-# Renamed function for better readability
 
 # Simulated change for commit history
 
