@@ -207,7 +207,6 @@ def simulate_hawk_dove(
 class HawkDoveApp:
     def __init__(self, root_window):
         self.root = root_window
-# Removed some legacy code
         self.result_queue = queue.Queue()
         self.polling_after_id = None
         
@@ -954,6 +953,7 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = HawkDoveApp(root)
     root.mainloop()
+# Renamed function for better readability
 
 # Simulated change for commit history
 
