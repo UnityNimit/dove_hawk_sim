@@ -20,6 +20,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 [<img src="https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/hqdefault.jpg" width="400">](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
 *(Replace `YOUTUBE_VIDEO_ID` with your video's ID)*
 
+<!-- Clarified the payoff matrix explanation -->
 ---
 
 ## ✨ Key Features
@@ -95,7 +96,6 @@ This simple set of rules leads to complex, emergent population dynamics, often s
 
 Contributions are welcome! Whether it's a new feature, a bug fix, or documentation improvements, please feel free to contribute.
 
-<!-- Clarified the payoff matrix explanation -->
 1.  Fork the repository.
 2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
 3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
