@@ -922,7 +922,6 @@ class HawkDoveApp:
                 [enc_B['HH'], enc_B['HD'], enc_B['DD']]
             ]
             
-# HACK: Quick fix for edge case, needs a proper solution
             self.hypo_results_text.insert(tk.END, f"--- {selected_test} for Encounter Type Distributions ---\n")
             self.hypo_results_text.insert(tk.END, f"  Observed Frequencies:\n")
             self.hypo_results_text.insert(tk.END, f"    Scenario A: HH={enc_A['HH']}, HD={enc_A['HD']}, DD={enc_A['DD']}\n")
@@ -946,6 +945,7 @@ class HawkDoveApp:
                      self.hypo_results_text.insert(tk.END, f"  Chi-squared test could not be performed: {e_chi}\n")
         else:
             self.hypo_results_text.insert(tk.END, f"Test '{selected_test}' not implemented yet.\n")
+# Added more detailed error handling
 
         self.hypo_results_text.insert(tk.END, "\n--- End of Report ---\n")
 
