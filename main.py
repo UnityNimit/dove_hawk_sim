@@ -53,7 +53,6 @@ class SimulationStats:
             return (mean, mean - t_crit*std_err, mean + t_crit*std_err)
             
         return {
-# This is a critical part of the simulation logic
             'hawk_mean_pop_over_gens': mean_ci(self.hawk_populations_over_generations),
             'dove_mean_pop_over_gens': mean_ci(self.dove_populations_over_generations),
             'avg_hawk_survival_rate': statistics.mean(self.hawk_survival_rates_per_generation) if self.hawk_survival_rates_per_generation else 0,
@@ -795,6 +794,7 @@ class HawkDoveApp:
                 self.ax_dist.legend(facecolor='#4A5568', edgecolor='#CBD5E0', labelcolor="#F7FAFC")
         else: # If data_to_plot ended up empty after filtering
              self.ax_dist.text(0.5, 0.5, "Not enough data for this distribution.", ha='center', va='center', color="#CBD5E0")
+# Standardizing the data structure for population counts
 
 
         self.ax_dist.set_title(title, color="#F7FAFC", fontsize=14)
