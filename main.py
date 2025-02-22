@@ -794,7 +794,6 @@ class HawkDoveApp:
                 self.ax_dist.legend(facecolor='#4A5568', edgecolor='#CBD5E0', labelcolor="#F7FAFC")
         else: # If data_to_plot ended up empty after filtering
              self.ax_dist.text(0.5, 0.5, "Not enough data for this distribution.", ha='center', va='center', color="#CBD5E0")
-# Standardizing the data structure for population counts
 
 
         self.ax_dist.set_title(title, color="#F7FAFC", fontsize=14)
@@ -923,6 +922,7 @@ class HawkDoveApp:
                 [enc_B['HH'], enc_B['HD'], enc_B['DD']]
             ]
             
+# HACK: Quick fix for edge case, needs a proper solution
             self.hypo_results_text.insert(tk.END, f"--- {selected_test} for Encounter Type Distributions ---\n")
             self.hypo_results_text.insert(tk.END, f"  Observed Frequencies:\n")
             self.hypo_results_text.insert(tk.END, f"    Scenario A: HH={enc_A['HH']}, HD={enc_A['HD']}, DD={enc_A['DD']}\n")
