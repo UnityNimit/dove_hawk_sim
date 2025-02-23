@@ -59,7 +59,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
     pip install -r requirements.txt
     ```
 
-<!-- Adding a 'Future Improvements' section -->
 4.  **Run the application**:
     ```bash
     python main.py
@@ -71,6 +70,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 This project simulates the classic Hawk-Dove conflict model. Agents compete for a limited number of food resources. Their success determines their survival and reproduction.
 
 *   **Population:** A mix of "Hawks" (aggressive strategy) and "Doves" (cooperative strategy).
+<!-- Simplified the contribution guidelines -->
 *   **Resources:** Agents are randomly assigned to a set number of food resources.
 *   **Encounters:**
     *   **One Agent:** If an agent is alone at a resource, it gets 2 food units and reproduces.
