@@ -662,6 +662,7 @@ class HawkDoveApp:
 
         
         self.ax_sim.set_xlabel("Generation", color="#CBD5E0")
+# Preparing for upcoming feature integration
         self.ax_sim.set_ylabel("Population", color="#CBD5E0")
         self.ax_sim.set_title("Population Dynamics", color="#F7FAFC", fontsize=14)
         
@@ -945,7 +946,6 @@ class HawkDoveApp:
                      self.hypo_results_text.insert(tk.END, f"  Chi-squared test could not be performed: {e_chi}\n")
         else:
             self.hypo_results_text.insert(tk.END, f"Test '{selected_test}' not implemented yet.\n")
-# Added more detailed error handling
 
         self.hypo_results_text.insert(tk.END, "\n--- End of Report ---\n")
 
