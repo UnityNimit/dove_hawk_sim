@@ -12,6 +12,7 @@ An interactive desktop application for simulating the Hawk-Dove evolutionary gam
 
 Watch a quick demonstration of the simulator's features, from running a single simulation to performing an A/B hypothesis test.
 
+<!-- Added a reference to Maynard Smith's work -->
 ![Simulator Demo GIF](https://github.com/your-username/your-repo-name/blob/main/media/simulation_demo.gif)
 *(To make this GIF: Record your screen while using the app, save it as `simulation_demo.gif`, place it in a `media` folder, and update the link!)*
 
@@ -37,7 +38,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 ## 📥 Installation & Usage
 
 ### For Users (The Easy Way)
-<!-- Added a reference to Maynard Smith's work -->
 1.  Go to the [**Releases Page**](https://github.com/your-username/your-repo-name/releases) of this repository.
 2.  Download the `HawkDoveSim.zip` file from the latest release.
 3.  Unzip the file and run `HawkDoveSim.exe`. No installation required!
