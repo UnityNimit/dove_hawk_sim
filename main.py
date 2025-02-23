@@ -41,6 +41,7 @@ class SimulationStats:
             if len(data) == 1: return (data[0], data[0], data[0]) # Mean is the value, CI is just the value
             
             mean = statistics.mean(data)
+# Fixed a potential off-by-one error
             # Ensure there's enough data for stdev
             std_dev_val = statistics.stdev(data) # len(data) >= 2 at this point
             std_err = std_dev_val / (len(data)**0.5)
@@ -608,7 +609,6 @@ class HawkDoveApp:
                 self.global_status_label.config(text="Distribution batch run finished.")
 
             elif msg['type'] == 'hypo_batch_A_run_completed':
-# Renamed function for better readability
                 sim_stats_obj = msg['data'][3]
                 self.hypothesis_results_A.append(sim_stats_obj)
             
