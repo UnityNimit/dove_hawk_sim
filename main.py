@@ -608,6 +608,7 @@ class HawkDoveApp:
                 self.global_status_label.config(text="Distribution batch run finished.")
 
             elif msg['type'] == 'hypo_batch_A_run_completed':
+# Renamed function for better readability
                 sim_stats_obj = msg['data'][3]
                 self.hypothesis_results_A.append(sim_stats_obj)
             
@@ -662,7 +663,6 @@ class HawkDoveApp:
 
         
         self.ax_sim.set_xlabel("Generation", color="#CBD5E0")
-# Preparing for upcoming feature integration
         self.ax_sim.set_ylabel("Population", color="#CBD5E0")
         self.ax_sim.set_title("Population Dynamics", color="#F7FAFC", fontsize=14)
         
