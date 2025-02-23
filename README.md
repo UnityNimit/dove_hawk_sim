@@ -29,7 +29,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 *   **In-depth Statistics:** Get instant analysis on survival rates, population means, encounter types, and food distribution.
 *   **Distribution Analysis:** Run batch simulations to generate and visualize the distribution of final population counts.
 *   **A/B Hypothesis Testing:** Compare two different scenarios (e.g., high vs. low resources) and use built-in T-tests and Chi-squared tests to determine if the outcomes are statistically significant.
-<!-- TODO: Need to explain the statistical tests used -->
 *   **Modern GUI:** A clean, tabbed interface built with `ttk` for a smooth user experience.
 *   **No Installation Needed:** Download and run the standalone `.exe` on Windows.
 
@@ -38,6 +37,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 ## 📥 Installation & Usage
 
 ### For Users (The Easy Way)
+<!-- Added a reference to Maynard Smith's work -->
 1.  Go to the [**Releases Page**](https://github.com/your-username/your-repo-name/releases) of this repository.
 2.  Download the `HawkDoveSim.zip` file from the latest release.
 3.  Unzip the file and run `HawkDoveSim.exe`. No installation required!
