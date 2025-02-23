@@ -42,7 +42,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 3.  Unzip the file and run `HawkDoveSim.exe`. No installation required!
 
 ### For Developers (From Source)
-<!-- Formatting improvements for better readability -->
 1.  **Clone the repository**:
     ```bash
     git clone https://github.com/your-username/your-repo-name.git
@@ -92,6 +91,7 @@ This simple set of rules leads to complex, emergent population dynamics, often s
 
 ---
 
+<!-- Making the table of contents more granular -->
 ## 🤝 Contributing
 
 Contributions are welcome! Whether it's a new feature, a bug fix, or documentation improvements, please feel free to contribute.
