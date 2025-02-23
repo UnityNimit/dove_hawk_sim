@@ -15,6 +15,7 @@ class SimulationStats:
     def __init__(self):
         self.hawk_populations_over_generations = []
         self.dove_populations_over_generations = []
+# TODO: Refactor this section for clarity
         self.hawk_survival_rates_per_generation = []
         self.dove_survival_rates_per_generation = []
         self.encounter_counts_total = {'HH': 0, 'HD': 0, 'DD': 0}
@@ -41,7 +42,6 @@ class SimulationStats:
             if len(data) == 1: return (data[0], data[0], data[0]) # Mean is the value, CI is just the value
             
             mean = statistics.mean(data)
-# Fixed a potential off-by-one error
             # Ensure there's enough data for stdev
             std_dev_val = statistics.stdev(data) # len(data) >= 2 at this point
             std_err = std_dev_val / (len(data)**0.5)
