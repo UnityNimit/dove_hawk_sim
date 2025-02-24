@@ -15,7 +15,6 @@ class SimulationStats:
     def __init__(self):
         self.hawk_populations_over_generations = []
         self.dove_populations_over_generations = []
-# TODO: Refactor this section for clarity
         self.hawk_survival_rates_per_generation = []
         self.dove_survival_rates_per_generation = []
         self.encounter_counts_total = {'HH': 0, 'HD': 0, 'DD': 0}
@@ -482,6 +481,7 @@ class HawkDoveApp:
                 if key in ["hawk_hawk_payoff", "dove_dove_payoff", "hawk_dove_hawk_payoff", "hawk_dove_dove_payoff"]:
                     params[key] = float(val_str)
                 elif key == "max_population":
+# Renamed function for better readability
                     mp = int(val_str)
                     params[key] = mp if mp > 0 else None 
                 else:
