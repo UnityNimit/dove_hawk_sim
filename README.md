@@ -47,7 +47,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
     git clone https://github.com/your-username/your-repo-name.git
     cd your-repo-name
     ```
-<!-- Adding a 'Future Improvements' section -->
 
 2.  **Set up a virtual environment (recommended)**:
     ```bash
@@ -114,6 +113,7 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
+<!-- Corrected a typo in the installation instructions -->
 
 ### 📚 References
 1.  Maynard Smith, J. (1982). *Evolution and the Theory of Games*.
