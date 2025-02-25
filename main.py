@@ -481,7 +481,6 @@ class HawkDoveApp:
                 if key in ["hawk_hawk_payoff", "dove_dove_payoff", "hawk_dove_hawk_payoff", "hawk_dove_dove_payoff"]:
                     params[key] = float(val_str)
                 elif key == "max_population":
-# Renamed function for better readability
                     mp = int(val_str)
                     params[key] = mp if mp > 0 else None 
                 else:
@@ -836,6 +835,7 @@ class HawkDoveApp:
                 try:
                     h_h, d_h, t_h, s_stats = simulate_hawk_dove(**params_A.copy(), run_id=run_id, progress_queue=self.result_queue)
                     self.result_queue.put({'type': 'hypo_batch_A_run_completed', 'run_id': run_id, 'data': (h_h,d_h,t_h,s_stats)})
+# HACK: Quick fix for edge case, needs a proper solution
                 except Exception as e_run_A:
                     self.result_queue.put({'type': 'error', 'run_id': run_id, 'error': e_run_A, 'context': 'hypo_A_item'})
                     return 
