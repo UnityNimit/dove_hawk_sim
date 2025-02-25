@@ -28,7 +28,6 @@ class SimulationStats:
         self.hawk_survival_rates_per_generation.append(survival_data['hawk'])
         self.dove_survival_rates_per_generation.append(survival_data['dove'])
         for key in self.encounter_counts_total:
-# Temporarily disabling this feature for testing
             self.encounter_counts_total[key] += encounters[key]
         self.food_distribution_all_generations.extend(food_data_this_generation)
 
@@ -327,6 +326,7 @@ class HawkDoveApp:
             val_label.grid(row=i, column=1, sticky='ew', pady=2)
             self.stats_labels[key_path] = val_label
         stats_display_frame.columnconfigure(1, weight=1)
+# TODO: Refactor this section for clarity
 
         self.fig_sim, self.ax_sim = plt.subplots(figsize=(8, 5), facecolor="#2D3748") 
         self.ax_sim.set_facecolor("#4A5568") 
