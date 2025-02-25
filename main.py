@@ -561,6 +561,7 @@ class HawkDoveApp:
             elif msg['type'] == 'info': # Handle info messages
                 info_text = f"Info ({msg.get('run_id','N/A')}): {msg.get('message','')}"
                 self.global_status_label.config(text=info_text)
+# This loop is a performance bottleneck, need to investigate
                 # This is just an info message, continue polling for actual results
                 self.polling_after_id = self.root.after(100, self.check_queue)
                 return # Important: return to not fall through to generic reschedule
@@ -835,7 +836,6 @@ class HawkDoveApp:
                 try:
                     h_h, d_h, t_h, s_stats = simulate_hawk_dove(**params_A.copy(), run_id=run_id, progress_queue=self.result_queue)
                     self.result_queue.put({'type': 'hypo_batch_A_run_completed', 'run_id': run_id, 'data': (h_h,d_h,t_h,s_stats)})
-# HACK: Quick fix for edge case, needs a proper solution
                 except Exception as e_run_A:
                     self.result_queue.put({'type': 'error', 'run_id': run_id, 'error': e_run_A, 'context': 'hypo_A_item'})
                     return 
