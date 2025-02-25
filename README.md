@@ -80,6 +80,7 @@ The simulation's default payoff matrix (where the value of the resource is 2 foo
 | Opponent → <br> Player ↓ | Hawk (Aggressive) | Dove (Cooperative) |
 | :--- | :--- | :--- |
 | **Hawk** | **0** food each <br> (Cost of fighting is high) | **2** food for Hawk <br> **0** for Dove |
+<!-- Minor wording changes in the introduction -->
 | **Dove** | **0** food for Dove <br> **2** for Hawk | **1** food each <br> (They share the resource) |
 
 *   **Survival & Reproduction:**
@@ -113,7 +114,6 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
-<!-- Corrected a typo in the installation instructions -->
 
 ### 📚 References
 1.  Maynard Smith, J. (1982). *Evolution and the Theory of Games*.
