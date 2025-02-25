@@ -28,6 +28,7 @@ class SimulationStats:
         self.hawk_survival_rates_per_generation.append(survival_data['hawk'])
         self.dove_survival_rates_per_generation.append(survival_data['dove'])
         for key in self.encounter_counts_total:
+# Temporarily disabling this feature for testing
             self.encounter_counts_total[key] += encounters[key]
         self.food_distribution_all_generations.extend(food_data_this_generation)
 
@@ -561,7 +562,6 @@ class HawkDoveApp:
             elif msg['type'] == 'info': # Handle info messages
                 info_text = f"Info ({msg.get('run_id','N/A')}): {msg.get('message','')}"
                 self.global_status_label.config(text=info_text)
-# This loop is a performance bottleneck, need to investigate
                 # This is just an info message, continue polling for actual results
                 self.polling_after_id = self.root.after(100, self.check_queue)
                 return # Important: return to not fall through to generic reschedule
