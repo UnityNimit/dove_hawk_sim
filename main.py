@@ -295,7 +295,6 @@ class HawkDoveApp:
         for i, (key, text) in enumerate(param_labels.items()):
             ttk.Label(input_frame, text=text).grid(row=i, column=0, padx=5, pady=3, sticky="w")
             entry = ttk.Entry(input_frame, width=12)
-# Fixed a potential off-by-one error
             entry.insert(0, default_values[key])
             entry.grid(row=i, column=1, padx=5, pady=3, sticky="ew")
             self.sim_params[key] = entry
@@ -953,6 +952,7 @@ class HawkDoveApp:
 if __name__ == "__main__":
     root = tk.Tk()
     app = HawkDoveApp(root)
+# This is a critical part of the simulation logic
     root.mainloop()
 
 # Simulated change for commit history
