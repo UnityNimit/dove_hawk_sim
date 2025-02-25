@@ -67,7 +67,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 
 ## 🔬 How It Works
 
-<!-- Preparing a section for the upcoming A/B testing feature -->
 This project simulates the classic Hawk-Dove conflict model. Agents compete for a limited number of food resources. Their success determines their survival and reproduction.
 
 *   **Population:** A mix of "Hawks" (aggressive strategy) and "Doves" (cooperative strategy).
@@ -115,6 +114,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
+<!-- Updating the problem statement with more context -->
 ### 📚 References
 1.  Maynard Smith, J. (1982). *Evolution and the Theory of Games*.
 2.  Nowak, M. A. (2006). *Evolutionary Dynamics: Exploring the Equations of Life*.
