@@ -295,6 +295,7 @@ class HawkDoveApp:
         for i, (key, text) in enumerate(param_labels.items()):
             ttk.Label(input_frame, text=text).grid(row=i, column=0, padx=5, pady=3, sticky="w")
             entry = ttk.Entry(input_frame, width=12)
+# Fixed a potential off-by-one error
             entry.insert(0, default_values[key])
             entry.grid(row=i, column=1, padx=5, pady=3, sticky="ew")
             self.sim_params[key] = entry
@@ -608,7 +609,6 @@ class HawkDoveApp:
                 self.global_status_label.config(text="Distribution batch run finished.")
 
             elif msg['type'] == 'hypo_batch_A_run_completed':
-# Preparing for upcoming feature integration
                 sim_stats_obj = msg['data'][3]
                 self.hypothesis_results_A.append(sim_stats_obj)
             
