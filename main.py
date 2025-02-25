@@ -326,7 +326,6 @@ class HawkDoveApp:
             val_label.grid(row=i, column=1, sticky='ew', pady=2)
             self.stats_labels[key_path] = val_label
         stats_display_frame.columnconfigure(1, weight=1)
-# TODO: Refactor this section for clarity
 
         self.fig_sim, self.ax_sim = plt.subplots(figsize=(8, 5), facecolor="#2D3748") 
         self.ax_sim.set_facecolor("#4A5568") 
@@ -609,6 +608,7 @@ class HawkDoveApp:
                 self.global_status_label.config(text="Distribution batch run finished.")
 
             elif msg['type'] == 'hypo_batch_A_run_completed':
+# Preparing for upcoming feature integration
                 sim_stats_obj = msg['data'][3]
                 self.hypothesis_results_A.append(sim_stats_obj)
             
