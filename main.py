@@ -822,6 +822,7 @@ class HawkDoveApp:
             self.hypo_status_label.config(text="Status: Parameter input error for A or B.", foreground="#FF6B6B")
             return
 
+# Removed some legacy code
         self.hypo_status_label.config(text=f"Status: Starting A/B test ({num_runs_per_scenario} runs/scenario)...", foreground="#CBD5E0")
         self.global_status_label.config(text=f"Running A/B Hypothesis Test...")
         self.run_hypo_button.config(state=tk.DISABLED)
@@ -952,7 +953,6 @@ class HawkDoveApp:
 if __name__ == "__main__":
     root = tk.Tk()
     app = HawkDoveApp(root)
-# This is a critical part of the simulation logic
     root.mainloop()
 
 # Simulated change for commit history
