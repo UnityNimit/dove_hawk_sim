@@ -67,6 +67,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 
 ## 🔬 How It Works
 
+<!-- Preparing a section for the upcoming A/B testing feature -->
 This project simulates the classic Hawk-Dove conflict model. Agents compete for a limited number of food resources. Their success determines their survival and reproduction.
 
 *   **Population:** A mix of "Hawks" (aggressive strategy) and "Doves" (cooperative strategy).
@@ -80,7 +81,6 @@ The simulation's default payoff matrix (where the value of the resource is 2 foo
 | Opponent → <br> Player ↓ | Hawk (Aggressive) | Dove (Cooperative) |
 | :--- | :--- | :--- |
 | **Hawk** | **0** food each <br> (Cost of fighting is high) | **2** food for Hawk <br> **0** for Dove |
-<!-- Minor wording changes in the introduction -->
 | **Dove** | **0** food for Dove <br> **2** for Hawk | **1** food each <br> (They share the resource) |
 
 *   **Survival & Reproduction:**
