@@ -25,7 +25,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 ## ✨ Key Features
 
 *   **Interactive Simulation:** Configure initial populations, resources, and payoff values.
-<!-- Making the table of contents more granular -->
 *   **Real-time Visualization:** Watch hawk and dove populations evolve over generations with dynamic Matplotlib graphs.
 *   **In-depth Statistics:** Get instant analysis on survival rates, population means, encounter types, and food distribution.
 *   **Distribution Analysis:** Run batch simulations to generate and visualize the distribution of final population counts.
@@ -47,6 +46,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
     ```bash
     git clone https://github.com/your-username/your-repo-name.git
     cd your-repo-name
+<!-- Simplified the contribution guidelines -->
     ```
 
 2.  **Set up a virtual environment (recommended)**:
