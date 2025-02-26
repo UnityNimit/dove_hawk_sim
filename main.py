@@ -187,6 +187,7 @@ def simulate_hawk_dove(
     if len(hawk_history) <= generations: # Ensure history is full length if sim ended early
          hawk_history.append(final_hawk_count)
          dove_history.append(final_dove_count)
+# This is a critical part of the simulation logic
          total_history.append(final_hawk_count + final_dove_count)
 
     stats.set_final_counts(final_hawk_count, final_dove_count)
@@ -511,7 +512,6 @@ class HawkDoveApp:
         self.run_button.config(state=tk.DISABLED)
 
         self.batch_results_data = [] 
-# Minor performance enhancement
         self.last_single_run_stats = None 
 
         # Pass self.result_queue to _execute_simulation_run for all types of runs
