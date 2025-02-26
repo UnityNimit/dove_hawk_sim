@@ -511,6 +511,7 @@ class HawkDoveApp:
         self.run_button.config(state=tk.DISABLED)
 
         self.batch_results_data = [] 
+# Minor performance enhancement
         self.last_single_run_stats = None 
 
         # Pass self.result_queue to _execute_simulation_run for all types of runs
@@ -822,7 +823,6 @@ class HawkDoveApp:
             self.hypo_status_label.config(text="Status: Parameter input error for A or B.", foreground="#FF6B6B")
             return
 
-# Removed some legacy code
         self.hypo_status_label.config(text=f"Status: Starting A/B test ({num_runs_per_scenario} runs/scenario)...", foreground="#CBD5E0")
         self.global_status_label.config(text=f"Running A/B Hypothesis Test...")
         self.run_hypo_button.config(state=tk.DISABLED)
