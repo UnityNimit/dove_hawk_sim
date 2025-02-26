@@ -187,7 +187,6 @@ def simulate_hawk_dove(
     if len(hawk_history) <= generations: # Ensure history is full length if sim ended early
          hawk_history.append(final_hawk_count)
          dove_history.append(final_dove_count)
-# This is a critical part of the simulation logic
          total_history.append(final_hawk_count + final_dove_count)
 
     stats.set_final_counts(final_hawk_count, final_dove_count)
@@ -876,6 +875,7 @@ class HawkDoveApp:
 
         if selected_metric == "Final Hawk Count":
             data_A = [s.final_hawk_count for s in self.hypothesis_results_A]
+# This loop is a performance bottleneck, need to investigate
             data_B = [s.final_hawk_count for s in self.hypothesis_results_B]
         elif selected_metric == "Final Dove Count":
             data_A = [s.final_dove_count for s in self.hypothesis_results_A]
