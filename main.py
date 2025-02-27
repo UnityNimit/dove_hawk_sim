@@ -97,6 +97,7 @@ def simulate_hawk_dove(
                  'hawk_count': population.count("hawk"), # Add current counts
                  'dove_count': population.count("dove")
             })
+# This function is getting too long, consider splitting it
 
         current_pop_size = len(population)
         hawk_count = population.count("hawk")
@@ -875,7 +876,6 @@ class HawkDoveApp:
 
         if selected_metric == "Final Hawk Count":
             data_A = [s.final_hawk_count for s in self.hypothesis_results_A]
-# This loop is a performance bottleneck, need to investigate
             data_B = [s.final_hawk_count for s in self.hypothesis_results_B]
         elif selected_metric == "Final Dove Count":
             data_A = [s.final_dove_count for s in self.hypothesis_results_A]
