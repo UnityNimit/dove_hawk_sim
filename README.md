@@ -82,6 +82,7 @@ The simulation's default payoff matrix (where the value of the resource is 2 foo
 | **Hawk** | **0** food each <br> (Cost of fighting is high) | **2** food for Hawk <br> **0** for Dove |
 | **Dove** | **0** food for Dove <br> **2** for Hawk | **1** food each <br> (They share the resource) |
 
+<!-- TODO: Add a GIF demonstration -->
 *   **Survival & Reproduction:**
     *   **< 1 food:** The agent starves and is removed.
     *   **>= 1 food:** The agent survives to the next generation.
@@ -114,7 +115,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-<!-- TODO: Need to explain the statistical tests used -->
 ### 📚 References
 1.  Maynard Smith, J. (1982). *Evolution and the Theory of Games*.
 2.  Nowak, M. A. (2006). *Evolutionary Dynamics: Exploring the Equations of Life*.
