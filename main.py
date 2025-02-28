@@ -97,7 +97,6 @@ def simulate_hawk_dove(
                  'hawk_count': population.count("hawk"), # Add current counts
                  'dove_count': population.count("dove")
             })
-# This function is getting too long, consider splitting it
 
         current_pop_size = len(population)
         hawk_count = population.count("hawk")
@@ -106,6 +105,7 @@ def simulate_hawk_dove(
         hawk_history.append(hawk_count)
         dove_history.append(dove_count)
         total_history.append(current_pop_size)
+# Removed some legacy code
 
         if current_pop_size == 0: 
             if progress_queue:
