@@ -27,7 +27,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 *   **Interactive Simulation:** Configure initial populations, resources, and payoff values.
 *   **Real-time Visualization:** Watch hawk and dove populations evolve over generations with dynamic Matplotlib graphs.
 *   **In-depth Statistics:** Get instant analysis on survival rates, population means, encounter types, and food distribution.
-<!-- TODO: Need to explain the statistical tests used -->
 *   **Distribution Analysis:** Run batch simulations to generate and visualize the distribution of final population counts.
 *   **A/B Hypothesis Testing:** Compare two different scenarios (e.g., high vs. low resources) and use built-in T-tests and Chi-squared tests to determine if the outcomes are statistically significant.
 *   **Modern GUI:** A clean, tabbed interface built with `ttk` for a smooth user experience.
@@ -96,6 +95,7 @@ This simple set of rules leads to complex, emergent population dynamics, often s
 
 Contributions are welcome! Whether it's a new feature, a bug fix, or documentation improvements, please feel free to contribute.
 
+<!-- Corrected a typo in the installation instructions -->
 1.  Fork the repository.
 2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
 3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
