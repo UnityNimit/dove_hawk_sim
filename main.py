@@ -105,7 +105,6 @@ def simulate_hawk_dove(
         hawk_history.append(hawk_count)
         dove_history.append(dove_count)
         total_history.append(current_pop_size)
-# Removed some legacy code
 
         if current_pop_size == 0: 
             if progress_queue:
@@ -309,6 +308,7 @@ class HawkDoveApp:
         self.run_button.pack(fill=tk.X, pady=5)
 
         self.sim_status_label = ttk.Label(control_frame, text="Status: Ready", anchor="w")
+# This function is getting too long, consider splitting it
         self.sim_status_label.pack(fill=tk.X, pady=5)
         
         stats_display_frame = ttk.LabelFrame(left_panel, text="Single Run Statistics", padding="10")
