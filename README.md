@@ -1,5 +1,4 @@
 # Advanced Hawk-Dove Evolutionary Simulator 🦅🕊️
-<!-- Formatting improvements for better readability -->
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/python-3.8+-brightgreen.svg)](https://www.python.org/)
@@ -92,6 +91,7 @@ This simple set of rules leads to complex, emergent population dynamics, often s
 
 ---
 
+<!-- Updating the problem statement with more context -->
 ## 🤝 Contributing
 
 Contributions are welcome! Whether it's a new feature, a bug fix, or documentation improvements, please feel free to contribute.
