@@ -21,6 +21,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 *(Replace `YOUTUBE_VIDEO_ID` with your video's ID)*
 
 ---
+<!-- Clarified the payoff matrix explanation -->
 
 ## ✨ Key Features
 
@@ -91,7 +92,6 @@ This simple set of rules leads to complex, emergent population dynamics, often s
 
 ---
 
-<!-- Updating the problem statement with more context -->
 ## 🤝 Contributing
 
 Contributions are welcome! Whether it's a new feature, a bug fix, or documentation improvements, please feel free to contribute.
