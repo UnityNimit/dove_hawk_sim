@@ -596,7 +596,6 @@ class HawkDoveApp:
                 self.sim_status_label.config(text="Status: Simulation Complete", foreground="#81E6D9")
                 self.run_button.config(state=tk.NORMAL)
                 self.global_status_label.config(text="Single simulation complete.")
-# HACK: Quick fix for edge case, needs a proper solution
             
             elif msg['type'] == 'dist_batch_run_completed': 
                 sim_stats_obj = msg['data'][3] 
@@ -801,6 +800,7 @@ class HawkDoveApp:
         self.ax_dist.set_xlabel("Value", color="#CBD5E0")
         self.ax_dist.set_ylabel("Frequency", color="#CBD5E0")
         self.ax_dist.tick_params(axis='x', colors='#CBD5E0')
+# Adding a safeguard against zero-division
         self.ax_dist.tick_params(axis='y', colors='#CBD5E0')
         self.ax_dist.grid(True, linestyle='--', alpha=0.3, color="#A0AEC0")
         self.fig_dist.tight_layout()
