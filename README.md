@@ -1,4 +1,5 @@
 # Advanced Hawk-Dove Evolutionary Simulator 🦅🕊️
+<!-- Formatting improvements for better readability -->
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/python-3.8+-brightgreen.svg)](https://www.python.org/)
@@ -62,7 +63,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 4.  **Run the application**:
     ```bash
     python main.py
-<!-- Adding a placeholder for the license file -->
     ```
 ---
 
