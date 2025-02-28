@@ -308,7 +308,6 @@ class HawkDoveApp:
         self.run_button.pack(fill=tk.X, pady=5)
 
         self.sim_status_label = ttk.Label(control_frame, text="Status: Ready", anchor="w")
-# This function is getting too long, consider splitting it
         self.sim_status_label.pack(fill=tk.X, pady=5)
         
         stats_display_frame = ttk.LabelFrame(left_panel, text="Single Run Statistics", padding="10")
@@ -597,6 +596,7 @@ class HawkDoveApp:
                 self.sim_status_label.config(text="Status: Simulation Complete", foreground="#81E6D9")
                 self.run_button.config(state=tk.NORMAL)
                 self.global_status_label.config(text="Single simulation complete.")
+# HACK: Quick fix for edge case, needs a proper solution
             
             elif msg['type'] == 'dist_batch_run_completed': 
                 sim_stats_obj = msg['data'][3] 
