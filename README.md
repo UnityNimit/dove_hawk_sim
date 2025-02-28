@@ -82,7 +82,6 @@ The simulation's default payoff matrix (where the value of the resource is 2 foo
 | **Hawk** | **0** food each <br> (Cost of fighting is high) | **2** food for Hawk <br> **0** for Dove |
 | **Dove** | **0** food for Dove <br> **2** for Hawk | **1** food each <br> (They share the resource) |
 
-<!-- TODO: Add a GIF demonstration -->
 *   **Survival & Reproduction:**
     *   **< 1 food:** The agent starves and is removed.
     *   **>= 1 food:** The agent survives to the next generation.
@@ -109,6 +108,7 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 
 ---
 
+<!-- Note to self: update version number before release -->
 ## 📜 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
