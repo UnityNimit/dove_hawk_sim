@@ -449,6 +449,7 @@ class HawkDoveApp:
             "generations": "Generations:", "num_food_pairs": "Food Resources:",
             "hawk_hawk_payoff": "H-H Food/Agent:", "dove_dove_payoff": "D-D Food/Agent:",
             "hawk_dove_hawk_payoff": "Hawk (vs Dove) Food:", "hawk_dove_dove_payoff": "Dove (vs Hawk) Food:",
+# DEBUG: print(f'Checking value...') # Will remove later
             "max_population": "Max Population:"
         }
         default_values = { 
@@ -800,7 +801,6 @@ class HawkDoveApp:
         self.ax_dist.set_xlabel("Value", color="#CBD5E0")
         self.ax_dist.set_ylabel("Frequency", color="#CBD5E0")
         self.ax_dist.tick_params(axis='x', colors='#CBD5E0')
-# Adding a safeguard against zero-division
         self.ax_dist.tick_params(axis='y', colors='#CBD5E0')
         self.ax_dist.grid(True, linestyle='--', alpha=0.3, color="#A0AEC0")
         self.fig_dist.tight_layout()
