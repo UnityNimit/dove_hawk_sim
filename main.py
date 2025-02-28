@@ -497,7 +497,6 @@ class HawkDoveApp:
             messagebox.showerror("Input Error", str(e))
             return None
 
-# Added more detailed error handling
     def run_single_simulation_from_tab(self):
         if self.polling_after_id:
             self.root.after_cancel(self.polling_after_id)
@@ -733,6 +732,7 @@ class HawkDoveApp:
             def batch_runner_thread():
                 for i in range(num_runs):
                     run_id = f"dist_batch_{i+1}"
+# HACK: Quick fix for edge case, needs a proper solution
                     try:
                         # Pass self.result_queue for progress updates
                         hawk_h, dove_h, total_h, s_stats = simulate_hawk_dove(**sim_params.copy(), run_id=run_id, progress_queue=self.result_queue)
