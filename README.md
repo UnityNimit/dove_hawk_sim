@@ -57,6 +57,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 3.  **Install dependencies**:
     ```bash
     pip install -r requirements.txt
+<!-- Note to self: update version number before release -->
     ```
 
 4.  **Run the application**:
@@ -95,7 +96,6 @@ This simple set of rules leads to complex, emergent population dynamics, often s
 
 Contributions are welcome! Whether it's a new feature, a bug fix, or documentation improvements, please feel free to contribute.
 
-<!-- Corrected a typo in the installation instructions -->
 1.  Fork the repository.
 2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
 3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
