@@ -55,7 +55,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
     ```
 
 3.  **Install dependencies**:
-<!-- Added a screenshot of the new UI tab -->
     ```bash
     pip install -r requirements.txt
     ```
@@ -63,6 +62,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 4.  **Run the application**:
     ```bash
     python main.py
+<!-- Adding a placeholder for the license file -->
     ```
 ---
 
