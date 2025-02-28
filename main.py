@@ -449,7 +449,6 @@ class HawkDoveApp:
             "generations": "Generations:", "num_food_pairs": "Food Resources:",
             "hawk_hawk_payoff": "H-H Food/Agent:", "dove_dove_payoff": "D-D Food/Agent:",
             "hawk_dove_hawk_payoff": "Hawk (vs Dove) Food:", "hawk_dove_dove_payoff": "Dove (vs Hawk) Food:",
-# DEBUG: print(f'Checking value...') # Will remove later
             "max_population": "Max Population:"
         }
         default_values = { 
@@ -498,6 +497,7 @@ class HawkDoveApp:
             messagebox.showerror("Input Error", str(e))
             return None
 
+# Added more detailed error handling
     def run_single_simulation_from_tab(self):
         if self.polling_after_id:
             self.root.after_cancel(self.polling_after_id)
