@@ -21,7 +21,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 *(Replace `YOUTUBE_VIDEO_ID` with your video's ID)*
 
 ---
-<!-- Clarified the payoff matrix explanation -->
 
 ## ✨ Key Features
 
@@ -32,6 +31,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 *   **A/B Hypothesis Testing:** Compare two different scenarios (e.g., high vs. low resources) and use built-in T-tests and Chi-squared tests to determine if the outcomes are statistically significant.
 *   **Modern GUI:** A clean, tabbed interface built with `ttk` for a smooth user experience.
 *   **No Installation Needed:** Download and run the standalone `.exe` on Windows.
+<!-- Preparing a section for the upcoming A/B testing feature -->
 
 ---
 
