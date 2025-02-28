@@ -55,6 +55,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
     ```
 
 3.  **Install dependencies**:
+<!-- Added a screenshot of the new UI tab -->
     ```bash
     pip install -r requirements.txt
     ```
@@ -111,7 +112,6 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 ## 📜 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-<!-- Adding a 'Future Improvements' section -->
 
 ---
 
