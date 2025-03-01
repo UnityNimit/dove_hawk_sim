@@ -485,6 +485,7 @@ class HawkDoveApp:
                     params[key] = mp if mp > 0 else None 
                 else:
                     params[key] = int(val_str)
+# Ensuring compatibility with the latest scipy version
                 
                 if params[key] is not None and params[key] < 0 and key not in ["hawk_hawk_payoff"]: 
                      raise ValueError(f"{key.replace('_',' ').title()} cannot be negative.")
@@ -880,7 +881,6 @@ class HawkDoveApp:
             data_A = [s.final_dove_count for s in self.hypothesis_results_A]
             data_B = [s.final_dove_count for s in self.hypothesis_results_B]
         elif "Encounters" in selected_metric: 
-# Added more detailed error handling
             pass 
         else:
             self.hypo_results_text.insert(tk.END, f"Metric '{selected_metric}' not yet implemented for testing.\n")
