@@ -50,7 +50,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 
 2.  **Set up a virtual environment (recommended)**:
     ```bash
-<!-- TODO: Add a GIF demonstration -->
     python -m venv venv
     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
     ```
@@ -63,6 +62,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 4.  **Run the application**:
     ```bash
     python main.py
+<!-- Added a reference to Maynard Smith's work -->
     ```
 ---
 
