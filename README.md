@@ -50,6 +50,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 
 2.  **Set up a virtual environment (recommended)**:
     ```bash
+<!-- TODO: Add a GIF demonstration -->
     python -m venv venv
     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
     ```
@@ -89,7 +90,6 @@ The simulation's default payoff matrix (where the value of the resource is 2 foo
 
 This simple set of rules leads to complex, emergent population dynamics, often stabilizing at a mixed equilibrium where both strategies coexist.
 
-<!-- Updated the prerequisites list -->
 ---
 
 ## 🤝 Contributing
