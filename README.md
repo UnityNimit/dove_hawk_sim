@@ -57,7 +57,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 3.  **Install dependencies**:
     ```bash
     pip install -r requirements.txt
-<!-- Note to self: update version number before release -->
     ```
 
 4.  **Run the application**:
@@ -90,6 +89,7 @@ The simulation's default payoff matrix (where the value of the resource is 2 foo
 
 This simple set of rules leads to complex, emergent population dynamics, often stabilizing at a mixed equilibrium where both strategies coexist.
 
+<!-- Updated the prerequisites list -->
 ---
 
 ## 🤝 Contributing
