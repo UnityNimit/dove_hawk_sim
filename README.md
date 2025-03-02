@@ -17,7 +17,6 @@ Watch a quick demonstration of the simulator's features, from running a single s
 
 ### 🎥 Full Video Tutorial
 For a detailed walkthrough of all features and the science behind the model, watch our tutorial on YouTube:
-<!-- Adding a 'Future Improvements' section -->
 [<img src="https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/hqdefault.jpg" width="400">](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
 *(Replace `YOUTUBE_VIDEO_ID` with your video's ID)*
 
@@ -113,6 +112,7 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
+<!-- Adding a 'Future Improvements' section -->
 ---
 
 ### 📚 References
