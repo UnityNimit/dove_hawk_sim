@@ -17,6 +17,7 @@ Watch a quick demonstration of the simulator's features, from running a single s
 
 ### 🎥 Full Video Tutorial
 For a detailed walkthrough of all features and the science behind the model, watch our tutorial on YouTube:
+<!-- Adding a 'Future Improvements' section -->
 [<img src="https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/hqdefault.jpg" width="400">](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
 *(Replace `YOUTUBE_VIDEO_ID` with your video's ID)*
 
@@ -33,7 +34,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 *   **No Installation Needed:** Download and run the standalone `.exe` on Windows.
 
 ---
-<!-- Checking for broken links -->
 
 ## 📥 Installation & Usage
 
