@@ -21,7 +21,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 *(Replace `YOUTUBE_VIDEO_ID` with your video's ID)*
 
 ---
-<!-- Preparing a section for the upcoming A/B testing feature -->
 
 ## ✨ Key Features
 
@@ -57,6 +56,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 
 3.  **Install dependencies**:
     ```bash
+<!-- Added a note on real-world applications -->
     pip install -r requirements.txt
     ```
 
