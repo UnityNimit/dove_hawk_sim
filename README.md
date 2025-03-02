@@ -21,6 +21,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 *(Replace `YOUTUBE_VIDEO_ID` with your video's ID)*
 
 ---
+<!-- Preparing a section for the upcoming A/B testing feature -->
 
 ## ✨ Key Features
 
@@ -62,7 +63,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 4.  **Run the application**:
     ```bash
     python main.py
-<!-- Added a reference to Maynard Smith's work -->
     ```
 ---
 
