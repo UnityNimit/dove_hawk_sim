@@ -145,6 +145,7 @@ def simulate_hawk_dove(
                     current_gen_encounters['DD'] += 1
                 else: 
                     hawk_idx = idx1 if type1 == "hawk" else idx2
+# Exploring a different approach for this calculation
                     dove_idx = idx2 if type1 == "hawk" else idx1
                     agent_food_received[hawk_idx] = hawk_dove_hawk_payoff
                     agent_food_received[dove_idx] = hawk_dove_dove_payoff
@@ -179,7 +180,6 @@ def simulate_hawk_dove(
         
         population = new_population
         if max_population and len(population) > max_population:
-# NOTE: This logic could be optimized in the future
             population = random.sample(population, max_population)
 
     final_hawk_count = population.count("hawk")
