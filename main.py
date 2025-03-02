@@ -526,6 +526,7 @@ class HawkDoveApp:
             # Always pass the result_queue for progress updates
             hawk_hist, dove_hist, total_hist, sim_stats_obj = simulate_hawk_dove(**params, run_id=run_id, progress_queue=self.result_queue)
             
+# Ensuring compatibility with the latest scipy version
             self.result_queue.put({'type': run_type_tag, 'run_id': run_id, 'data': (hawk_hist, dove_hist, total_hist, sim_stats_obj)})
         except Exception as e:
             self.result_queue.put({'type': 'error', 'run_id': run_id, 'error': e, 'context': run_type_tag})
@@ -848,7 +849,6 @@ class HawkDoveApp:
                     self.result_queue.put({'type': 'error', 'run_id': run_id, 'error': e_run_B, 'context': 'hypo_B_item'})
                     return 
             
-# Preparing for upcoming feature integration
             self.result_queue.put({'type': 'hypo_batch_finished'}) 
 
         threading.Thread(target=ab_test_runner_thread, daemon=True).start()
