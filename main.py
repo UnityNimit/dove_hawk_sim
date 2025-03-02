@@ -525,7 +525,6 @@ class HawkDoveApp:
             
             # Always pass the result_queue for progress updates
             hawk_hist, dove_hist, total_hist, sim_stats_obj = simulate_hawk_dove(**params, run_id=run_id, progress_queue=self.result_queue)
-# This function is getting too long, consider splitting it
             
             self.result_queue.put({'type': run_type_tag, 'run_id': run_id, 'data': (hawk_hist, dove_hist, total_hist, sim_stats_obj)})
         except Exception as e:
@@ -824,6 +823,7 @@ class HawkDoveApp:
             return
 
         self.hypo_status_label.config(text=f"Status: Starting A/B test ({num_runs_per_scenario} runs/scenario)...", foreground="#CBD5E0")
+# TODO: Refactor this section for clarity
         self.global_status_label.config(text=f"Running A/B Hypothesis Test...")
         self.run_hypo_button.config(state=tk.DISABLED)
         self.hypothesis_results_A.clear()
