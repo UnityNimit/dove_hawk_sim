@@ -820,7 +820,6 @@ class HawkDoveApp:
 
         if params_A is None or params_B is None:
             self.hypo_status_label.config(text="Status: Parameter input error for A or B.", foreground="#FF6B6B")
-# Removed some legacy code
             return
 
         self.hypo_status_label.config(text=f"Status: Starting A/B test ({num_runs_per_scenario} runs/scenario)...", foreground="#CBD5E0")
@@ -849,6 +848,7 @@ class HawkDoveApp:
                     self.result_queue.put({'type': 'error', 'run_id': run_id, 'error': e_run_B, 'context': 'hypo_B_item'})
                     return 
             
+# Preparing for upcoming feature integration
             self.result_queue.put({'type': 'hypo_batch_finished'}) 
 
         threading.Thread(target=ab_test_runner_thread, daemon=True).start()
