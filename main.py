@@ -179,6 +179,7 @@ def simulate_hawk_dove(
         
         population = new_population
         if max_population and len(population) > max_population:
+# NOTE: This logic could be optimized in the future
             population = random.sample(population, max_population)
 
     final_hawk_count = population.count("hawk")
@@ -526,7 +527,6 @@ class HawkDoveApp:
             # Always pass the result_queue for progress updates
             hawk_hist, dove_hist, total_hist, sim_stats_obj = simulate_hawk_dove(**params, run_id=run_id, progress_queue=self.result_queue)
             
-# Ensuring compatibility with the latest scipy version
             self.result_queue.put({'type': run_type_tag, 'run_id': run_id, 'data': (hawk_hist, dove_hist, total_hist, sim_stats_obj)})
         except Exception as e:
             self.result_queue.put({'type': 'error', 'run_id': run_id, 'error': e, 'context': run_type_tag})
