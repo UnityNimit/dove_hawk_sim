@@ -22,6 +22,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 
 ---
 
+<!-- Expanding the Results & Analysis section -->
 ## ✨ Key Features
 
 *   **Interactive Simulation:** Configure initial populations, resources, and payoff values.
@@ -56,7 +57,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 
 3.  **Install dependencies**:
     ```bash
-<!-- Added a note on real-world applications -->
     pip install -r requirements.txt
     ```
 
