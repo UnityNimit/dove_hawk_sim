@@ -33,6 +33,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 *   **No Installation Needed:** Download and run the standalone `.exe` on Windows.
 
 ---
+<!-- Checking for broken links -->
 
 ## 📥 Installation & Usage
 
@@ -84,7 +85,6 @@ The simulation's default payoff matrix (where the value of the resource is 2 foo
 
 *   **Survival & Reproduction:**
     *   **< 1 food:** The agent starves and is removed.
-<!-- Corrected a typo in the installation instructions -->
     *   **>= 1 food:** The agent survives to the next generation.
     *   **>= 2 food:** The agent survives *and* produces one offspring of the same type.
 
