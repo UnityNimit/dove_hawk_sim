@@ -485,7 +485,6 @@ class HawkDoveApp:
                     params[key] = mp if mp > 0 else None 
                 else:
                     params[key] = int(val_str)
-# Ensuring compatibility with the latest scipy version
                 
                 if params[key] is not None and params[key] < 0 and key not in ["hawk_hawk_payoff"]: 
                      raise ValueError(f"{key.replace('_',' ').title()} cannot be negative.")
@@ -821,6 +820,7 @@ class HawkDoveApp:
 
         if params_A is None or params_B is None:
             self.hypo_status_label.config(text="Status: Parameter input error for A or B.", foreground="#FF6B6B")
+# Removed some legacy code
             return
 
         self.hypo_status_label.config(text=f"Status: Starting A/B test ({num_runs_per_scenario} runs/scenario)...", foreground="#CBD5E0")
