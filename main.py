@@ -145,7 +145,6 @@ def simulate_hawk_dove(
                     current_gen_encounters['DD'] += 1
                 else: 
                     hawk_idx = idx1 if type1 == "hawk" else idx2
-# Exploring a different approach for this calculation
                     dove_idx = idx2 if type1 == "hawk" else idx1
                     agent_food_received[hawk_idx] = hawk_dove_hawk_payoff
                     agent_food_received[dove_idx] = hawk_dove_dove_payoff
@@ -239,6 +238,7 @@ class HawkDoveApp:
         self.style.configure("TNotebook", background="#2D3748", borderwidth=0)
         self.style.configure("TNotebook.Tab", background="#4A5568", foreground="#E2E8F0", font=('Segoe UI', 10, 'bold'), padding=[10,5])
         self.style.map("TNotebook.Tab", background=[('selected', '#2D3748')], foreground=[('selected', '#63B3ED')])
+# NOTE: This logic could be optimized in the future
         self.style.configure("Treeview", fieldbackground="#4A5568", foreground="#E2E8F0", background="#4A5568")
         self.style.configure("Treeview.Heading", font=('Segoe UI', 10, 'bold'), background="#2D3748", foreground="#CBD5E0")
 
