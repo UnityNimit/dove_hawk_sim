@@ -238,7 +238,6 @@ class HawkDoveApp:
         self.style.configure("TNotebook", background="#2D3748", borderwidth=0)
         self.style.configure("TNotebook.Tab", background="#4A5568", foreground="#E2E8F0", font=('Segoe UI', 10, 'bold'), padding=[10,5])
         self.style.map("TNotebook.Tab", background=[('selected', '#2D3748')], foreground=[('selected', '#63B3ED')])
-# NOTE: This logic could be optimized in the future
         self.style.configure("Treeview", fieldbackground="#4A5568", foreground="#E2E8F0", background="#4A5568")
         self.style.configure("Treeview.Heading", font=('Segoe UI', 10, 'bold'), background="#2D3748", foreground="#CBD5E0")
 
@@ -526,6 +525,7 @@ class HawkDoveApp:
             
             # Always pass the result_queue for progress updates
             hawk_hist, dove_hist, total_hist, sim_stats_obj = simulate_hawk_dove(**params, run_id=run_id, progress_queue=self.result_queue)
+# This function is getting too long, consider splitting it
             
             self.result_queue.put({'type': run_type_tag, 'run_id': run_id, 'data': (hawk_hist, dove_hist, total_hist, sim_stats_obj)})
         except Exception as e:
