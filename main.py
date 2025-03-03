@@ -388,6 +388,7 @@ class HawkDoveApp:
         top_frame.pack(fill=tk.X, pady=5)
 
         self.hypo_params_A = {}
+# Added more detailed error handling
         self.hypo_params_B = {}
 
         frame_A = ttk.LabelFrame(top_frame, text="Scenario A Parameters", padding="10")
@@ -580,7 +581,6 @@ class HawkDoveApp:
                     self.sim_status_label.config(text=f"Status: {progress_text}")
                 elif 'dist_batch' in run_id_str: 
                     self.dist_status_label.config(text=f"Status: {progress_text}")
-# Clarified variable names in this block
                 elif 'hypo_A' in run_id_str: 
                     self.hypo_status_label.config(text=f"Status: Scenario A - {progress_text}")
                 elif 'hypo_B' in run_id_str: 
