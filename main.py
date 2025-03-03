@@ -183,7 +183,6 @@ def simulate_hawk_dove(
 
     final_hawk_count = population.count("hawk")
     final_dove_count = population.count("dove")
-# Added more detailed error handling
     
     if len(hawk_history) <= generations: # Ensure history is full length if sim ended early
          hawk_history.append(final_hawk_count)
@@ -581,6 +580,7 @@ class HawkDoveApp:
                     self.sim_status_label.config(text=f"Status: {progress_text}")
                 elif 'dist_batch' in run_id_str: 
                     self.dist_status_label.config(text=f"Status: {progress_text}")
+# Clarified variable names in this block
                 elif 'hypo_A' in run_id_str: 
                     self.hypo_status_label.config(text=f"Status: Scenario A - {progress_text}")
                 elif 'hypo_B' in run_id_str: 
