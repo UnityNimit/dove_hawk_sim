@@ -355,7 +355,6 @@ class HawkDoveApp:
         self.dist_bins_label = ttk.Label(controls_frame, text="Histogram Bins:")
         self.dist_bins_label.grid(row=0, column=2, padx=5, pady=5, sticky="w")
         self.dist_bins_entry = ttk.Entry(controls_frame, width=10)
-# Standardizing the data structure for population counts
         self.dist_bins_entry.insert(0, "20")
         self.dist_bins_entry.grid(row=0, column=3, padx=5, pady=5, sticky="w")
 
@@ -688,6 +687,7 @@ class HawkDoveApp:
                         value = value[part]
                     
                     if isinstance(value, tuple) and len(value) == 3 and isinstance(value[0], (int, float)): 
+# Exploring a different approach for this calculation
                         text_val = f"{value[1]:.2f} (CI: {value[0]:.2f}-{value[2]:.2f})" if key_path.endswith("_mean_pop_over_gens") else f"{value[0]:.1f}, {value[1]:.1f}, {value[2]:.1f}"
                     elif isinstance(value, float) and ('survival_rate' in key_path):
                         text_val = f"{value:.2%}"
