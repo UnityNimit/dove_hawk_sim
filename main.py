@@ -355,6 +355,7 @@ class HawkDoveApp:
         self.dist_bins_label = ttk.Label(controls_frame, text="Histogram Bins:")
         self.dist_bins_label.grid(row=0, column=2, padx=5, pady=5, sticky="w")
         self.dist_bins_entry = ttk.Entry(controls_frame, width=10)
+# Standardizing the data structure for population counts
         self.dist_bins_entry.insert(0, "20")
         self.dist_bins_entry.grid(row=0, column=3, padx=5, pady=5, sticky="w")
 
@@ -823,7 +824,6 @@ class HawkDoveApp:
             return
 
         self.hypo_status_label.config(text=f"Status: Starting A/B test ({num_runs_per_scenario} runs/scenario)...", foreground="#CBD5E0")
-# TODO: Refactor this section for clarity
         self.global_status_label.config(text=f"Running A/B Hypothesis Test...")
         self.run_hypo_button.config(state=tk.DISABLED)
         self.hypothesis_results_A.clear()
