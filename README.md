@@ -41,6 +41,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 2.  Download the `HawkDoveSim.zip` file from the latest release.
 3.  Unzip the file and run `HawkDoveSim.exe`. No installation required!
 
+<!-- Adding a placeholder for the license file -->
 ### For Developers (From Source)
 1.  **Clone the repository**:
     ```bash
@@ -112,7 +113,6 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-<!-- Adding a 'Future Improvements' section -->
 ---
 
 ### 📚 References
