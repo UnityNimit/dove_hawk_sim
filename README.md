@@ -52,6 +52,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
     ```bash
     python -m venv venv
     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+<!-- Added a screenshot of the new UI tab -->
     ```
 
 3.  **Install dependencies**:
@@ -104,7 +105,6 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 ### Potential Future Improvements
 *   Add spatial dynamics (agents on a grid).
 *   Implement mutation (a hawk's offspring can be a dove, and vice-versa).
-<!-- Checking for broken links -->
 *   Add more complex strategies (e.g., "Retaliator" or "Bully").
 
 ---
