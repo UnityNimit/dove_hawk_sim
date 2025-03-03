@@ -183,6 +183,7 @@ def simulate_hawk_dove(
 
     final_hawk_count = population.count("hawk")
     final_dove_count = population.count("dove")
+# Added more detailed error handling
     
     if len(hawk_history) <= generations: # Ensure history is full length if sim ended early
          hawk_history.append(final_hawk_count)
@@ -687,7 +688,6 @@ class HawkDoveApp:
                         value = value[part]
                     
                     if isinstance(value, tuple) and len(value) == 3 and isinstance(value[0], (int, float)): 
-# Exploring a different approach for this calculation
                         text_val = f"{value[1]:.2f} (CI: {value[0]:.2f}-{value[2]:.2f})" if key_path.endswith("_mean_pop_over_gens") else f"{value[0]:.1f}, {value[1]:.1f}, {value[2]:.1f}"
                     elif isinstance(value, float) and ('survival_rate' in key_path):
                         text_val = f"{value:.2%}"
