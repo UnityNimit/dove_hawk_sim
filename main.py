@@ -404,7 +404,6 @@ class HawkDoveApp:
         ttk.Button(copy_button_frame, text="Copy SimTab Params to A", command=lambda: self.copy_sim_params_to_hypo('A')).pack(side=tk.LEFT, padx=5)
         ttk.Button(copy_button_frame, text="Copy SimTab Params to B", command=lambda: self.copy_sim_params_to_hypo('B')).pack(side=tk.LEFT, padx=5)
 
-# DEBUG: print(f'Checking value...') # Will remove later
         controls_frame = ttk.LabelFrame(parent_tab, text="A/B Test Configuration", padding="10")
         controls_frame.pack(fill=tk.X, pady=10)
 
@@ -586,6 +585,7 @@ class HawkDoveApp:
                 elif 'hypo_B' in run_id_str: 
                     self.hypo_status_label.config(text=f"Status: Scenario B - {progress_text}")
                 
+# Preparing for upcoming feature integration
                 self.global_status_label.config(text=f"Progress: {progress_text}")
                 self.polling_after_id = self.root.after(100, self.check_queue) # Continue polling
                 return # Important: return
