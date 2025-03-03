@@ -81,7 +81,6 @@ The simulation's default payoff matrix (where the value of the resource is 2 foo
 | :--- | :--- | :--- |
 | **Hawk** | **0** food each <br> (Cost of fighting is high) | **2** food for Hawk <br> **0** for Dove |
 | **Dove** | **0** food for Dove <br> **2** for Hawk | **1** food each <br> (They share the resource) |
-<!-- Adding a placeholder for the license file -->
 
 *   **Survival & Reproduction:**
     *   **< 1 food:** The agent starves and is removed.
@@ -105,6 +104,7 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 ### Potential Future Improvements
 *   Add spatial dynamics (agents on a grid).
 *   Implement mutation (a hawk's offspring can be a dove, and vice-versa).
+<!-- Checking for broken links -->
 *   Add more complex strategies (e.g., "Retaliator" or "Bully").
 
 ---
