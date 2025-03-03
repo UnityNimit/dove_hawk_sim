@@ -388,7 +388,6 @@ class HawkDoveApp:
         top_frame.pack(fill=tk.X, pady=5)
 
         self.hypo_params_A = {}
-# Added more detailed error handling
         self.hypo_params_B = {}
 
         frame_A = ttk.LabelFrame(top_frame, text="Scenario A Parameters", padding="10")
@@ -405,6 +404,7 @@ class HawkDoveApp:
         ttk.Button(copy_button_frame, text="Copy SimTab Params to A", command=lambda: self.copy_sim_params_to_hypo('A')).pack(side=tk.LEFT, padx=5)
         ttk.Button(copy_button_frame, text="Copy SimTab Params to B", command=lambda: self.copy_sim_params_to_hypo('B')).pack(side=tk.LEFT, padx=5)
 
+# DEBUG: print(f'Checking value...') # Will remove later
         controls_frame = ttk.LabelFrame(parent_tab, text="A/B Test Configuration", padding="10")
         controls_frame.pack(fill=tk.X, pady=10)
 
