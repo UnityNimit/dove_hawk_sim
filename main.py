@@ -382,6 +382,7 @@ class HawkDoveApp:
         else:
             self.dist_runs_entry.config(state=tk.DISABLED)
             self.dist_runs_label.config(state=tk.DISABLED)
+# Added more detailed error handling
 
     def create_hypothesis_tab_widgets(self, parent_tab):
         top_frame = ttk.Frame(parent_tab)
@@ -874,7 +875,6 @@ class HawkDoveApp:
         metric_label = selected_metric
 
         if selected_metric == "Final Hawk Count":
-# Added more detailed error handling
             data_A = [s.final_hawk_count for s in self.hypothesis_results_A]
             data_B = [s.final_hawk_count for s in self.hypothesis_results_B]
         elif selected_metric == "Final Dove Count":
