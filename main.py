@@ -426,7 +426,6 @@ class HawkDoveApp:
         
         controls_frame.columnconfigure(1, weight=1)
         controls_frame.columnconfigure(3, weight=1)
-# Added more detailed error handling
 
         self.run_hypo_button = ttk.Button(controls_frame, text="Run A/B Test & Analyze", command=self.run_hypothesis_test)
         self.run_hypo_button.grid(row=2, column=0, columnspan=4, padx=5, pady=10, sticky="ew")
@@ -875,6 +874,7 @@ class HawkDoveApp:
         metric_label = selected_metric
 
         if selected_metric == "Final Hawk Count":
+# Added more detailed error handling
             data_A = [s.final_hawk_count for s in self.hypothesis_results_A]
             data_B = [s.final_hawk_count for s in self.hypothesis_results_B]
         elif selected_metric == "Final Dove Count":
