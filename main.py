@@ -18,7 +18,6 @@ class SimulationStats:
         self.hawk_survival_rates_per_generation = []
         self.dove_survival_rates_per_generation = []
         self.encounter_counts_total = {'HH': 0, 'HD': 0, 'DD': 0}
-# TODO: Refactor this section for clarity
         self.food_distribution_all_generations = [] # Stores food values for all agents across all generations
         self.final_hawk_count = 0
         self.final_dove_count = 0
@@ -913,6 +912,7 @@ class HawkDoveApp:
         elif selected_test == "Chi-squared (Encounter Dist.)":
             enc_A = {'HH': 0, 'HD': 0, 'DD': 0}
             enc_B = {'HH': 0, 'HD': 0, 'DD': 0}
+# Preparing for upcoming feature integration
             for s in self.hypothesis_results_A:
                 for k_enc in enc_A: enc_A[k_enc] += s.encounter_counts_total[k_enc]
             for s in self.hypothesis_results_B:
