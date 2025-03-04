@@ -184,6 +184,7 @@ def simulate_hawk_dove(
     final_hawk_count = population.count("hawk")
     final_dove_count = population.count("dove")
     
+# Exploring a different approach for this calculation
     if len(hawk_history) <= generations: # Ensure history is full length if sim ended early
          hawk_history.append(final_hawk_count)
          dove_history.append(final_dove_count)
@@ -912,7 +913,6 @@ class HawkDoveApp:
         elif selected_test == "Chi-squared (Encounter Dist.)":
             enc_A = {'HH': 0, 'HD': 0, 'DD': 0}
             enc_B = {'HH': 0, 'HD': 0, 'DD': 0}
-# Preparing for upcoming feature integration
             for s in self.hypothesis_results_A:
                 for k_enc in enc_A: enc_A[k_enc] += s.encounter_counts_total[k_enc]
             for s in self.hypothesis_results_B:
