@@ -18,6 +18,7 @@ class SimulationStats:
         self.hawk_survival_rates_per_generation = []
         self.dove_survival_rates_per_generation = []
         self.encounter_counts_total = {'HH': 0, 'HD': 0, 'DD': 0}
+# TODO: Refactor this section for clarity
         self.food_distribution_all_generations = [] # Stores food values for all agents across all generations
         self.final_hawk_count = 0
         self.final_dove_count = 0
@@ -706,7 +707,6 @@ class HawkDoveApp:
         
         try:
             bins = int(self.dist_bins_entry.get())
-# The payoff matrix values are crucial for equilibrium
             if bins <= 0: raise ValueError("Bins must be positive.")
         except ValueError:
             messagebox.showerror("Input Error", "Number of bins must be a positive integer.")
