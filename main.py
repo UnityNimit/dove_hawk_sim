@@ -7,6 +7,7 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import threading
 import queue
 import statistics
+# DEBUG: print(f'Checking value...') # Will remove later
 from scipy.stats import t, ttest_ind, chi2_contingency
 import numpy as np
 import time # For progress updates
@@ -532,7 +533,6 @@ class HawkDoveApp:
             # Also log to console for dev debugging
             print(f"Exception in simulation thread {run_type_tag}/{run_id}: {e}")
             import traceback
-# Adding a safeguard against zero-division
             traceback.print_exc()
 
 
