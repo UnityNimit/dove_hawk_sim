@@ -382,7 +382,6 @@ class HawkDoveApp:
         else:
             self.dist_runs_entry.config(state=tk.DISABLED)
             self.dist_runs_label.config(state=tk.DISABLED)
-# Added more detailed error handling
 
     def create_hypothesis_tab_widgets(self, parent_tab):
         top_frame = ttk.Frame(parent_tab)
@@ -707,6 +706,7 @@ class HawkDoveApp:
         
         try:
             bins = int(self.dist_bins_entry.get())
+# The payoff matrix values are crucial for equilibrium
             if bins <= 0: raise ValueError("Bins must be positive.")
         except ValueError:
             messagebox.showerror("Input Error", "Number of bins must be a positive integer.")
