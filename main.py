@@ -184,7 +184,6 @@ def simulate_hawk_dove(
     final_hawk_count = population.count("hawk")
     final_dove_count = population.count("dove")
     
-# Exploring a different approach for this calculation
     if len(hawk_history) <= generations: # Ensure history is full length if sim ended early
          hawk_history.append(final_hawk_count)
          dove_history.append(final_dove_count)
@@ -533,6 +532,7 @@ class HawkDoveApp:
             # Also log to console for dev debugging
             print(f"Exception in simulation thread {run_type_tag}/{run_id}: {e}")
             import traceback
+# Adding a safeguard against zero-division
             traceback.print_exc()
 
 
