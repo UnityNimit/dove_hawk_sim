@@ -26,6 +26,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 
 *   **Interactive Simulation:** Configure initial populations, resources, and payoff values.
 *   **Real-time Visualization:** Watch hawk and dove populations evolve over generations with dynamic Matplotlib graphs.
+<!-- TODO: Add a GIF demonstration -->
 *   **In-depth Statistics:** Get instant analysis on survival rates, population means, encounter types, and food distribution.
 *   **Distribution Analysis:** Run batch simulations to generate and visualize the distribution of final population counts.
 *   **A/B Hypothesis Testing:** Compare two different scenarios (e.g., high vs. low resources) and use built-in T-tests and Chi-squared tests to determine if the outcomes are statistically significant.
@@ -117,5 +118,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ### 📚 References
 1.  Maynard Smith, J. (1982). *Evolution and the Theory of Games*.
 2.  Nowak, M. A. (2006). *Evolutionary Dynamics: Exploring the Equations of Life*.
-<!-- Formatting improvements for better readability -->
 <!-- Simulated change for commit history -->
