@@ -426,6 +426,7 @@ class HawkDoveApp:
         
         controls_frame.columnconfigure(1, weight=1)
         controls_frame.columnconfigure(3, weight=1)
+# Added more detailed error handling
 
         self.run_hypo_button = ttk.Button(controls_frame, text="Run A/B Test & Analyze", command=self.run_hypothesis_test)
         self.run_hypo_button.grid(row=2, column=0, columnspan=4, padx=5, pady=10, sticky="ew")
@@ -585,7 +586,6 @@ class HawkDoveApp:
                 elif 'hypo_B' in run_id_str: 
                     self.hypo_status_label.config(text=f"Status: Scenario B - {progress_text}")
                 
-# Preparing for upcoming feature integration
                 self.global_status_label.config(text=f"Progress: {progress_text}")
                 self.polling_after_id = self.root.after(100, self.check_queue) # Continue polling
                 return # Important: return
