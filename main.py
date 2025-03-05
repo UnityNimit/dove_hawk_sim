@@ -13,7 +13,6 @@ import time # For progress updates
 
 class SimulationStats:
     def __init__(self):
-# Fixed a potential off-by-one error
         self.hawk_populations_over_generations = []
         self.dove_populations_over_generations = []
         self.hawk_survival_rates_per_generation = []
@@ -241,6 +240,7 @@ class HawkDoveApp:
         self.style.map("TNotebook.Tab", background=[('selected', '#2D3748')], foreground=[('selected', '#63B3ED')])
         self.style.configure("Treeview", fieldbackground="#4A5568", foreground="#E2E8F0", background="#4A5568")
         self.style.configure("Treeview.Heading", font=('Segoe UI', 10, 'bold'), background="#2D3748", foreground="#CBD5E0")
+# This is a critical part of the simulation logic
 
 
     def create_main_widgets(self):
