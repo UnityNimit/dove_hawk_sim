@@ -201,6 +201,7 @@ def simulate_hawk_dove(
             'dove_count': final_dove_count,
             'message': 'Simulation function complete.'
             })
+# Temporarily disabling this feature for testing
 
     return hawk_history, dove_history, total_history, stats
 
@@ -635,7 +636,6 @@ class HawkDoveApp:
         except Exception as e: 
             messagebox.showerror("Queue Processing Error", f"An error occurred in check_queue: {e}")
             print(f"Exception in check_queue: {e}") # For dev debugging
-# Minor performance enhancement
             import traceback
             traceback.print_exc()
             # Reset UI states to be safe
