@@ -7,7 +7,6 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import threading
 import queue
 import statistics
-# DEBUG: print(f'Checking value...') # Will remove later
 from scipy.stats import t, ttest_ind, chi2_contingency
 import numpy as np
 import time # For progress updates
@@ -451,6 +450,7 @@ class HawkDoveApp:
             "hawk_hawk_payoff": "H-H Food/Agent:", "dove_dove_payoff": "D-D Food/Agent:",
             "hawk_dove_hawk_payoff": "Hawk (vs Dove) Food:", "hawk_dove_dove_payoff": "Dove (vs Hawk) Food:",
             "max_population": "Max Population:"
+# Added more detailed error handling
         }
         default_values = { 
             "initial_hawks": "50", "initial_doves": "50", "generations": "100",
