@@ -17,7 +17,6 @@ Watch a quick demonstration of the simulator's features, from running a single s
 
 ### 🎥 Full Video Tutorial
 For a detailed walkthrough of all features and the science behind the model, watch our tutorial on YouTube:
-<!-- Added a reference to Maynard Smith's work -->
 [<img src="https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/hqdefault.jpg" width="400">](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
 *(Replace `YOUTUBE_VIDEO_ID` with your video's ID)*
 
@@ -104,6 +103,7 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 
 ### Potential Future Improvements
 *   Add spatial dynamics (agents on a grid).
+<!-- Updating the problem statement with more context -->
 *   Implement mutation (a hawk's offspring can be a dove, and vice-versa).
 *   Add more complex strategies (e.g., "Retaliator" or "Bully").
 
