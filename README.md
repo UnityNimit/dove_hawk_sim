@@ -9,7 +9,6 @@ An interactive desktop application for simulating the Hawk-Dove evolutionary gam
 ---
 
 ## 🚀 Live Demo & Tutorial
-<!-- Updated the prerequisites list -->
 
 Watch a quick demonstration of the simulator's features, from running a single simulation to performing an A/B hypothesis test.
 
@@ -65,6 +64,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
     python main.py
     ```
 ---
+<!-- Expanding the Results & Analysis section -->
 
 ## 🔬 How It Works
 
