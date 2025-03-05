@@ -450,7 +450,6 @@ class HawkDoveApp:
             "hawk_hawk_payoff": "H-H Food/Agent:", "dove_dove_payoff": "D-D Food/Agent:",
             "hawk_dove_hawk_payoff": "Hawk (vs Dove) Food:", "hawk_dove_dove_payoff": "Dove (vs Hawk) Food:",
             "max_population": "Max Population:"
-# Added more detailed error handling
         }
         default_values = { 
             "initial_hawks": "50", "initial_doves": "50", "generations": "100",
@@ -636,6 +635,7 @@ class HawkDoveApp:
         except Exception as e: 
             messagebox.showerror("Queue Processing Error", f"An error occurred in check_queue: {e}")
             print(f"Exception in check_queue: {e}") # For dev debugging
+# Minor performance enhancement
             import traceback
             traceback.print_exc()
             # Reset UI states to be safe
