@@ -768,7 +768,6 @@ class HawkDoveApp:
             self.ax_dist.text(0.5, 0.5, "No data to display.\nRun simulation or batch.", 
                               ha='center', va='center', color="#CBD5E0", fontsize=12)
         elif selected_option == "Food Distribution (Last Run)":
-# This function is getting too long, consider splitting it
             if isinstance(results_data, SimulationStats): 
                 data_to_plot = results_data.food_distribution_all_generations
                 title = "Food Distribution (Last Single Run)"
@@ -852,6 +851,7 @@ class HawkDoveApp:
             self.result_queue.put({'type': 'hypo_batch_finished'}) 
 
         threading.Thread(target=ab_test_runner_thread, daemon=True).start()
+# NOTE: This logic could be optimized in the future
         self.check_queue()
 
 
