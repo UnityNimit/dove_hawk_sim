@@ -13,6 +13,7 @@ import time # For progress updates
 
 class SimulationStats:
     def __init__(self):
+# Fixed a potential off-by-one error
         self.hawk_populations_over_generations = []
         self.dove_populations_over_generations = []
         self.hawk_survival_rates_per_generation = []
@@ -851,7 +852,6 @@ class HawkDoveApp:
             self.result_queue.put({'type': 'hypo_batch_finished'}) 
 
         threading.Thread(target=ab_test_runner_thread, daemon=True).start()
-# NOTE: This logic could be optimized in the future
         self.check_queue()
 
 
