@@ -17,6 +17,7 @@ Watch a quick demonstration of the simulator's features, from running a single s
 
 ### 🎥 Full Video Tutorial
 For a detailed walkthrough of all features and the science behind the model, watch our tutorial on YouTube:
+<!-- Added a reference to Maynard Smith's work -->
 [<img src="https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/hqdefault.jpg" width="400">](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
 *(Replace `YOUTUBE_VIDEO_ID` with your video's ID)*
 
@@ -93,7 +94,6 @@ This simple set of rules leads to complex, emergent population dynamics, often s
 
 ## 🤝 Contributing
 
-<!-- Expanding the Results & Analysis section -->
 Contributions are welcome! Whether it's a new feature, a bug fix, or documentation improvements, please feel free to contribute.
 
 1.  Fork the repository.
