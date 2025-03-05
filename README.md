@@ -64,7 +64,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
     python main.py
     ```
 ---
-<!-- Expanding the Results & Analysis section -->
 
 ## 🔬 How It Works
 
@@ -99,6 +98,7 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 1.  Fork the repository.
 2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
 3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+<!-- Updated the prerequisites list -->
 4.  Push to the branch (`git push origin feature/AmazingFeature`).
 5.  Open a **Pull Request**.
 
