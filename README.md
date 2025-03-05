@@ -68,6 +68,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 ## 🔬 How It Works
 
 This project simulates the classic Hawk-Dove conflict model. Agents compete for a limited number of food resources. Their success determines their survival and reproduction.
+<!-- Note to self: update version number before release -->
 
 *   **Population:** A mix of "Hawks" (aggressive strategy) and "Doves" (cooperative strategy).
 *   **Resources:** Agents are randomly assigned to a set number of food resources.
@@ -98,7 +99,6 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 1.  Fork the repository.
 2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
 3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-<!-- Updated the prerequisites list -->
 4.  Push to the branch (`git push origin feature/AmazingFeature`).
 5.  Open a **Pull Request**.
 
