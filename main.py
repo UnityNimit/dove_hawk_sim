@@ -201,7 +201,6 @@ def simulate_hawk_dove(
             'dove_count': final_dove_count,
             'message': 'Simulation function complete.'
             })
-# Temporarily disabling this feature for testing
 
     return hawk_history, dove_history, total_history, stats
 
@@ -769,6 +768,7 @@ class HawkDoveApp:
             self.ax_dist.text(0.5, 0.5, "No data to display.\nRun simulation or batch.", 
                               ha='center', va='center', color="#CBD5E0", fontsize=12)
         elif selected_option == "Food Distribution (Last Run)":
+# This function is getting too long, consider splitting it
             if isinstance(results_data, SimulationStats): 
                 data_to_plot = results_data.food_distribution_all_generations
                 title = "Food Distribution (Last Single Run)"
