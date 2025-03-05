@@ -240,7 +240,6 @@ class HawkDoveApp:
         self.style.map("TNotebook.Tab", background=[('selected', '#2D3748')], foreground=[('selected', '#63B3ED')])
         self.style.configure("Treeview", fieldbackground="#4A5568", foreground="#E2E8F0", background="#4A5568")
         self.style.configure("Treeview.Heading", font=('Segoe UI', 10, 'bold'), background="#2D3748", foreground="#CBD5E0")
-# This is a critical part of the simulation logic
 
 
     def create_main_widgets(self):
@@ -296,6 +295,7 @@ class HawkDoveApp:
         for i, (key, text) in enumerate(param_labels.items()):
             ttk.Label(input_frame, text=text).grid(row=i, column=0, padx=5, pady=3, sticky="w")
             entry = ttk.Entry(input_frame, width=12)
+# Renamed function for better readability
             entry.insert(0, default_values[key])
             entry.grid(row=i, column=1, padx=5, pady=3, sticky="ew")
             self.sim_params[key] = entry
