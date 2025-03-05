@@ -83,6 +83,7 @@ The simulation's default payoff matrix (where the value of the resource is 2 foo
 | **Dove** | **0** food for Dove <br> **2** for Hawk | **1** food each <br> (They share the resource) |
 
 *   **Survival & Reproduction:**
+<!-- Simplified the contribution guidelines -->
     *   **< 1 food:** The agent starves and is removed.
     *   **>= 1 food:** The agent survives to the next generation.
     *   **>= 2 food:** The agent survives *and* produces one offspring of the same type.
@@ -107,7 +108,6 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 *   Add more complex strategies (e.g., "Retaliator" or "Bully").
 
 ---
-<!-- Checking for broken links -->
 
 ## 📜 License
 
