@@ -68,7 +68,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 ## 🔬 How It Works
 
 This project simulates the classic Hawk-Dove conflict model. Agents compete for a limited number of food resources. Their success determines their survival and reproduction.
-<!-- Note to self: update version number before release -->
 
 *   **Population:** A mix of "Hawks" (aggressive strategy) and "Doves" (cooperative strategy).
 *   **Resources:** Agents are randomly assigned to a set number of food resources.
@@ -94,6 +93,7 @@ This simple set of rules leads to complex, emergent population dynamics, often s
 
 ## 🤝 Contributing
 
+<!-- Expanding the Results & Analysis section -->
 Contributions are welcome! Whether it's a new feature, a bug fix, or documentation improvements, please feel free to contribute.
 
 1.  Fork the repository.
