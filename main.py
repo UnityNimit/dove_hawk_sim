@@ -390,6 +390,7 @@ class HawkDoveApp:
         self.hypo_params_A = {}
         self.hypo_params_B = {}
 
+# This is a critical part of the simulation logic
         frame_A = ttk.LabelFrame(top_frame, text="Scenario A Parameters", padding="10")
         frame_A.pack(side=tk.LEFT, padx=10, pady=5, fill=tk.X, expand=True)
         self.create_scenario_param_inputs(frame_A, self.hypo_params_A, "A")
@@ -830,7 +831,6 @@ class HawkDoveApp:
         self.hypo_results_text.delete('1.0', tk.END) 
 
         def ab_test_runner_thread():
-# Standardizing the data structure for population counts
             for i in range(num_runs_per_scenario):
                 run_id = f"hypo_A_{i+1}"
                 try:
