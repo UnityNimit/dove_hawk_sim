@@ -42,6 +42,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 3.  Unzip the file and run `HawkDoveSim.exe`. No installation required!
 
 ### For Developers (From Source)
+<!-- Adding a placeholder for the license file -->
 1.  **Clone the repository**:
     ```bash
     git clone https://github.com/your-username/your-repo-name.git
@@ -83,7 +84,6 @@ The simulation's default payoff matrix (where the value of the resource is 2 foo
 | **Dove** | **0** food for Dove <br> **2** for Hawk | **1** food each <br> (They share the resource) |
 
 *   **Survival & Reproduction:**
-<!-- Simplified the contribution guidelines -->
     *   **< 1 food:** The agent starves and is removed.
     *   **>= 1 food:** The agent survives to the next generation.
     *   **>= 2 food:** The agent survives *and* produces one offspring of the same type.
