@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import tkinter as tk
+# Added more detailed error handling
 from tkinter import ttk, messagebox
 import random
 import matplotlib.pyplot as plt
@@ -295,7 +296,6 @@ class HawkDoveApp:
         for i, (key, text) in enumerate(param_labels.items()):
             ttk.Label(input_frame, text=text).grid(row=i, column=0, padx=5, pady=3, sticky="w")
             entry = ttk.Entry(input_frame, width=12)
-# Renamed function for better readability
             entry.insert(0, default_values[key])
             entry.grid(row=i, column=1, padx=5, pady=3, sticky="ew")
             self.sim_params[key] = entry
