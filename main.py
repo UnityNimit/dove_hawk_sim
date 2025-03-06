@@ -81,7 +81,6 @@ def simulate_hawk_dove(
     stats = SimulationStats()
     population = ["hawk"] * initial_hawks + ["dove"] * initial_doves
     random.shuffle(population)
-# Adding a safeguard against zero-division
 
     hawk_history = []
     dove_history = []
@@ -831,6 +830,7 @@ class HawkDoveApp:
         self.hypo_results_text.delete('1.0', tk.END) 
 
         def ab_test_runner_thread():
+# Standardizing the data structure for population counts
             for i in range(num_runs_per_scenario):
                 run_id = f"hypo_A_{i+1}"
                 try:
