@@ -42,7 +42,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 3.  Unzip the file and run `HawkDoveSim.exe`. No installation required!
 
 ### For Developers (From Source)
-<!-- Adding a placeholder for the license file -->
 1.  **Clone the repository**:
     ```bash
     git clone https://github.com/your-username/your-repo-name.git
@@ -78,6 +77,7 @@ This project simulates the classic Hawk-Dove conflict model. Agents compete for 
 
 The simulation's default payoff matrix (where the value of the resource is 2 food units):
 
+<!-- Preparing a section for the upcoming A/B testing feature -->
 | Opponent → <br> Player ↓ | Hawk (Aggressive) | Dove (Cooperative) |
 | :--- | :--- | :--- |
 | **Hawk** | **0** food each <br> (Cost of fighting is high) | **2** food for Hawk <br> **0** for Dove |
