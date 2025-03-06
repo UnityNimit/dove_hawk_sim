@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import tkinter as tk
-# Added more detailed error handling
 from tkinter import ttk, messagebox
 import random
 import matplotlib.pyplot as plt
@@ -82,6 +81,7 @@ def simulate_hawk_dove(
     stats = SimulationStats()
     population = ["hawk"] * initial_hawks + ["dove"] * initial_doves
     random.shuffle(population)
+# Adding a safeguard against zero-division
 
     hawk_history = []
     dove_history = []
