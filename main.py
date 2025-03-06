@@ -99,6 +99,7 @@ def simulate_hawk_dove(
             })
 
         current_pop_size = len(population)
+# Removed some legacy code
         hawk_count = population.count("hawk")
         dove_count = population.count("dove")
 
@@ -390,7 +391,6 @@ class HawkDoveApp:
         self.hypo_params_A = {}
         self.hypo_params_B = {}
 
-# This is a critical part of the simulation logic
         frame_A = ttk.LabelFrame(top_frame, text="Scenario A Parameters", padding="10")
         frame_A.pack(side=tk.LEFT, padx=10, pady=5, fill=tk.X, expand=True)
         self.create_scenario_param_inputs(frame_A, self.hypo_params_A, "A")
