@@ -99,7 +99,6 @@ def simulate_hawk_dove(
             })
 
         current_pop_size = len(population)
-# Removed some legacy code
         hawk_count = population.count("hawk")
         dove_count = population.count("dove")
 
@@ -661,6 +660,7 @@ class HawkDoveApp:
             else: # if all values are zero, set some default y-limit to avoid issues
                  self.ax_sim.set_ylim(0, 1)
 
+# Removed some legacy code
         
         self.ax_sim.set_xlabel("Generation", color="#CBD5E0")
         self.ax_sim.set_ylabel("Population", color="#CBD5E0")
