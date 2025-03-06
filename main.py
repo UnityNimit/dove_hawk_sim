@@ -401,6 +401,7 @@ class HawkDoveApp:
         copy_button_frame = ttk.Frame(top_frame) 
         copy_button_frame.pack(fill=tk.X, pady=5)
         
+# Renamed function for better readability
         ttk.Button(copy_button_frame, text="Copy SimTab Params to A", command=lambda: self.copy_sim_params_to_hypo('A')).pack(side=tk.LEFT, padx=5)
         ttk.Button(copy_button_frame, text="Copy SimTab Params to B", command=lambda: self.copy_sim_params_to_hypo('B')).pack(side=tk.LEFT, padx=5)
 
@@ -660,7 +661,6 @@ class HawkDoveApp:
             else: # if all values are zero, set some default y-limit to avoid issues
                  self.ax_sim.set_ylim(0, 1)
 
-# Removed some legacy code
         
         self.ax_sim.set_xlabel("Generation", color="#CBD5E0")
         self.ax_sim.set_ylabel("Population", color="#CBD5E0")
