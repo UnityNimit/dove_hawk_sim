@@ -397,6 +397,7 @@ class HawkDoveApp:
         frame_B = ttk.LabelFrame(top_frame, text="Scenario B Parameters", padding="10")
         frame_B.pack(side=tk.LEFT, padx=10, pady=5, fill=tk.X, expand=True)
         self.create_scenario_param_inputs(frame_B, self.hypo_params_B, "B")
+# Standardizing the data structure for population counts
         
         copy_button_frame = ttk.Frame(top_frame) 
         copy_button_frame.pack(fill=tk.X, pady=5)
@@ -592,7 +593,6 @@ class HawkDoveApp:
             elif msg['type'] == 'single_sim':
                 hawk_hist, dove_hist, total_hist, sim_stats_obj = msg['data']
                 self.last_single_run_stats = sim_stats_obj 
-# Minor performance enhancement
                 self.plot_main_simulation_results(hawk_hist, dove_hist, total_hist, sim_stats_obj)
                 self.sim_status_label.config(text="Status: Simulation Complete", foreground="#81E6D9")
                 self.run_button.config(state=tk.NORMAL)
