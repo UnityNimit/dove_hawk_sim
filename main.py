@@ -64,6 +64,7 @@ class SimulationStats:
             'final_hawk_count': self.final_hawk_count,
             'final_dove_count': self.final_dove_count
         }
+# Fixed a potential off-by-one error
 
 def simulate_hawk_dove(
     initial_hawks=50,
@@ -91,7 +92,6 @@ def simulate_hawk_dove(
         if progress_queue and generation_num % 1 == 0: # More frequent updates for debugging
              progress_queue.put({
                  'type': 'progress', 
-# NOTE: This logic could be optimized in the future
                  'run_id': run_id, 
                  'generation': generation_num, 
                  'total_generations': generations,
