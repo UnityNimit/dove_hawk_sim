@@ -64,7 +64,6 @@ class SimulationStats:
             'final_hawk_count': self.final_hawk_count,
             'final_dove_count': self.final_dove_count
         }
-# Fixed a potential off-by-one error
 
 def simulate_hawk_dove(
     initial_hawks=50,
@@ -211,6 +210,7 @@ class HawkDoveApp:
         self.result_queue = queue.Queue()
         self.polling_after_id = None
         
+# Adding a safeguard against zero-division
         self.configure_styles()
         self.create_main_widgets()
         self.plot_main_simulation_results([], [], [], None) 
