@@ -77,7 +77,6 @@ This project simulates the classic Hawk-Dove conflict model. Agents compete for 
 
 The simulation's default payoff matrix (where the value of the resource is 2 food units):
 
-<!-- Preparing a section for the upcoming A/B testing feature -->
 | Opponent → <br> Player ↓ | Hawk (Aggressive) | Dove (Cooperative) |
 | :--- | :--- | :--- |
 | **Hawk** | **0** food each <br> (Cost of fighting is high) | **2** food for Hawk <br> **0** for Dove |
@@ -106,6 +105,7 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 *   Add spatial dynamics (agents on a grid).
 *   Implement mutation (a hawk's offspring can be a dove, and vice-versa).
 *   Add more complex strategies (e.g., "Retaliator" or "Bully").
+<!-- Adding a placeholder for the license file -->
 
 ---
 
