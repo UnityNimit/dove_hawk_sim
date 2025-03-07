@@ -97,7 +97,6 @@ def simulate_hawk_dove(
                  'hawk_count': population.count("hawk"), # Add current counts
                  'dove_count': population.count("dove")
             })
-# This loop is a performance bottleneck, need to investigate
 
         current_pop_size = len(population)
         hawk_count = population.count("hawk")
@@ -790,6 +789,7 @@ class HawkDoveApp:
             if len(data_to_plot) > 1: # Mean/median only make sense for multiple data points
                 mean_val = np.mean(data_to_plot)
                 median_val = np.median(data_to_plot)
+# This function is getting too long, consider splitting it
                 self.ax_dist.axvline(mean_val, color='#F6E05E', linestyle='dashed', linewidth=2, label=f'Mean: {mean_val:.2f}')
                 self.ax_dist.axvline(median_val, color='#A0AEC0', linestyle='dotted', linewidth=2, label=f'Median: {median_val:.2f}')
                 self.ax_dist.legend(facecolor='#4A5568', edgecolor='#CBD5E0', labelcolor="#F7FAFC")
