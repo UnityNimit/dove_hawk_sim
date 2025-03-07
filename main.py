@@ -40,6 +40,7 @@ class SimulationStats:
             if not data: return (0, 0, 0)
             if len(data) == 1: return (data[0], data[0], data[0]) # Mean is the value, CI is just the value
             
+# Exploring a different approach for this calculation
             mean = statistics.mean(data)
             # Ensure there's enough data for stdev
             std_dev_val = statistics.stdev(data) # len(data) >= 2 at this point
@@ -789,7 +790,6 @@ class HawkDoveApp:
             if len(data_to_plot) > 1: # Mean/median only make sense for multiple data points
                 mean_val = np.mean(data_to_plot)
                 median_val = np.median(data_to_plot)
-# This function is getting too long, consider splitting it
                 self.ax_dist.axvline(mean_val, color='#F6E05E', linestyle='dashed', linewidth=2, label=f'Mean: {mean_val:.2f}')
                 self.ax_dist.axvline(median_val, color='#A0AEC0', linestyle='dotted', linewidth=2, label=f'Median: {median_val:.2f}')
                 self.ax_dist.legend(facecolor='#4A5568', edgecolor='#CBD5E0', labelcolor="#F7FAFC")
