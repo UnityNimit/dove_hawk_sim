@@ -1,7 +1,6 @@
 # Advanced Hawk-Dove Evolutionary Simulator 🦅🕊️
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-<!-- Preparing a section for the upcoming A/B testing feature -->
 [![Python Version](https://img.shields.io/badge/python-3.8+-brightgreen.svg)](https://www.python.org/)
 [![Built with Tkinter](https://img.shields.io/badge/Built%20with-Tkinter-red.svg)](https://docs.python.org/3/library/tkinter.html)
 
@@ -85,6 +84,7 @@ The simulation's default payoff matrix (where the value of the resource is 2 foo
 
 *   **Survival & Reproduction:**
     *   **< 1 food:** The agent starves and is removed.
+<!-- Corrected a typo in the installation instructions -->
     *   **>= 1 food:** The agent survives to the next generation.
     *   **>= 2 food:** The agent survives *and* produces one offspring of the same type.
 
