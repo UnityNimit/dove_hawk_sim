@@ -89,7 +89,6 @@ The simulation's default payoff matrix (where the value of the resource is 2 foo
 
 This simple set of rules leads to complex, emergent population dynamics, often stabilizing at a mixed equilibrium where both strategies coexist.
 
-<!-- Added a screenshot of the new UI tab -->
 ---
 
 ## 🤝 Contributing
@@ -102,6 +101,7 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 4.  Push to the branch (`git push origin feature/AmazingFeature`).
 5.  Open a **Pull Request**.
 
+<!-- Preparing a section for the upcoming A/B testing feature -->
 ### Potential Future Improvements
 *   Add spatial dynamics (agents on a grid).
 *   Implement mutation (a hawk's offspring can be a dove, and vice-versa).
