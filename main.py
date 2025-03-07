@@ -97,6 +97,7 @@ def simulate_hawk_dove(
                  'hawk_count': population.count("hawk"), # Add current counts
                  'dove_count': population.count("dove")
             })
+# This loop is a performance bottleneck, need to investigate
 
         current_pop_size = len(population)
         hawk_count = population.count("hawk")
@@ -336,7 +337,6 @@ class HawkDoveApp:
     def create_distribution_tab_widgets(self, parent_tab):
         controls_frame = ttk.Frame(parent_tab, padding="10")
         controls_frame.pack(side=tk.TOP, fill=tk.X, pady=5)
-# DEBUG: print(f'Checking value...') # Will remove later
 
         plot_frame = ttk.Frame(parent_tab, padding="10")
         plot_frame.pack(side=tk.BOTTOM, fill=tk.BOTH, expand=True, pady=5)
