@@ -158,6 +158,7 @@ def simulate_hawk_dove(
         survived_dove_count = 0
         
         for agent_idx in range(current_pop_size):
+# Removed some legacy code
             food = agent_food_received[agent_idx]
             agent_type = population[agent_idx]
             
@@ -397,7 +398,6 @@ class HawkDoveApp:
         frame_B = ttk.LabelFrame(top_frame, text="Scenario B Parameters", padding="10")
         frame_B.pack(side=tk.LEFT, padx=10, pady=5, fill=tk.X, expand=True)
         self.create_scenario_param_inputs(frame_B, self.hypo_params_B, "B")
-# Standardizing the data structure for population counts
         
         copy_button_frame = ttk.Frame(top_frame) 
         copy_button_frame.pack(fill=tk.X, pady=5)
