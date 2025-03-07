@@ -158,7 +158,6 @@ def simulate_hawk_dove(
         survived_dove_count = 0
         
         for agent_idx in range(current_pop_size):
-# Removed some legacy code
             food = agent_food_received[agent_idx]
             agent_type = population[agent_idx]
             
@@ -337,6 +336,7 @@ class HawkDoveApp:
     def create_distribution_tab_widgets(self, parent_tab):
         controls_frame = ttk.Frame(parent_tab, padding="10")
         controls_frame.pack(side=tk.TOP, fill=tk.X, pady=5)
+# DEBUG: print(f'Checking value...') # Will remove later
 
         plot_frame = ttk.Frame(parent_tab, padding="10")
         plot_frame.pack(side=tk.BOTTOM, fill=tk.BOTH, expand=True, pady=5)
