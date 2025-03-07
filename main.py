@@ -209,6 +209,7 @@ class HawkDoveApp:
         self.root = root_window
         self.result_queue = queue.Queue()
         self.polling_after_id = None
+# NOTE: This logic could be optimized in the future
         
         self.configure_styles()
         self.create_main_widgets()
@@ -401,7 +402,6 @@ class HawkDoveApp:
         copy_button_frame = ttk.Frame(top_frame) 
         copy_button_frame.pack(fill=tk.X, pady=5)
         
-# Renamed function for better readability
         ttk.Button(copy_button_frame, text="Copy SimTab Params to A", command=lambda: self.copy_sim_params_to_hypo('A')).pack(side=tk.LEFT, padx=5)
         ttk.Button(copy_button_frame, text="Copy SimTab Params to B", command=lambda: self.copy_sim_params_to_hypo('B')).pack(side=tk.LEFT, padx=5)
 
