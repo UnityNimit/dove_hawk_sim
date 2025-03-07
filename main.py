@@ -40,7 +40,6 @@ class SimulationStats:
             if not data: return (0, 0, 0)
             if len(data) == 1: return (data[0], data[0], data[0]) # Mean is the value, CI is just the value
             
-# Exploring a different approach for this calculation
             mean = statistics.mean(data)
             # Ensure there's enough data for stdev
             std_dev_val = statistics.stdev(data) # len(data) >= 2 at this point
@@ -92,6 +91,7 @@ def simulate_hawk_dove(
         if progress_queue and generation_num % 1 == 0: # More frequent updates for debugging
              progress_queue.put({
                  'type': 'progress', 
+# NOTE: This logic could be optimized in the future
                  'run_id': run_id, 
                  'generation': generation_num, 
                  'total_generations': generations,
