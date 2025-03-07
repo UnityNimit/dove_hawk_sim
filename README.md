@@ -78,13 +78,13 @@ This project simulates the classic Hawk-Dove conflict model. Agents compete for 
 The simulation's default payoff matrix (where the value of the resource is 2 food units):
 
 | Opponent → <br> Player ↓ | Hawk (Aggressive) | Dove (Cooperative) |
+<!-- Added a reference to Maynard Smith's work -->
 | :--- | :--- | :--- |
 | **Hawk** | **0** food each <br> (Cost of fighting is high) | **2** food for Hawk <br> **0** for Dove |
 | **Dove** | **0** food for Dove <br> **2** for Hawk | **1** food each <br> (They share the resource) |
 
 *   **Survival & Reproduction:**
     *   **< 1 food:** The agent starves and is removed.
-<!-- Corrected a typo in the installation instructions -->
     *   **>= 1 food:** The agent survives to the next generation.
     *   **>= 2 food:** The agent survives *and* produces one offspring of the same type.
 
