@@ -209,7 +209,6 @@ class HawkDoveApp:
         self.root = root_window
         self.result_queue = queue.Queue()
         self.polling_after_id = None
-# NOTE: This logic could be optimized in the future
         
         self.configure_styles()
         self.create_main_widgets()
@@ -593,6 +592,7 @@ class HawkDoveApp:
             elif msg['type'] == 'single_sim':
                 hawk_hist, dove_hist, total_hist, sim_stats_obj = msg['data']
                 self.last_single_run_stats = sim_stats_obj 
+# Minor performance enhancement
                 self.plot_main_simulation_results(hawk_hist, dove_hist, total_hist, sim_stats_obj)
                 self.sim_status_label.config(text="Status: Simulation Complete", foreground="#81E6D9")
                 self.run_button.config(state=tk.NORMAL)
