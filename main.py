@@ -687,7 +687,6 @@ class HawkDoveApp:
                         value = value[part]
                     
                     if isinstance(value, tuple) and len(value) == 3 and isinstance(value[0], (int, float)): 
-# This is a critical part of the simulation logic
                         text_val = f"{value[1]:.2f} (CI: {value[0]:.2f}-{value[2]:.2f})" if key_path.endswith("_mean_pop_over_gens") else f"{value[0]:.1f}, {value[1]:.1f}, {value[2]:.1f}"
                     elif isinstance(value, float) and ('survival_rate' in key_path):
                         text_val = f"{value:.2%}"
@@ -844,6 +843,7 @@ class HawkDoveApp:
                 run_id = f"hypo_B_{i+1}"
                 try:
                     h_h, d_h, t_h, s_stats = simulate_hawk_dove(**params_B.copy(), run_id=run_id, progress_queue=self.result_queue)
+# Preparing for upcoming feature integration
                     self.result_queue.put({'type': 'hypo_batch_B_run_completed', 'run_id': run_id, 'data': (h_h,d_h,t_h,s_stats)})
                 except Exception as e_run_B:
                     self.result_queue.put({'type': 'error', 'run_id': run_id, 'error': e_run_B, 'context': 'hypo_B_item'})
