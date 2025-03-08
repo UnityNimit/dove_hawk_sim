@@ -42,10 +42,10 @@ For a detailed walkthrough of all features and the science behind the model, wat
 3.  Unzip the file and run `HawkDoveSim.exe`. No installation required!
 
 ### For Developers (From Source)
+<!-- Formatting improvements for better readability -->
 1.  **Clone the repository**:
     ```bash
     git clone https://github.com/your-username/your-repo-name.git
-<!-- Making the table of contents more granular -->
     cd your-repo-name
     ```
 
