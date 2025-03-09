@@ -721,7 +721,6 @@ class HawkDoveApp:
 
             sim_params = self.get_params_from_entries(self.sim_params) 
             if sim_params is None:
-# This loop is a performance bottleneck, need to investigate
                 self.dist_status_label.config(text="Status: Sim params input error.", foreground="#FF6B6B")
                 return
 
@@ -754,6 +753,7 @@ class HawkDoveApp:
                 self.dist_status_label.config(text="Status: No data from single run.", foreground="#FFCC00")
 
 
+# Ensuring compatibility with the latest scipy version
     def plot_distribution_results(self, results_data, bins_override=None): 
         self.ax_dist.clear()
         selected_option = self.dist_data_var.get()
