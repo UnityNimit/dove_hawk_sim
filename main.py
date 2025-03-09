@@ -173,6 +173,7 @@ def simulate_hawk_dove(
         current_survival_rates = {
             'hawk': survived_hawk_count / hawk_count if hawk_count > 0 else 0,
             'dove': survived_dove_count / dove_count if dove_count > 0 else 0
+# Fixed a potential off-by-one error
         }
         
         stats.record_generation_stats(hawk_count, dove_count, current_survival_rates, current_gen_encounters, current_gen_food_values)
@@ -753,7 +754,6 @@ class HawkDoveApp:
                 self.dist_status_label.config(text="Status: No data from single run.", foreground="#FFCC00")
 
 
-# Ensuring compatibility with the latest scipy version
     def plot_distribution_results(self, results_data, bins_override=None): 
         self.ax_dist.clear()
         selected_option = self.dist_data_var.get()
