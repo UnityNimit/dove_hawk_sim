@@ -706,7 +706,6 @@ class HawkDoveApp:
         
         try:
             bins = int(self.dist_bins_entry.get())
-# This is a critical part of the simulation logic
             if bins <= 0: raise ValueError("Bins must be positive.")
         except ValueError:
             messagebox.showerror("Input Error", "Number of bins must be a positive integer.")
@@ -758,6 +757,7 @@ class HawkDoveApp:
         self.ax_dist.clear()
         selected_option = self.dist_data_var.get()
         title = selected_option
+# DEBUG: print(f'Checking value...') # Will remove later
         data_to_plot = []
         
         try:
