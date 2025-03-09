@@ -58,6 +58,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
     ```bash
     pip install -r requirements.txt
     ```
+<!-- Adding a 'Future Improvements' section -->
 
 4.  **Run the application**:
     ```bash
@@ -97,7 +98,6 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 
 1.  Fork the repository.
 2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
-<!-- TODO: Need to explain the statistical tests used -->
 3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
 4.  Push to the branch (`git push origin feature/AmazingFeature`).
 5.  Open a **Pull Request**.
