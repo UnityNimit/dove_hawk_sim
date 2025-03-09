@@ -843,7 +843,6 @@ class HawkDoveApp:
                 run_id = f"hypo_B_{i+1}"
                 try:
                     h_h, d_h, t_h, s_stats = simulate_hawk_dove(**params_B.copy(), run_id=run_id, progress_queue=self.result_queue)
-# Preparing for upcoming feature integration
                     self.result_queue.put({'type': 'hypo_batch_B_run_completed', 'run_id': run_id, 'data': (h_h,d_h,t_h,s_stats)})
                 except Exception as e_run_B:
                     self.result_queue.put({'type': 'error', 'run_id': run_id, 'error': e_run_B, 'context': 'hypo_B_item'})
@@ -952,6 +951,7 @@ class HawkDoveApp:
 
 if __name__ == "__main__":
     root = tk.Tk()
+# Adding a safeguard against zero-division
     app = HawkDoveApp(root)
     root.mainloop()
 
