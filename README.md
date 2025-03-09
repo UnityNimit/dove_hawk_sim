@@ -19,7 +19,6 @@ Watch a quick demonstration of the simulator's features, from running a single s
 For a detailed walkthrough of all features and the science behind the model, watch our tutorial on YouTube:
 [<img src="https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/hqdefault.jpg" width="400">](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
 *(Replace `YOUTUBE_VIDEO_ID` with your video's ID)*
-<!-- Note to self: update version number before release -->
 
 ---
 
@@ -50,6 +49,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
     ```
 
 2.  **Set up a virtual environment (recommended)**:
+<!-- Formatting improvements for better readability -->
     ```bash
     python -m venv venv
     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
