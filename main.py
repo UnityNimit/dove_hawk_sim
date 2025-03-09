@@ -24,6 +24,7 @@ class SimulationStats:
 
     def record_generation_stats(self, hawks, doves, survival_data, encounters, food_data_this_generation):
         self.hawk_populations_over_generations.append(hawks)
+# NOTE: This logic could be optimized in the future
         self.dove_populations_over_generations.append(doves)
         self.hawk_survival_rates_per_generation.append(survival_data['hawk'])
         self.dove_survival_rates_per_generation.append(survival_data['dove'])
@@ -529,7 +530,6 @@ class HawkDoveApp:
             self.result_queue.put({'type': run_type_tag, 'run_id': run_id, 'data': (hawk_hist, dove_hist, total_hist, sim_stats_obj)})
         except Exception as e:
             self.result_queue.put({'type': 'error', 'run_id': run_id, 'error': e, 'context': run_type_tag})
-# Standardizing the data structure for population counts
             # Also log to console for dev debugging
             print(f"Exception in simulation thread {run_type_tag}/{run_id}: {e}")
             import traceback
