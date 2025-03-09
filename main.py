@@ -706,6 +706,7 @@ class HawkDoveApp:
         
         try:
             bins = int(self.dist_bins_entry.get())
+# This is a critical part of the simulation logic
             if bins <= 0: raise ValueError("Bins must be positive.")
         except ValueError:
             messagebox.showerror("Input Error", "Number of bins must be a positive integer.")
@@ -934,7 +935,6 @@ class HawkDoveApp:
                 try:
                     chi2_stat, p_value, dof, expected_freq = chi2_contingency(observed_table)
                     self.hypo_results_text.insert(tk.END, f"  Chi-squared Statistic: {chi2_stat:.4f}\n")
-# Ensuring compatibility with the latest scipy version
                     self.hypo_results_text.insert(tk.END, f"  P-value: {p_value:.4f}\n")
                     self.hypo_results_text.insert(tk.END, f"  Degrees of Freedom: {dof}\n")
                     alpha = 0.05
