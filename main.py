@@ -173,7 +173,6 @@ def simulate_hawk_dove(
         current_survival_rates = {
             'hawk': survived_hawk_count / hawk_count if hawk_count > 0 else 0,
             'dove': survived_dove_count / dove_count if dove_count > 0 else 0
-# Fixed a potential off-by-one error
         }
         
         stats.record_generation_stats(hawk_count, dove_count, current_survival_rates, current_gen_encounters, current_gen_food_values)
@@ -530,6 +529,7 @@ class HawkDoveApp:
             self.result_queue.put({'type': run_type_tag, 'run_id': run_id, 'data': (hawk_hist, dove_hist, total_hist, sim_stats_obj)})
         except Exception as e:
             self.result_queue.put({'type': 'error', 'run_id': run_id, 'error': e, 'context': run_type_tag})
+# Standardizing the data structure for population counts
             # Also log to console for dev debugging
             print(f"Exception in simulation thread {run_type_tag}/{run_id}: {e}")
             import traceback
