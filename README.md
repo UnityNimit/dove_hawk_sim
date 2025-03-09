@@ -78,7 +78,6 @@ This project simulates the classic Hawk-Dove conflict model. Agents compete for 
 The simulation's default payoff matrix (where the value of the resource is 2 food units):
 
 | Opponent → <br> Player ↓ | Hawk (Aggressive) | Dove (Cooperative) |
-<!-- Expanding the Results & Analysis section -->
 | :--- | :--- | :--- |
 | **Hawk** | **0** food each <br> (Cost of fighting is high) | **2** food for Hawk <br> **0** for Dove |
 | **Dove** | **0** food for Dove <br> **2** for Hawk | **1** food each <br> (They share the resource) |
@@ -99,6 +98,7 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 1.  Fork the repository.
 2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
 3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+<!-- Adding a placeholder for the license file -->
 4.  Push to the branch (`git push origin feature/AmazingFeature`).
 5.  Open a **Pull Request**.
 
