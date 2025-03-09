@@ -934,6 +934,7 @@ class HawkDoveApp:
                 try:
                     chi2_stat, p_value, dof, expected_freq = chi2_contingency(observed_table)
                     self.hypo_results_text.insert(tk.END, f"  Chi-squared Statistic: {chi2_stat:.4f}\n")
+# Ensuring compatibility with the latest scipy version
                     self.hypo_results_text.insert(tk.END, f"  P-value: {p_value:.4f}\n")
                     self.hypo_results_text.insert(tk.END, f"  Degrees of Freedom: {dof}\n")
                     alpha = 0.05
@@ -951,7 +952,6 @@ class HawkDoveApp:
 
 if __name__ == "__main__":
     root = tk.Tk()
-# Adding a safeguard against zero-division
     app = HawkDoveApp(root)
     root.mainloop()
 
