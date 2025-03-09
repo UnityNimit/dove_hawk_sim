@@ -66,6 +66,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 ---
 
 ## 🔬 How It Works
+<!-- Simplified the contribution guidelines -->
 
 This project simulates the classic Hawk-Dove conflict model. Agents compete for a limited number of food resources. Their success determines their survival and reproduction.
 
@@ -85,7 +86,6 @@ The simulation's default payoff matrix (where the value of the resource is 2 foo
 *   **Survival & Reproduction:**
     *   **< 1 food:** The agent starves and is removed.
     *   **>= 1 food:** The agent survives to the next generation.
-<!-- Rephrasing the conclusion for greater impact -->
     *   **>= 2 food:** The agent survives *and* produces one offspring of the same type.
 
 This simple set of rules leads to complex, emergent population dynamics, often stabilizing at a mixed equilibrium where both strategies coexist.
