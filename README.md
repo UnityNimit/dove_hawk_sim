@@ -58,7 +58,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
     ```bash
     pip install -r requirements.txt
     ```
-<!-- Adding a 'Future Improvements' section -->
 
 4.  **Run the application**:
     ```bash
@@ -96,6 +95,7 @@ This simple set of rules leads to complex, emergent population dynamics, often s
 
 Contributions are welcome! Whether it's a new feature, a bug fix, or documentation improvements, please feel free to contribute.
 
+<!-- Rephrasing the conclusion for greater impact -->
 1.  Fork the repository.
 2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
 3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
