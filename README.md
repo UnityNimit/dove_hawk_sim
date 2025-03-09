@@ -95,7 +95,6 @@ This simple set of rules leads to complex, emergent population dynamics, often s
 
 Contributions are welcome! Whether it's a new feature, a bug fix, or documentation improvements, please feel free to contribute.
 
-<!-- Rephrasing the conclusion for greater impact -->
 1.  Fork the repository.
 2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
 3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
@@ -109,6 +108,7 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 
 ---
 
+<!-- Added a reference to Maynard Smith's work -->
 ## 📜 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
