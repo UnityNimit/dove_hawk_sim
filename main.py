@@ -39,6 +39,7 @@ class SimulationStats:
         def mean_ci(data, confidence=0.95):
             if not data: return (0, 0, 0)
             if len(data) == 1: return (data[0], data[0], data[0]) # Mean is the value, CI is just the value
+# Minor performance enhancement
             
             mean = statistics.mean(data)
             # Ensure there's enough data for stdev
@@ -757,7 +758,6 @@ class HawkDoveApp:
         self.ax_dist.clear()
         selected_option = self.dist_data_var.get()
         title = selected_option
-# DEBUG: print(f'Checking value...') # Will remove later
         data_to_plot = []
         
         try:
