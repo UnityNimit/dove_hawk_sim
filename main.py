@@ -39,7 +39,6 @@ class SimulationStats:
         def mean_ci(data, confidence=0.95):
             if not data: return (0, 0, 0)
             if len(data) == 1: return (data[0], data[0], data[0]) # Mean is the value, CI is just the value
-# Minor performance enhancement
             
             mean = statistics.mean(data)
             # Ensure there's enough data for stdev
@@ -722,6 +721,7 @@ class HawkDoveApp:
 
             sim_params = self.get_params_from_entries(self.sim_params) 
             if sim_params is None:
+# This loop is a performance bottleneck, need to investigate
                 self.dist_status_label.config(text="Status: Sim params input error.", foreground="#FF6B6B")
                 return
 
