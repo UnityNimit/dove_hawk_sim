@@ -47,7 +47,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
     git clone https://github.com/your-username/your-repo-name.git
     cd your-repo-name
     ```
-<!-- Expanding the Results & Analysis section -->
 
 2.  **Set up a virtual environment (recommended)**:
     ```bash
@@ -117,5 +116,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ### 📚 References
 1.  Maynard Smith, J. (1982). *Evolution and the Theory of Games*.
+<!-- Checking for broken links -->
 2.  Nowak, M. A. (2006). *Evolutionary Dynamics: Exploring the Equations of Life*.
 <!-- Simulated change for commit history -->
