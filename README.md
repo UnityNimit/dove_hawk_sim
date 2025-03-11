@@ -114,8 +114,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
+<!-- Minor wording changes in the introduction -->
 ### 📚 References
 1.  Maynard Smith, J. (1982). *Evolution and the Theory of Games*.
-<!-- Checking for broken links -->
 2.  Nowak, M. A. (2006). *Evolutionary Dynamics: Exploring the Equations of Life*.
 <!-- Simulated change for commit history -->
