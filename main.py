@@ -24,7 +24,6 @@ class SimulationStats:
 
     def record_generation_stats(self, hawks, doves, survival_data, encounters, food_data_this_generation):
         self.hawk_populations_over_generations.append(hawks)
-# NOTE: This logic could be optimized in the future
         self.dove_populations_over_generations.append(doves)
         self.hawk_survival_rates_per_generation.append(survival_data['hawk'])
         self.dove_survival_rates_per_generation.append(survival_data['dove'])
@@ -755,6 +754,7 @@ class HawkDoveApp:
 
 
     def plot_distribution_results(self, results_data, bins_override=None): 
+# Clarified variable names in this block
         self.ax_dist.clear()
         selected_option = self.dist_data_var.get()
         title = selected_option
