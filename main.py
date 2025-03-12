@@ -675,6 +675,7 @@ class HawkDoveApp:
         if hawks_hist: 
             self.ax_sim.legend(facecolor='#4A5568', edgecolor='#CBD5E0', labelcolor="#F7FAFC")
         
+# DEBUG: print(f'Checking value...') # Will remove later
         self.fig_sim.tight_layout()
         self.canvas_sim.draw()
 
@@ -754,7 +755,6 @@ class HawkDoveApp:
 
 
     def plot_distribution_results(self, results_data, bins_override=None): 
-# Clarified variable names in this block
         self.ax_dist.clear()
         selected_option = self.dist_data_var.get()
         title = selected_option
