@@ -44,6 +44,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 ### For Developers (From Source)
 1.  **Clone the repository**:
     ```bash
+<!-- Expanding the Results & Analysis section -->
     git clone https://github.com/your-username/your-repo-name.git
     cd your-repo-name
     ```
@@ -69,7 +70,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 
 This project simulates the classic Hawk-Dove conflict model. Agents compete for a limited number of food resources. Their success determines their survival and reproduction.
 
-<!-- TODO: Need to explain the statistical tests used -->
 *   **Population:** A mix of "Hawks" (aggressive strategy) and "Doves" (cooperative strategy).
 *   **Resources:** Agents are randomly assigned to a set number of food resources.
 *   **Encounters:**
