@@ -44,7 +44,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 ### For Developers (From Source)
 1.  **Clone the repository**:
     ```bash
-<!-- Expanding the Results & Analysis section -->
     git clone https://github.com/your-username/your-repo-name.git
     cd your-repo-name
     ```
@@ -62,6 +61,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 
 4.  **Run the application**:
     ```bash
+<!-- Added a screenshot of the new UI tab -->
     python main.py
     ```
 ---
