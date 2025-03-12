@@ -10,7 +10,6 @@ An interactive desktop application for simulating the Hawk-Dove evolutionary gam
 
 ## 🚀 Live Demo & Tutorial
 
-<!-- Preparing a section for the upcoming A/B testing feature -->
 Watch a quick demonstration of the simulator's features, from running a single simulation to performing an A/B hypothesis test.
 
 ![Simulator Demo GIF](https://github.com/your-username/your-repo-name/blob/main/media/simulation_demo.gif)
@@ -27,6 +26,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 
 *   **Interactive Simulation:** Configure initial populations, resources, and payoff values.
 *   **Real-time Visualization:** Watch hawk and dove populations evolve over generations with dynamic Matplotlib graphs.
+<!-- Adding a 'Future Improvements' section -->
 *   **In-depth Statistics:** Get instant analysis on survival rates, population means, encounter types, and food distribution.
 *   **Distribution Analysis:** Run batch simulations to generate and visualize the distribution of final population counts.
 *   **A/B Hypothesis Testing:** Compare two different scenarios (e.g., high vs. low resources) and use built-in T-tests and Chi-squared tests to determine if the outcomes are statistically significant.
