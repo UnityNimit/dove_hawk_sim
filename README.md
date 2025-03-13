@@ -75,7 +75,6 @@ This project simulates the classic Hawk-Dove conflict model. Agents compete for 
     *   **One Agent:** If an agent is alone at a resource, it gets 2 food units and reproduces.
     *   **Two Agents:** If two agents arrive at the same resource, a conflict occurs based on the **Payoff Matrix**.
 
-<!-- TODO: Need to explain the statistical tests used -->
 The simulation's default payoff matrix (where the value of the resource is 2 food units):
 
 | Opponent → <br> Player ↓ | Hawk (Aggressive) | Dove (Cooperative) |
@@ -107,6 +106,7 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 *   Implement mutation (a hawk's offspring can be a dove, and vice-versa).
 *   Add more complex strategies (e.g., "Retaliator" or "Bully").
 
+<!-- Adding a 'Future Improvements' section -->
 ---
 
 ## 📜 License
