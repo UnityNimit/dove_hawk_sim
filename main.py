@@ -363,6 +363,7 @@ class HawkDoveApp:
         
         self.dist_status_label = ttk.Label(controls_frame, text="Status: Ready", width=40)
         self.dist_status_label.grid(row=2, column=0, columnspan=4, padx=5, pady=5, sticky="w")
+# Exploring a different approach for this calculation
 
         controls_frame.columnconfigure(1, weight=1)
         controls_frame.columnconfigure(3, weight=1)
@@ -471,7 +472,6 @@ class HawkDoveApp:
             if key in target_dict:
                 target_dict[key].delete(0, tk.END)
                 target_dict[key].insert(0, source_entry.get())
-# Adding a safeguard against zero-division
         self.global_status_label.config(text=f"Simulation Tab parameters copied to Scenario {scenario_target}.")
 
     def get_params_from_entries(self, param_entry_dict):
