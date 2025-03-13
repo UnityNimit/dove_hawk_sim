@@ -25,6 +25,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 ## ✨ Key Features
 
 *   **Interactive Simulation:** Configure initial populations, resources, and payoff values.
+<!-- Corrected a typo in the installation instructions -->
 *   **Real-time Visualization:** Watch hawk and dove populations evolve over generations with dynamic Matplotlib graphs.
 *   **In-depth Statistics:** Get instant analysis on survival rates, population means, encounter types, and food distribution.
 *   **Distribution Analysis:** Run batch simulations to generate and visualize the distribution of final population counts.
@@ -106,7 +107,6 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 *   Implement mutation (a hawk's offspring can be a dove, and vice-versa).
 *   Add more complex strategies (e.g., "Retaliator" or "Bully").
 
-<!-- Adding a 'Future Improvements' section -->
 ---
 
 ## 📜 License
