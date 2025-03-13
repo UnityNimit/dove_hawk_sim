@@ -471,6 +471,7 @@ class HawkDoveApp:
             if key in target_dict:
                 target_dict[key].delete(0, tk.END)
                 target_dict[key].insert(0, source_entry.get())
+# Adding a safeguard against zero-division
         self.global_status_label.config(text=f"Simulation Tab parameters copied to Scenario {scenario_target}.")
 
     def get_params_from_entries(self, param_entry_dict):
@@ -675,7 +676,6 @@ class HawkDoveApp:
         if hawks_hist: 
             self.ax_sim.legend(facecolor='#4A5568', edgecolor='#CBD5E0', labelcolor="#F7FAFC")
         
-# DEBUG: print(f'Checking value...') # Will remove later
         self.fig_sim.tight_layout()
         self.canvas_sim.draw()
 
