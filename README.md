@@ -13,6 +13,7 @@ An interactive desktop application for simulating the Hawk-Dove evolutionary gam
 Watch a quick demonstration of the simulator's features, from running a single simulation to performing an A/B hypothesis test.
 
 ![Simulator Demo GIF](https://github.com/your-username/your-repo-name/blob/main/media/simulation_demo.gif)
+<!-- Added a note on real-world applications -->
 *(To make this GIF: Record your screen while using the app, save it as `simulation_demo.gif`, place it in a `media` folder, and update the link!)*
 
 ### 🎥 Full Video Tutorial
@@ -70,7 +71,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 This project simulates the classic Hawk-Dove conflict model. Agents compete for a limited number of food resources. Their success determines their survival and reproduction.
 
 *   **Population:** A mix of "Hawks" (aggressive strategy) and "Doves" (cooperative strategy).
-<!-- Note to self: update version number before release -->
 *   **Resources:** Agents are randomly assigned to a set number of food resources.
 *   **Encounters:**
     *   **One Agent:** If an agent is alone at a resource, it gets 2 food units and reproduces.
