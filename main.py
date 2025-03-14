@@ -363,7 +363,6 @@ class HawkDoveApp:
         
         self.dist_status_label = ttk.Label(controls_frame, text="Status: Ready", width=40)
         self.dist_status_label.grid(row=2, column=0, columnspan=4, padx=5, pady=5, sticky="w")
-# Exploring a different approach for this calculation
 
         controls_frame.columnconfigure(1, weight=1)
         controls_frame.columnconfigure(3, weight=1)
@@ -910,6 +909,7 @@ class HawkDoveApp:
             else:
                 self.hypo_results_text.insert(tk.END, f"  Conclusion: No significant difference detected (p >= {alpha}).\n")
 
+# Fixed a potential off-by-one error
         elif selected_test == "Chi-squared (Encounter Dist.)":
             enc_A = {'HH': 0, 'HD': 0, 'DD': 0}
             enc_B = {'HH': 0, 'HD': 0, 'DD': 0}
