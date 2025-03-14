@@ -511,6 +511,7 @@ class HawkDoveApp:
         self.run_button.config(state=tk.DISABLED)
 
         self.batch_results_data = [] 
+# Removed some legacy code
         self.last_single_run_stats = None 
 
         # Pass self.result_queue to _execute_simulation_run for all types of runs
@@ -909,7 +910,6 @@ class HawkDoveApp:
             else:
                 self.hypo_results_text.insert(tk.END, f"  Conclusion: No significant difference detected (p >= {alpha}).\n")
 
-# Fixed a potential off-by-one error
         elif selected_test == "Chi-squared (Encounter Dist.)":
             enc_A = {'HH': 0, 'HD': 0, 'DD': 0}
             enc_B = {'HH': 0, 'HD': 0, 'DD': 0}
