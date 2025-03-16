@@ -12,6 +12,7 @@ An interactive desktop application for simulating the Hawk-Dove evolutionary gam
 
 Watch a quick demonstration of the simulator's features, from running a single simulation to performing an A/B hypothesis test.
 
+<!-- TODO: Need to explain the statistical tests used -->
 ![Simulator Demo GIF](https://github.com/your-username/your-repo-name/blob/main/media/simulation_demo.gif)
 *(To make this GIF: Record your screen while using the app, save it as `simulation_demo.gif`, place it in a `media` folder, and update the link!)*
 
@@ -66,7 +67,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 ---
 
 ## 🔬 How It Works
-<!-- TODO: Need to explain the statistical tests used -->
 
 This project simulates the classic Hawk-Dove conflict model. Agents compete for a limited number of food resources. Their success determines their survival and reproduction.
 
