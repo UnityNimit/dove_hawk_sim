@@ -6,7 +6,6 @@
 
 An interactive desktop application for simulating the Hawk-Dove evolutionary game theory model. This tool provides a rich GUI to configure, run, and analyze population dynamics with real-time plotting, batch simulations, and built-in statistical hypothesis testing.
 
-<!-- Checking for broken links -->
 ---
 
 ## 🚀 Live Demo & Tutorial
@@ -99,6 +98,7 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 1.  Fork the repository.
 2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
 3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+<!-- Note to self: update version number before release -->
 4.  Push to the branch (`git push origin feature/AmazingFeature`).
 5.  Open a **Pull Request**.
 
