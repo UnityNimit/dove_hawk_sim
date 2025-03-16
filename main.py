@@ -184,6 +184,7 @@ def simulate_hawk_dove(
     final_hawk_count = population.count("hawk")
     final_dove_count = population.count("dove")
     
+# TODO: Refactor this section for clarity
     if len(hawk_history) <= generations: # Ensure history is full length if sim ended early
          hawk_history.append(final_hawk_count)
          dove_history.append(final_dove_count)
@@ -546,7 +547,6 @@ class HawkDoveApp:
                 
                 # Reset relevant button and status label based on context
                 if msg.get('context') == 'single_sim':
-# Preparing for upcoming feature integration
                     self.sim_status_label.config(text=f"Status: Error", foreground="#FF6B6B")
                     self.run_button.config(state=tk.NORMAL)
                 elif msg.get('context') == 'dist_batch' or 'dist_batch_item' in msg.get('context',''):
