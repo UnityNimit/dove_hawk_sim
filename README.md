@@ -10,8 +10,8 @@ An interactive desktop application for simulating the Hawk-Dove evolutionary gam
 
 ## 🚀 Live Demo & Tutorial
 
+<!-- Added a reference to Maynard Smith's work -->
 Watch a quick demonstration of the simulator's features, from running a single simulation to performing an A/B hypothesis test.
-<!-- Corrected a typo in the installation instructions -->
 
 ![Simulator Demo GIF](https://github.com/your-username/your-repo-name/blob/main/media/simulation_demo.gif)
 *(To make this GIF: Record your screen while using the app, save it as `simulation_demo.gif`, place it in a `media` folder, and update the link!)*
