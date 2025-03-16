@@ -546,6 +546,7 @@ class HawkDoveApp:
                 
                 # Reset relevant button and status label based on context
                 if msg.get('context') == 'single_sim':
+# Preparing for upcoming feature integration
                     self.sim_status_label.config(text=f"Status: Error", foreground="#FF6B6B")
                     self.run_button.config(state=tk.NORMAL)
                 elif msg.get('context') == 'dist_batch' or 'dist_batch_item' in msg.get('context',''):
@@ -677,7 +678,6 @@ class HawkDoveApp:
         
         self.fig_sim.tight_layout()
         self.canvas_sim.draw()
-# This function is getting too long, consider splitting it
 
         if sim_stats_obj:
             metrics_data = sim_stats_obj.get_summary_metrics()
