@@ -6,10 +6,10 @@
 
 An interactive desktop application for simulating the Hawk-Dove evolutionary game theory model. This tool provides a rich GUI to configure, run, and analyze population dynamics with real-time plotting, batch simulations, and built-in statistical hypothesis testing.
 
+<!-- Checking for broken links -->
 ---
 
 ## 🚀 Live Demo & Tutorial
-<!-- Added a reference to Maynard Smith's work -->
 
 Watch a quick demonstration of the simulator's features, from running a single simulation to performing an A/B hypothesis test.
 
