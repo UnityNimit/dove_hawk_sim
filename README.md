@@ -11,6 +11,7 @@ An interactive desktop application for simulating the Hawk-Dove evolutionary gam
 ## 🚀 Live Demo & Tutorial
 
 Watch a quick demonstration of the simulator's features, from running a single simulation to performing an A/B hypothesis test.
+<!-- Corrected a typo in the installation instructions -->
 
 ![Simulator Demo GIF](https://github.com/your-username/your-repo-name/blob/main/media/simulation_demo.gif)
 *(To make this GIF: Record your screen while using the app, save it as `simulation_demo.gif`, place it in a `media` folder, and update the link!)*
@@ -98,7 +99,6 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 1.  Fork the repository.
 2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
 3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-<!-- Note to self: update version number before release -->
 4.  Push to the branch (`git push origin feature/AmazingFeature`).
 5.  Open a **Pull Request**.
 
