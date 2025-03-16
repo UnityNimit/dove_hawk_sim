@@ -511,7 +511,6 @@ class HawkDoveApp:
         self.run_button.config(state=tk.DISABLED)
 
         self.batch_results_data = [] 
-# Removed some legacy code
         self.last_single_run_stats = None 
 
         # Pass self.result_queue to _execute_simulation_run for all types of runs
@@ -678,6 +677,7 @@ class HawkDoveApp:
         
         self.fig_sim.tight_layout()
         self.canvas_sim.draw()
+# This function is getting too long, consider splitting it
 
         if sim_stats_obj:
             metrics_data = sim_stats_obj.get_summary_metrics()
