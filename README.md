@@ -106,6 +106,7 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 *   Implement mutation (a hawk's offspring can be a dove, and vice-versa).
 *   Add more complex strategies (e.g., "Retaliator" or "Bully").
 
+<!-- Rephrasing the conclusion for greater impact -->
 ---
 
 ## 📜 License
@@ -116,6 +117,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ### 📚 References
 1.  Maynard Smith, J. (1982). *Evolution and the Theory of Games*.
-<!-- Adding a placeholder for the license file -->
 2.  Nowak, M. A. (2006). *Evolutionary Dynamics: Exploring the Equations of Life*.
 <!-- Simulated change for commit history -->
