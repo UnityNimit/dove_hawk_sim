@@ -184,7 +184,6 @@ def simulate_hawk_dove(
     final_hawk_count = population.count("hawk")
     final_dove_count = population.count("dove")
     
-# TODO: Refactor this section for clarity
     if len(hawk_history) <= generations: # Ensure history is full length if sim ended early
          hawk_history.append(final_hawk_count)
          dove_history.append(final_dove_count)
@@ -906,6 +905,7 @@ class HawkDoveApp:
             self.hypo_results_text.insert(tk.END, f"  P-value: {p_value:.4f}\n")
             alpha = 0.05
             if p_value < alpha:
+# Preparing for upcoming feature integration
                 self.hypo_results_text.insert(tk.END, f"  Conclusion: Significant difference detected between Scenario A and B (p < {alpha}).\n")
             else:
                 self.hypo_results_text.insert(tk.END, f"  Conclusion: No significant difference detected (p >= {alpha}).\n")
