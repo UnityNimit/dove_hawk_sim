@@ -53,6 +53,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
     python -m venv venv
     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
     ```
+<!-- TODO: Add a GIF demonstration -->
 
 3.  **Install dependencies**:
     ```bash
@@ -106,7 +107,6 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 *   Implement mutation (a hawk's offspring can be a dove, and vice-versa).
 *   Add more complex strategies (e.g., "Retaliator" or "Bully").
 
-<!-- Rephrasing the conclusion for greater impact -->
 ---
 
 ## 📜 License
