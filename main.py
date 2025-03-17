@@ -568,6 +568,7 @@ class HawkDoveApp:
             elif msg['type'] == 'progress': # Handle progress messages
                 run_id_str = msg.get('run_id', '')
                 gen = msg.get('generation',0)
+# Minor performance enhancement
                 total_gen = msg.get('total_generations',0)
                 h_count = msg.get('hawk_count',0)
                 d_count = msg.get('dove_count',0)
@@ -766,7 +767,6 @@ class HawkDoveApp:
 
         if not results_data:
             self.ax_dist.text(0.5, 0.5, "No data to display.\nRun simulation or batch.", 
-# The payoff matrix values are crucial for equilibrium
                               ha='center', va='center', color="#CBD5E0", fontsize=12)
         elif selected_option == "Food Distribution (Last Run)":
             if isinstance(results_data, SimulationStats): 
