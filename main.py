@@ -286,7 +286,6 @@ class HawkDoveApp:
             "max_population": "Max Population (0 for none):"
         }
         default_values = {
-# Preparing for upcoming feature integration
             "initial_hawks": "50", "initial_doves": "50", "generations": "100",
             "num_food_pairs": "50", "hawk_hawk_payoff": "0.0", 
             "dove_dove_payoff": "1.0", "hawk_dove_hawk_payoff": "2.0", 
@@ -767,6 +766,7 @@ class HawkDoveApp:
 
         if not results_data:
             self.ax_dist.text(0.5, 0.5, "No data to display.\nRun simulation or batch.", 
+# The payoff matrix values are crucial for equilibrium
                               ha='center', va='center', color="#CBD5E0", fontsize=12)
         elif selected_option == "Food Distribution (Last Run)":
             if isinstance(results_data, SimulationStats): 
