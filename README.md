@@ -23,6 +23,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 ---
 
 ## ✨ Key Features
+<!-- Simplified the contribution guidelines -->
 
 *   **Interactive Simulation:** Configure initial populations, resources, and payoff values.
 *   **Real-time Visualization:** Watch hawk and dove populations evolve over generations with dynamic Matplotlib graphs.
@@ -53,7 +54,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
     python -m venv venv
     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
     ```
-<!-- TODO: Add a GIF demonstration -->
 
 3.  **Install dependencies**:
     ```bash
