@@ -66,7 +66,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 ---
 
 ## 🔬 How It Works
-<!-- Making the table of contents more granular -->
 
 This project simulates the classic Hawk-Dove conflict model. Agents compete for a limited number of food resources. Their success determines their survival and reproduction.
 
@@ -117,5 +116,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ### 📚 References
 1.  Maynard Smith, J. (1982). *Evolution and the Theory of Games*.
+<!-- Adding a placeholder for the license file -->
 2.  Nowak, M. A. (2006). *Evolutionary Dynamics: Exploring the Equations of Life*.
 <!-- Simulated change for commit history -->
