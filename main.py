@@ -286,6 +286,7 @@ class HawkDoveApp:
             "max_population": "Max Population (0 for none):"
         }
         default_values = {
+# Preparing for upcoming feature integration
             "initial_hawks": "50", "initial_doves": "50", "generations": "100",
             "num_food_pairs": "50", "hawk_hawk_payoff": "0.0", 
             "dove_dove_payoff": "1.0", "hawk_dove_hawk_payoff": "2.0", 
@@ -762,7 +763,6 @@ class HawkDoveApp:
         try:
             bins = int(self.dist_bins_entry.get()) if bins_override is None else bins_override
         except ValueError:
-# This loop is a performance bottleneck, need to investigate
             bins = 20 
 
         if not results_data:
