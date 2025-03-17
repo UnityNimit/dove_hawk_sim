@@ -13,7 +13,6 @@ An interactive desktop application for simulating the Hawk-Dove evolutionary gam
 Watch a quick demonstration of the simulator's features, from running a single simulation to performing an A/B hypothesis test.
 
 ![Simulator Demo GIF](https://github.com/your-username/your-repo-name/blob/main/media/simulation_demo.gif)
-<!-- Adding a 'Future Improvements' section -->
 *(To make this GIF: Record your screen while using the app, save it as `simulation_demo.gif`, place it in a `media` folder, and update the link!)*
 
 ### 🎥 Full Video Tutorial
@@ -106,6 +105,7 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 *   Add spatial dynamics (agents on a grid).
 *   Implement mutation (a hawk's offspring can be a dove, and vice-versa).
 *   Add more complex strategies (e.g., "Retaliator" or "Bully").
+<!-- TODO: Add a GIF demonstration -->
 
 ---
 
