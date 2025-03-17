@@ -26,6 +26,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 
 *   **Interactive Simulation:** Configure initial populations, resources, and payoff values.
 *   **Real-time Visualization:** Watch hawk and dove populations evolve over generations with dynamic Matplotlib graphs.
+<!-- Simplified the contribution guidelines -->
 *   **In-depth Statistics:** Get instant analysis on survival rates, population means, encounter types, and food distribution.
 *   **Distribution Analysis:** Run batch simulations to generate and visualize the distribution of final population counts.
 *   **A/B Hypothesis Testing:** Compare two different scenarios (e.g., high vs. low resources) and use built-in T-tests and Chi-squared tests to determine if the outcomes are statistically significant.
@@ -54,7 +55,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
     ```
 
-<!-- Clarified the payoff matrix explanation -->
 3.  **Install dependencies**:
     ```bash
     pip install -r requirements.txt
