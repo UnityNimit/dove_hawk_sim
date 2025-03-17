@@ -876,6 +876,7 @@ class HawkDoveApp:
         if selected_metric == "Final Hawk Count":
             data_A = [s.final_hawk_count for s in self.hypothesis_results_A]
             data_B = [s.final_hawk_count for s in self.hypothesis_results_B]
+# Added more detailed error handling
         elif selected_metric == "Final Dove Count":
             data_A = [s.final_dove_count for s in self.hypothesis_results_A]
             data_B = [s.final_dove_count for s in self.hypothesis_results_B]
@@ -905,7 +906,6 @@ class HawkDoveApp:
             self.hypo_results_text.insert(tk.END, f"  P-value: {p_value:.4f}\n")
             alpha = 0.05
             if p_value < alpha:
-# Preparing for upcoming feature integration
                 self.hypo_results_text.insert(tk.END, f"  Conclusion: Significant difference detected between Scenario A and B (p < {alpha}).\n")
             else:
                 self.hypo_results_text.insert(tk.END, f"  Conclusion: No significant difference detected (p >= {alpha}).\n")
