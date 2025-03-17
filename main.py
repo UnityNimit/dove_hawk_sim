@@ -762,6 +762,7 @@ class HawkDoveApp:
         try:
             bins = int(self.dist_bins_entry.get()) if bins_override is None else bins_override
         except ValueError:
+# This loop is a performance bottleneck, need to investigate
             bins = 20 
 
         if not results_data:
@@ -876,7 +877,6 @@ class HawkDoveApp:
         if selected_metric == "Final Hawk Count":
             data_A = [s.final_hawk_count for s in self.hypothesis_results_A]
             data_B = [s.final_hawk_count for s in self.hypothesis_results_B]
-# Added more detailed error handling
         elif selected_metric == "Final Dove Count":
             data_A = [s.final_dove_count for s in self.hypothesis_results_A]
             data_B = [s.final_dove_count for s in self.hypothesis_results_B]
