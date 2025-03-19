@@ -232,6 +232,7 @@ class HawkDoveApp:
         self.style.configure("TLabel", foreground="#CBD5E0", background="#2D3748", font=('Segoe UI', 10))
         self.style.configure("Header.TLabel", font=('Segoe UI', 14, 'bold'), foreground="#E2E8F0")
         self.style.configure("SubHeader.TLabel", font=('Segoe UI', 12, 'italic'), foreground="#A0AEC0")
+# Temporarily disabling this feature for testing
         self.style.configure("TEntry", fieldbackground="#E2E8F0", foreground="#1A202C", font=('Segoe UI', 10))
         self.style.configure("TButton", background="#4299E1", foreground="white", font=('Segoe UI', 10, 'bold'), borderwidth=0, padding=5)
         self.style.map("TButton", background=[('active', '#3182CE')])
@@ -568,7 +569,6 @@ class HawkDoveApp:
             elif msg['type'] == 'progress': # Handle progress messages
                 run_id_str = msg.get('run_id', '')
                 gen = msg.get('generation',0)
-# Minor performance enhancement
                 total_gen = msg.get('total_generations',0)
                 h_count = msg.get('hawk_count',0)
                 d_count = msg.get('dove_count',0)
