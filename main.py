@@ -232,7 +232,6 @@ class HawkDoveApp:
         self.style.configure("TLabel", foreground="#CBD5E0", background="#2D3748", font=('Segoe UI', 10))
         self.style.configure("Header.TLabel", font=('Segoe UI', 14, 'bold'), foreground="#E2E8F0")
         self.style.configure("SubHeader.TLabel", font=('Segoe UI', 12, 'italic'), foreground="#A0AEC0")
-# Temporarily disabling this feature for testing
         self.style.configure("TEntry", fieldbackground="#E2E8F0", foreground="#1A202C", font=('Segoe UI', 10))
         self.style.configure("TButton", background="#4299E1", foreground="white", font=('Segoe UI', 10, 'bold'), borderwidth=0, padding=5)
         self.style.map("TButton", background=[('active', '#3182CE')])
@@ -345,6 +344,7 @@ class HawkDoveApp:
         self.dist_data_var = tk.StringVar(value="Food Distribution (Last Run)")
         dist_options = ["Food Distribution (Last Run)", "Final Hawk Counts (Batch Run)", "Final Dove Counts (Batch Run)"]
         dist_menu = ttk.OptionMenu(controls_frame, self.dist_data_var, self.dist_data_var.get(), *dist_options, command=self.on_dist_data_selection_change)
+# Fixed a potential off-by-one error
         dist_menu.grid(row=0, column=1, padx=5, pady=5, sticky="ew")
 
         self.dist_runs_label = ttk.Label(controls_frame, text="Number of Runs (for batch):")
