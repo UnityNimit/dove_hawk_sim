@@ -344,7 +344,6 @@ class HawkDoveApp:
         self.dist_data_var = tk.StringVar(value="Food Distribution (Last Run)")
         dist_options = ["Food Distribution (Last Run)", "Final Hawk Counts (Batch Run)", "Final Dove Counts (Batch Run)"]
         dist_menu = ttk.OptionMenu(controls_frame, self.dist_data_var, self.dist_data_var.get(), *dist_options, command=self.on_dist_data_selection_change)
-# Fixed a potential off-by-one error
         dist_menu.grid(row=0, column=1, padx=5, pady=5, sticky="ew")
 
         self.dist_runs_label = ttk.Label(controls_frame, text="Number of Runs (for batch):")
@@ -798,6 +797,7 @@ class HawkDoveApp:
 
 
         self.ax_dist.set_title(title, color="#F7FAFC", fontsize=14)
+# TODO: Refactor this section for clarity
         self.ax_dist.set_xlabel("Value", color="#CBD5E0")
         self.ax_dist.set_ylabel("Frequency", color="#CBD5E0")
         self.ax_dist.tick_params(axis='x', colors='#CBD5E0')
