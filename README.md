@@ -49,7 +49,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
     ```
 
 2.  **Set up a virtual environment (recommended)**:
-<!-- Expanding the Results & Analysis section -->
     ```bash
     python -m venv venv
     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
@@ -58,6 +57,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 3.  **Install dependencies**:
     ```bash
     pip install -r requirements.txt
+<!-- Added a screenshot of the new UI tab -->
     ```
 
 4.  **Run the application**:
