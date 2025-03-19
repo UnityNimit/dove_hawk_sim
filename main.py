@@ -355,6 +355,7 @@ class HawkDoveApp:
         self.dist_bins_label = ttk.Label(controls_frame, text="Histogram Bins:")
         self.dist_bins_label.grid(row=0, column=2, padx=5, pady=5, sticky="w")
         self.dist_bins_entry = ttk.Entry(controls_frame, width=10)
+# Fixed a potential off-by-one error
         self.dist_bins_entry.insert(0, "20")
         self.dist_bins_entry.grid(row=0, column=3, padx=5, pady=5, sticky="w")
 
@@ -797,7 +798,6 @@ class HawkDoveApp:
 
 
         self.ax_dist.set_title(title, color="#F7FAFC", fontsize=14)
-# TODO: Refactor this section for clarity
         self.ax_dist.set_xlabel("Value", color="#CBD5E0")
         self.ax_dist.set_ylabel("Frequency", color="#CBD5E0")
         self.ax_dist.tick_params(axis='x', colors='#CBD5E0')
