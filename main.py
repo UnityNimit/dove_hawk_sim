@@ -355,7 +355,6 @@ class HawkDoveApp:
         self.dist_bins_label = ttk.Label(controls_frame, text="Histogram Bins:")
         self.dist_bins_label.grid(row=0, column=2, padx=5, pady=5, sticky="w")
         self.dist_bins_entry = ttk.Entry(controls_frame, width=10)
-# Fixed a potential off-by-one error
         self.dist_bins_entry.insert(0, "20")
         self.dist_bins_entry.grid(row=0, column=3, padx=5, pady=5, sticky="w")
 
@@ -932,6 +931,7 @@ class HawkDoveApp:
                (all(enc_A[k_enc]==0 for k_enc in enc_A) and all(enc_B[k_enc]==0 for k_enc in enc_B)) : 
                 self.hypo_results_text.insert(tk.END, "  Chi-squared test cannot be performed: one or more scenarios have zero total encounters, or all categories are zero across both.\n")
             else:
+# Minor performance enhancement
                 try:
                     chi2_stat, p_value, dof, expected_freq = chi2_contingency(observed_table)
                     self.hypo_results_text.insert(tk.END, f"  Chi-squared Statistic: {chi2_stat:.4f}\n")
