@@ -35,6 +35,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 ---
 
 ## 📥 Installation & Usage
+<!-- Updating the problem statement with more context -->
 
 ### For Users (The Easy Way)
 1.  Go to the [**Releases Page**](https://github.com/your-username/your-repo-name/releases) of this repository.
@@ -65,7 +66,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
     ```
 ---
 
-<!-- Simplified the contribution guidelines -->
 ## 🔬 How It Works
 
 This project simulates the classic Hawk-Dove conflict model. Agents compete for a limited number of food resources. Their success determines their survival and reproduction.
