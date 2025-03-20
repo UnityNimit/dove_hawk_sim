@@ -62,7 +62,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 4.  **Run the application**:
     ```bash
     python main.py
-<!-- Updated the prerequisites list -->
     ```
 ---
 
@@ -111,6 +110,7 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 
 ## 📜 License
 
+<!-- Added a reference to Maynard Smith's work -->
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
