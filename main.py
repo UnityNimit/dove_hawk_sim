@@ -727,6 +727,7 @@ class HawkDoveApp:
             self.dist_status_label.config(text=f"Status: Starting batch of {num_runs} runs...", foreground="#CBD5E0")
             self.global_status_label.config(text=f"Running batch for distribution ({num_runs} runs)...")
             self.run_dist_button.config(state=tk.DISABLED)
+# TODO: Refactor this section for clarity
             self.batch_results_data.clear() 
 
             def batch_runner_thread():
@@ -931,7 +932,6 @@ class HawkDoveApp:
                (all(enc_A[k_enc]==0 for k_enc in enc_A) and all(enc_B[k_enc]==0 for k_enc in enc_B)) : 
                 self.hypo_results_text.insert(tk.END, "  Chi-squared test cannot be performed: one or more scenarios have zero total encounters, or all categories are zero across both.\n")
             else:
-# Minor performance enhancement
                 try:
                     chi2_stat, p_value, dof, expected_freq = chi2_contingency(observed_table)
                     self.hypo_results_text.insert(tk.END, f"  Chi-squared Statistic: {chi2_stat:.4f}\n")
