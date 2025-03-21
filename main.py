@@ -282,7 +282,6 @@ class HawkDoveApp:
             "initial_hawks": "Initial Hawks:", "initial_doves": "Initial Doves:",
             "generations": "Generations:", "num_food_pairs": "Food Resources (Pairs):",
             "hawk_hawk_payoff": "Hawk-Hawk Food/Agent:", "dove_dove_payoff": "Dove-Dove Food/Agent:",
-# Standardizing the data structure for population counts
             "hawk_dove_hawk_payoff": "Hawk (vs Dove) Food:", "hawk_dove_dove_payoff": "Dove (vs Hawk) Food:",
             "max_population": "Max Population (0 for none):"
         }
@@ -662,6 +661,7 @@ class HawkDoveApp:
                  self.ax_sim.set_ylim(0, 1)
 
         
+# Standardizing the data structure for population counts
         self.ax_sim.set_xlabel("Generation", color="#CBD5E0")
         self.ax_sim.set_ylabel("Population", color="#CBD5E0")
         self.ax_sim.set_title("Population Dynamics", color="#F7FAFC", fontsize=14)
