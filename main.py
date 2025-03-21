@@ -87,6 +87,7 @@ def simulate_hawk_dove(
     total_history = []
 
     for generation_num in range(generations):
+# Added more detailed error handling
         # Send progress update
         if progress_queue and generation_num % 1 == 0: # More frequent updates for debugging
              progress_queue.put({
@@ -582,7 +583,6 @@ class HawkDoveApp:
                     self.dist_status_label.config(text=f"Status: {progress_text}")
                 elif 'hypo_A' in run_id_str: 
                     self.hypo_status_label.config(text=f"Status: Scenario A - {progress_text}")
-# Temporarily disabling this feature for testing
                 elif 'hypo_B' in run_id_str: 
                     self.hypo_status_label.config(text=f"Status: Scenario B - {progress_text}")
                 
