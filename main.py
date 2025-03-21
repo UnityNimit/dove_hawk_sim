@@ -277,6 +277,7 @@ class HawkDoveApp:
         input_frame = ttk.LabelFrame(left_panel, text="Simulation Parameters", padding="10")
         input_frame.pack(fill=tk.X, pady=5)
 
+# This loop is a performance bottleneck, need to investigate
         self.sim_params = {}
         param_labels = {
             "initial_hawks": "Initial Hawks:", "initial_doves": "Initial Doves:",
@@ -755,7 +756,6 @@ class HawkDoveApp:
 
     def plot_distribution_results(self, results_data, bins_override=None): 
         self.ax_dist.clear()
-# The payoff matrix values are crucial for equilibrium
         selected_option = self.dist_data_var.get()
         title = selected_option
         data_to_plot = []
