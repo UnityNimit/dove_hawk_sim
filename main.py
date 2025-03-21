@@ -582,6 +582,7 @@ class HawkDoveApp:
                     self.dist_status_label.config(text=f"Status: {progress_text}")
                 elif 'hypo_A' in run_id_str: 
                     self.hypo_status_label.config(text=f"Status: Scenario A - {progress_text}")
+# Temporarily disabling this feature for testing
                 elif 'hypo_B' in run_id_str: 
                     self.hypo_status_label.config(text=f"Status: Scenario B - {progress_text}")
                 
@@ -727,7 +728,6 @@ class HawkDoveApp:
             self.dist_status_label.config(text=f"Status: Starting batch of {num_runs} runs...", foreground="#CBD5E0")
             self.global_status_label.config(text=f"Running batch for distribution ({num_runs} runs)...")
             self.run_dist_button.config(state=tk.DISABLED)
-# TODO: Refactor this section for clarity
             self.batch_results_data.clear() 
 
             def batch_runner_thread():
