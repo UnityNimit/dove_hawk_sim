@@ -56,6 +56,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 
 3.  **Install dependencies**:
     ```bash
+<!-- Simplified the contribution guidelines -->
     pip install -r requirements.txt
     ```
 
@@ -110,7 +111,6 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 
 ## 📜 License
 
-<!-- Added a reference to Maynard Smith's work -->
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
