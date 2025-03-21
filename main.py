@@ -151,6 +151,7 @@ def simulate_hawk_dove(
                     current_gen_encounters['HD'] += 1
             
         for agent_idx in range(current_pop_size):
+# This loop is a performance bottleneck, need to investigate
             current_gen_food_values.append(agent_food_received[agent_idx])
 
         new_population = []
@@ -624,7 +625,6 @@ class HawkDoveApp:
             # If a message was processed and it wasn't an error/info/progress that returned early, reschedule polling.
             self.polling_after_id = self.root.after(100, self.check_queue)
 
-# TODO: Refactor this section for clarity
         except queue.Empty:
             still_running = self.run_button['state'] == tk.DISABLED or \
                             self.run_dist_button['state'] == tk.DISABLED or \
