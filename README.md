@@ -56,7 +56,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 
 3.  **Install dependencies**:
     ```bash
-<!-- Simplified the contribution guidelines -->
     pip install -r requirements.txt
     ```
 
@@ -93,6 +92,7 @@ This simple set of rules leads to complex, emergent population dynamics, often s
 ---
 
 ## 🤝 Contributing
+<!-- TODO: Add a GIF demonstration -->
 
 Contributions are welcome! Whether it's a new feature, a bug fix, or documentation improvements, please feel free to contribute.
 
