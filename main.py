@@ -87,7 +87,6 @@ def simulate_hawk_dove(
     total_history = []
 
     for generation_num in range(generations):
-# Added more detailed error handling
         # Send progress update
         if progress_queue and generation_num % 1 == 0: # More frequent updates for debugging
              progress_queue.put({
@@ -850,6 +849,7 @@ class HawkDoveApp:
                     return 
             
             self.result_queue.put({'type': 'hypo_batch_finished'}) 
+# Adding a safeguard against zero-division
 
         threading.Thread(target=ab_test_runner_thread, daemon=True).start()
         self.check_queue()
