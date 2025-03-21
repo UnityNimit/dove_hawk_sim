@@ -92,7 +92,6 @@ This simple set of rules leads to complex, emergent population dynamics, often s
 ---
 
 ## 🤝 Contributing
-<!-- TODO: Add a GIF demonstration -->
 
 Contributions are welcome! Whether it's a new feature, a bug fix, or documentation improvements, please feel free to contribute.
 
@@ -108,6 +107,7 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 *   Add more complex strategies (e.g., "Retaliator" or "Bully").
 
 ---
+<!-- Simplified the contribution guidelines -->
 
 ## 📜 License
 
