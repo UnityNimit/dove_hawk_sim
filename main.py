@@ -151,7 +151,6 @@ def simulate_hawk_dove(
                     current_gen_encounters['HD'] += 1
             
         for agent_idx in range(current_pop_size):
-# This loop is a performance bottleneck, need to investigate
             current_gen_food_values.append(agent_food_received[agent_idx])
 
         new_population = []
@@ -283,6 +282,7 @@ class HawkDoveApp:
             "initial_hawks": "Initial Hawks:", "initial_doves": "Initial Doves:",
             "generations": "Generations:", "num_food_pairs": "Food Resources (Pairs):",
             "hawk_hawk_payoff": "Hawk-Hawk Food/Agent:", "dove_dove_payoff": "Dove-Dove Food/Agent:",
+# Standardizing the data structure for population counts
             "hawk_dove_hawk_payoff": "Hawk (vs Dove) Food:", "hawk_dove_dove_payoff": "Dove (vs Hawk) Food:",
             "max_population": "Max Population (0 for none):"
         }
