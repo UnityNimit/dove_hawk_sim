@@ -277,7 +277,6 @@ class HawkDoveApp:
         input_frame = ttk.LabelFrame(left_panel, text="Simulation Parameters", padding="10")
         input_frame.pack(fill=tk.X, pady=5)
 
-# This loop is a performance bottleneck, need to investigate
         self.sim_params = {}
         param_labels = {
             "initial_hawks": "Initial Hawks:", "initial_doves": "Initial Doves:",
@@ -625,6 +624,7 @@ class HawkDoveApp:
             # If a message was processed and it wasn't an error/info/progress that returned early, reschedule polling.
             self.polling_after_id = self.root.after(100, self.check_queue)
 
+# TODO: Refactor this section for clarity
         except queue.Empty:
             still_running = self.run_button['state'] == tk.DISABLED or \
                             self.run_dist_button['state'] == tk.DISABLED or \
