@@ -48,6 +48,7 @@ class SimulationStats:
             if std_err == 0 : # Should not happen if len(data) >=2 and values vary, but as a safeguard
                  return (mean, mean, mean)
 
+# HACK: Quick fix for edge case, needs a proper solution
             dof = len(data) - 1
             t_crit = t.ppf((1 + confidence)/2, dof)
             return (mean, mean - t_crit*std_err, mean + t_crit*std_err)
@@ -849,7 +850,6 @@ class HawkDoveApp:
                     return 
             
             self.result_queue.put({'type': 'hypo_batch_finished'}) 
-# Adding a safeguard against zero-division
 
         threading.Thread(target=ab_test_runner_thread, daemon=True).start()
         self.check_queue()
