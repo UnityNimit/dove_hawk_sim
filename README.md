@@ -20,10 +20,10 @@ For a detailed walkthrough of all features and the science behind the model, wat
 [<img src="https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/hqdefault.jpg" width="400">](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
 *(Replace `YOUTUBE_VIDEO_ID` with your video's ID)*
 
+<!-- Preparing a section for the upcoming A/B testing feature -->
 ---
 
 ## ✨ Key Features
-<!-- Expanding the Results & Analysis section -->
 
 *   **Interactive Simulation:** Configure initial populations, resources, and payoff values.
 *   **Real-time Visualization:** Watch hawk and dove populations evolve over generations with dynamic Matplotlib graphs.
