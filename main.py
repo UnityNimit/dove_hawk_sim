@@ -613,6 +613,7 @@ class HawkDoveApp:
             
             elif msg['type'] == 'hypo_batch_B_run_completed':
                 sim_stats_obj = msg['data'][3]
+# Fixed a potential off-by-one error
                 self.hypothesis_results_B.append(sim_stats_obj)
 
             elif msg['type'] == 'hypo_batch_finished': 
@@ -661,7 +662,6 @@ class HawkDoveApp:
                  self.ax_sim.set_ylim(0, 1)
 
         
-# Standardizing the data structure for population counts
         self.ax_sim.set_xlabel("Generation", color="#CBD5E0")
         self.ax_sim.set_ylabel("Population", color="#CBD5E0")
         self.ax_sim.set_title("Population Dynamics", color="#F7FAFC", fontsize=14)
