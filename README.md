@@ -23,6 +23,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 ---
 
 ## ✨ Key Features
+<!-- Expanding the Results & Analysis section -->
 
 *   **Interactive Simulation:** Configure initial populations, resources, and payoff values.
 *   **Real-time Visualization:** Watch hawk and dove populations evolve over generations with dynamic Matplotlib graphs.
@@ -62,7 +63,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 4.  **Run the application**:
     ```bash
     python main.py
-<!-- Corrected a typo in the installation instructions -->
     ```
 ---
 
