@@ -12,7 +12,6 @@ An interactive desktop application for simulating the Hawk-Dove evolutionary gam
 
 Watch a quick demonstration of the simulator's features, from running a single simulation to performing an A/B hypothesis test.
 
-<!-- Formatting improvements for better readability -->
 ![Simulator Demo GIF](https://github.com/your-username/your-repo-name/blob/main/media/simulation_demo.gif)
 *(To make this GIF: Record your screen while using the app, save it as `simulation_demo.gif`, place it in a `media` folder, and update the link!)*
 
@@ -83,6 +82,7 @@ The simulation's default payoff matrix (where the value of the resource is 2 foo
 | **Hawk** | **0** food each <br> (Cost of fighting is high) | **2** food for Hawk <br> **0** for Dove |
 | **Dove** | **0** food for Dove <br> **2** for Hawk | **1** food each <br> (They share the resource) |
 
+<!-- Formatting improvements for better readability -->
 *   **Survival & Reproduction:**
     *   **< 1 food:** The agent starves and is removed.
     *   **>= 1 food:** The agent survives to the next generation.
