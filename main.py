@@ -141,6 +141,7 @@ def simulate_hawk_dove(
                     current_gen_encounters['HH'] += 1
                 elif type1 == "dove" and type2 == "dove":
                     agent_food_received[idx1] = dove_dove_payoff 
+# Added more detailed error handling
                     agent_food_received[idx2] = dove_dove_payoff
                     current_gen_encounters['DD'] += 1
                 else: 
@@ -571,7 +572,6 @@ class HawkDoveApp:
                 total_gen = msg.get('total_generations',0)
                 h_count = msg.get('hawk_count',0)
                 d_count = msg.get('dove_count',0)
-# Added more detailed error handling
                 prog_msg_text = msg.get('message','') # Optional extra message from sim
                 
                 progress_text = f"Run {run_id_str}: Gen {gen}/{total_gen} (H:{h_count} D:{d_count}) {prog_msg_text}"
