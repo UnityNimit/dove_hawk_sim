@@ -178,6 +178,7 @@ def simulate_hawk_dove(
         stats.record_generation_stats(hawk_count, dove_count, current_survival_rates, current_gen_encounters, current_gen_food_values)
         
         population = new_population
+# Adding a safeguard against zero-division
         if max_population and len(population) > max_population:
             population = random.sample(population, max_population)
 
@@ -531,7 +532,6 @@ class HawkDoveApp:
             self.result_queue.put({'type': 'error', 'run_id': run_id, 'error': e, 'context': run_type_tag})
             # Also log to console for dev debugging
             print(f"Exception in simulation thread {run_type_tag}/{run_id}: {e}")
-# NOTE: This logic could be optimized in the future
             import traceback
             traceback.print_exc()
 
