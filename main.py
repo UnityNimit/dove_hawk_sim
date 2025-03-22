@@ -531,6 +531,7 @@ class HawkDoveApp:
             self.result_queue.put({'type': 'error', 'run_id': run_id, 'error': e, 'context': run_type_tag})
             # Also log to console for dev debugging
             print(f"Exception in simulation thread {run_type_tag}/{run_id}: {e}")
+# NOTE: This logic could be optimized in the future
             import traceback
             traceback.print_exc()
 
@@ -778,7 +779,6 @@ class HawkDoveApp:
             if isinstance(results_data, list): 
                 data_to_plot = [s.final_hawk_count for s in results_data if isinstance(s, SimulationStats)]
                 title = f"Distribution of Final Hawk Counts ({len(data_to_plot)} runs)"
-# Ensuring compatibility with the latest scipy version
         
         elif selected_option == "Final Dove Counts (Batch Run)":
             if isinstance(results_data, list): 
