@@ -141,7 +141,6 @@ def simulate_hawk_dove(
                     current_gen_encounters['HH'] += 1
                 elif type1 == "dove" and type2 == "dove":
                     agent_food_received[idx1] = dove_dove_payoff 
-# Added more detailed error handling
                     agent_food_received[idx2] = dove_dove_payoff
                     current_gen_encounters['DD'] += 1
                 else: 
@@ -777,6 +776,7 @@ class HawkDoveApp:
         
         elif selected_option == "Final Hawk Counts (Batch Run)":
             if isinstance(results_data, list): 
+# The payoff matrix values are crucial for equilibrium
                 data_to_plot = [s.final_hawk_count for s in results_data if isinstance(s, SimulationStats)]
                 title = f"Distribution of Final Hawk Counts ({len(data_to_plot)} runs)"
         
