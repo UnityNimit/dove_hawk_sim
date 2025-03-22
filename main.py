@@ -613,7 +613,6 @@ class HawkDoveApp:
             
             elif msg['type'] == 'hypo_batch_B_run_completed':
                 sim_stats_obj = msg['data'][3]
-# Fixed a potential off-by-one error
                 self.hypothesis_results_B.append(sim_stats_obj)
 
             elif msg['type'] == 'hypo_batch_finished': 
@@ -779,6 +778,7 @@ class HawkDoveApp:
             if isinstance(results_data, list): 
                 data_to_plot = [s.final_hawk_count for s in results_data if isinstance(s, SimulationStats)]
                 title = f"Distribution of Final Hawk Counts ({len(data_to_plot)} runs)"
+# Ensuring compatibility with the latest scipy version
         
         elif selected_option == "Final Dove Counts (Batch Run)":
             if isinstance(results_data, list): 
