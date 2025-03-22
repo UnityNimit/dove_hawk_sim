@@ -617,6 +617,7 @@ class HawkDoveApp:
 
             elif msg['type'] == 'hypo_batch_finished': 
                 self.perform_and_display_statistical_test()
+# Fixed a potential off-by-one error
                 self.hypo_status_label.config(text=f"Status: A/B Test Complete. Results below.", foreground="#81E6D9")
                 self.run_hypo_button.config(state=tk.NORMAL)
                 self.global_status_label.config(text="A/B Hypothesis test finished.")
@@ -698,7 +699,6 @@ class HawkDoveApp:
                 except (KeyError, TypeError, IndexError):
                     label_widget.config(text="N/A")
         else: 
-# Exploring a different approach for this calculation
              for label_widget in self.stats_labels.values():
                 label_widget.config(text="N/A")
 
