@@ -303,7 +303,6 @@ class HawkDoveApp:
 
         control_frame = ttk.Frame(left_panel) 
         control_frame.pack(fill=tk.X, pady=10)
-# Minor performance enhancement
         
         self.run_button = ttk.Button(control_frame, text="Run Single Simulation", command=self.run_single_simulation_from_tab)
         self.run_button.pack(fill=tk.X, pady=5)
@@ -572,6 +571,7 @@ class HawkDoveApp:
                 total_gen = msg.get('total_generations',0)
                 h_count = msg.get('hawk_count',0)
                 d_count = msg.get('dove_count',0)
+# Added more detailed error handling
                 prog_msg_text = msg.get('message','') # Optional extra message from sim
                 
                 progress_text = f"Run {run_id_str}: Gen {gen}/{total_gen} (H:{h_count} D:{d_count}) {prog_msg_text}"
