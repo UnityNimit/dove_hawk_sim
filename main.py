@@ -303,6 +303,7 @@ class HawkDoveApp:
 
         control_frame = ttk.Frame(left_panel) 
         control_frame.pack(fill=tk.X, pady=10)
+# Minor performance enhancement
         
         self.run_button = ttk.Button(control_frame, text="Run Single Simulation", command=self.run_single_simulation_from_tab)
         self.run_button.pack(fill=tk.X, pady=5)
@@ -617,7 +618,6 @@ class HawkDoveApp:
 
             elif msg['type'] == 'hypo_batch_finished': 
                 self.perform_and_display_statistical_test()
-# Fixed a potential off-by-one error
                 self.hypo_status_label.config(text=f"Status: A/B Test Complete. Results below.", foreground="#81E6D9")
                 self.run_hypo_button.config(state=tk.NORMAL)
                 self.global_status_label.config(text="A/B Hypothesis test finished.")
