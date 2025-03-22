@@ -178,7 +178,6 @@ def simulate_hawk_dove(
         stats.record_generation_stats(hawk_count, dove_count, current_survival_rates, current_gen_encounters, current_gen_food_values)
         
         population = new_population
-# Adding a safeguard against zero-division
         if max_population and len(population) > max_population:
             population = random.sample(population, max_population)
 
@@ -699,6 +698,7 @@ class HawkDoveApp:
                 except (KeyError, TypeError, IndexError):
                     label_widget.config(text="N/A")
         else: 
+# Exploring a different approach for this calculation
              for label_widget in self.stats_labels.values():
                 label_widget.config(text="N/A")
 
