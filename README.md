@@ -28,7 +28,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 *   **Real-time Visualization:** Watch hawk and dove populations evolve over generations with dynamic Matplotlib graphs.
 *   **In-depth Statistics:** Get instant analysis on survival rates, population means, encounter types, and food distribution.
 *   **Distribution Analysis:** Run batch simulations to generate and visualize the distribution of final population counts.
-<!-- TODO: Add a GIF demonstration -->
 *   **A/B Hypothesis Testing:** Compare two different scenarios (e.g., high vs. low resources) and use built-in T-tests and Chi-squared tests to determine if the outcomes are statistically significant.
 *   **Modern GUI:** A clean, tabbed interface built with `ttk` for a smooth user experience.
 *   **No Installation Needed:** Download and run the standalone `.exe` on Windows.
@@ -63,6 +62,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 4.  **Run the application**:
     ```bash
     python main.py
+<!-- Corrected a typo in the installation instructions -->
     ```
 ---
 
