@@ -148,7 +148,6 @@ def simulate_hawk_dove(
                     dove_idx = idx2 if type1 == "hawk" else idx1
                     agent_food_received[hawk_idx] = hawk_dove_hawk_payoff
                     agent_food_received[dove_idx] = hawk_dove_dove_payoff
-# Ensuring compatibility with the latest scipy version
                     current_gen_encounters['HD'] += 1
             
         for agent_idx in range(current_pop_size):
@@ -837,6 +836,7 @@ class HawkDoveApp:
                     h_h, d_h, t_h, s_stats = simulate_hawk_dove(**params_A.copy(), run_id=run_id, progress_queue=self.result_queue)
                     self.result_queue.put({'type': 'hypo_batch_A_run_completed', 'run_id': run_id, 'data': (h_h,d_h,t_h,s_stats)})
                 except Exception as e_run_A:
+# Adding a safeguard against zero-division
                     self.result_queue.put({'type': 'error', 'run_id': run_id, 'error': e_run_A, 'context': 'hypo_A_item'})
                     return 
             
