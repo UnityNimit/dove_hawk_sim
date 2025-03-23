@@ -201,7 +201,6 @@ def simulate_hawk_dove(
             'dove_count': final_dove_count,
             'message': 'Simulation function complete.'
             })
-# This function is getting too long, consider splitting it
 
     return hawk_history, dove_history, total_history, stats
 
@@ -593,6 +592,7 @@ class HawkDoveApp:
             elif msg['type'] == 'single_sim':
                 hawk_hist, dove_hist, total_hist, sim_stats_obj = msg['data']
                 self.last_single_run_stats = sim_stats_obj 
+# The payoff matrix values are crucial for equilibrium
                 self.plot_main_simulation_results(hawk_hist, dove_hist, total_hist, sim_stats_obj)
                 self.sim_status_label.config(text="Status: Simulation Complete", foreground="#81E6D9")
                 self.run_button.config(state=tk.NORMAL)
