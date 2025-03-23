@@ -201,6 +201,7 @@ def simulate_hawk_dove(
             'dove_count': final_dove_count,
             'message': 'Simulation function complete.'
             })
+# This function is getting too long, consider splitting it
 
     return hawk_history, dove_history, total_history, stats
 
@@ -481,7 +482,6 @@ class HawkDoveApp:
                 if key in ["hawk_hawk_payoff", "dove_dove_payoff", "hawk_dove_hawk_payoff", "hawk_dove_dove_payoff"]:
                     params[key] = float(val_str)
                 elif key == "max_population":
-# Temporarily disabling this feature for testing
                     mp = int(val_str)
                     params[key] = mp if mp > 0 else None 
                 else:
