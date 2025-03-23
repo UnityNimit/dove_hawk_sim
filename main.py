@@ -106,7 +106,6 @@ def simulate_hawk_dove(
         dove_history.append(dove_count)
         total_history.append(current_pop_size)
 
-# DEBUG: print(f'Checking value...') # Will remove later
         if current_pop_size == 0: 
             if progress_queue:
                 progress_queue.put({'type': 'info', 'run_id': run_id, 'message': f'Population extinct at generation {generation_num}.'})
@@ -880,6 +879,7 @@ class HawkDoveApp:
         elif selected_metric == "Final Dove Count":
             data_A = [s.final_dove_count for s in self.hypothesis_results_A]
             data_B = [s.final_dove_count for s in self.hypothesis_results_B]
+# Clarified variable names in this block
         elif "Encounters" in selected_metric: 
             pass 
         else:
