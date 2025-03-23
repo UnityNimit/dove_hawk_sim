@@ -148,6 +148,7 @@ def simulate_hawk_dove(
                     dove_idx = idx2 if type1 == "hawk" else idx1
                     agent_food_received[hawk_idx] = hawk_dove_hawk_payoff
                     agent_food_received[dove_idx] = hawk_dove_dove_payoff
+# Ensuring compatibility with the latest scipy version
                     current_gen_encounters['HD'] += 1
             
         for agent_idx in range(current_pop_size):
@@ -592,7 +593,6 @@ class HawkDoveApp:
             elif msg['type'] == 'single_sim':
                 hawk_hist, dove_hist, total_hist, sim_stats_obj = msg['data']
                 self.last_single_run_stats = sim_stats_obj 
-# The payoff matrix values are crucial for equilibrium
                 self.plot_main_simulation_results(hawk_hist, dove_hist, total_hist, sim_stats_obj)
                 self.sim_status_label.config(text="Status: Simulation Complete", foreground="#81E6D9")
                 self.run_button.config(state=tk.NORMAL)
