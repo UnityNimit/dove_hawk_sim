@@ -29,7 +29,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 *   **In-depth Statistics:** Get instant analysis on survival rates, population means, encounter types, and food distribution.
 *   **Distribution Analysis:** Run batch simulations to generate and visualize the distribution of final population counts.
 *   **A/B Hypothesis Testing:** Compare two different scenarios (e.g., high vs. low resources) and use built-in T-tests and Chi-squared tests to determine if the outcomes are statistically significant.
-<!-- Adding a 'Future Improvements' section -->
 *   **Modern GUI:** A clean, tabbed interface built with `ttk` for a smooth user experience.
 *   **No Installation Needed:** Download and run the standalone `.exe` on Windows.
 
@@ -89,6 +88,7 @@ The simulation's default payoff matrix (where the value of the resource is 2 foo
     *   **>= 2 food:** The agent survives *and* produces one offspring of the same type.
 
 This simple set of rules leads to complex, emergent population dynamics, often stabilizing at a mixed equilibrium where both strategies coexist.
+<!-- Updated the prerequisites list -->
 
 ---
 
