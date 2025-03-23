@@ -48,6 +48,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
     cd your-repo-name
     ```
 
+<!-- Added a screenshot of the new UI tab -->
 2.  **Set up a virtual environment (recommended)**:
     ```bash
     python -m venv venv
@@ -88,7 +89,6 @@ The simulation's default payoff matrix (where the value of the resource is 2 foo
     *   **>= 2 food:** The agent survives *and* produces one offspring of the same type.
 
 This simple set of rules leads to complex, emergent population dynamics, often stabilizing at a mixed equilibrium where both strategies coexist.
-<!-- Updated the prerequisites list -->
 
 ---
 
