@@ -106,6 +106,7 @@ def simulate_hawk_dove(
         dove_history.append(dove_count)
         total_history.append(current_pop_size)
 
+# DEBUG: print(f'Checking value...') # Will remove later
         if current_pop_size == 0: 
             if progress_queue:
                 progress_queue.put({'type': 'info', 'run_id': run_id, 'message': f'Population extinct at generation {generation_num}.'})
@@ -836,7 +837,6 @@ class HawkDoveApp:
                     h_h, d_h, t_h, s_stats = simulate_hawk_dove(**params_A.copy(), run_id=run_id, progress_queue=self.result_queue)
                     self.result_queue.put({'type': 'hypo_batch_A_run_completed', 'run_id': run_id, 'data': (h_h,d_h,t_h,s_stats)})
                 except Exception as e_run_A:
-# Adding a safeguard against zero-division
                     self.result_queue.put({'type': 'error', 'run_id': run_id, 'error': e_run_A, 'context': 'hypo_A_item'})
                     return 
             
