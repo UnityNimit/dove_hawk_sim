@@ -40,7 +40,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 1.  Go to the [**Releases Page**](https://github.com/your-username/your-repo-name/releases) of this repository.
 2.  Download the `HawkDoveSim.zip` file from the latest release.
 3.  Unzip the file and run `HawkDoveSim.exe`. No installation required!
-<!-- Added a note on real-world applications -->
 
 ### For Developers (From Source)
 1.  **Clone the repository**:
@@ -82,6 +81,7 @@ The simulation's default payoff matrix (where the value of the resource is 2 foo
 | :--- | :--- | :--- |
 | **Hawk** | **0** food each <br> (Cost of fighting is high) | **2** food for Hawk <br> **0** for Dove |
 | **Dove** | **0** food for Dove <br> **2** for Hawk | **1** food each <br> (They share the resource) |
+<!-- Checking for broken links -->
 
 *   **Survival & Reproduction:**
     *   **< 1 food:** The agent starves and is removed.
