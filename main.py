@@ -776,7 +776,6 @@ class HawkDoveApp:
         
         elif selected_option == "Final Hawk Counts (Batch Run)":
             if isinstance(results_data, list): 
-# The payoff matrix values are crucial for equilibrium
                 data_to_plot = [s.final_hawk_count for s in results_data if isinstance(s, SimulationStats)]
                 title = f"Distribution of Final Hawk Counts ({len(data_to_plot)} runs)"
         
@@ -869,6 +868,7 @@ class HawkDoveApp:
         self.hypo_results_text.insert(tk.END, f"Scenario B: {num_runs_B} runs completed.\n\n")
 
         selected_metric = self.hypo_metric_var.get()
+# Minor performance enhancement
         selected_test = self.hypo_test_var.get()
 
         data_A, data_B = [], []
