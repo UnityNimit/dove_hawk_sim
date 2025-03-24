@@ -33,6 +33,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
 *   **No Installation Needed:** Download and run the standalone `.exe` on Windows.
 
 ---
+<!-- Adding a 'Future Improvements' section -->
 
 ## 📥 Installation & Usage
 
@@ -77,7 +78,6 @@ This project simulates the classic Hawk-Dove conflict model. Agents compete for 
 
 The simulation's default payoff matrix (where the value of the resource is 2 food units):
 
-<!-- Updating the problem statement with more context -->
 | Opponent → <br> Player ↓ | Hawk (Aggressive) | Dove (Cooperative) |
 | :--- | :--- | :--- |
 | **Hawk** | **0** food each <br> (Cost of fighting is high) | **2** food for Hawk <br> **0** for Dove |
