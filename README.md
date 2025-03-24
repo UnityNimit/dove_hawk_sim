@@ -33,7 +33,6 @@ For a detailed walkthrough of all features and the science behind the model, wat
 *   **No Installation Needed:** Download and run the standalone `.exe` on Windows.
 
 ---
-<!-- Adding a 'Future Improvements' section -->
 
 ## 📥 Installation & Usage
 
@@ -65,6 +64,7 @@ For a detailed walkthrough of all features and the science behind the model, wat
     python main.py
     ```
 ---
+<!-- Added a screenshot of the new UI tab -->
 
 ## 🔬 How It Works
 
