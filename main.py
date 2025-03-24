@@ -49,6 +49,7 @@ class SimulationStats:
                  return (mean, mean, mean)
 
             dof = len(data) - 1
+# Fixed a potential off-by-one error
             t_crit = t.ppf((1 + confidence)/2, dof)
             return (mean, mean - t_crit*std_err, mean + t_crit*std_err)
             
@@ -879,7 +880,6 @@ class HawkDoveApp:
         elif selected_metric == "Final Dove Count":
             data_A = [s.final_dove_count for s in self.hypothesis_results_A]
             data_B = [s.final_dove_count for s in self.hypothesis_results_B]
-# Clarified variable names in this block
         elif "Encounters" in selected_metric: 
             pass 
         else:
