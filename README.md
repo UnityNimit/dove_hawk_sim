@@ -109,11 +109,6 @@ Contributions are welcome! Whether it's a new feature, a bug fix, or documentati
 
 ---
 
-## 📜 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
 
 ### 📚 References
 1.  Maynard Smith, J. (1982). *Evolution and the Theory of Games*.
